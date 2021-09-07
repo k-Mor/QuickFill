@@ -1,17 +1,17 @@
 /**
  * Copyright 2021 Kaleb Moreno
 
-	Licensed under the Apache License, Version 2.0 (the "License");
-	you may not use this file except in compliance with the License.
-	You may obtain a copy of the License at
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
 
-	http://www.apache.org/licenses/LICENSE-2.0
+  http://www.apache.org/licenses/LICENSE-2.0
 
-	Unless required by applicable law or agreed to in writing, software
-	distributed under the License is distributed on an "AS IS" BASIS,
-	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-	See the License for the specific language governing permissions and
-	limitations under the License.
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
 
  * 
  * @author Kaleb Moreno
@@ -31,16 +31,15 @@
  */
 
 const prompt = require('prompt-sync')(), // The library that allows for easier user input
-	fs = require('fs'), // The file system library
-	jsonData = require('./Data/responses.json'), // The JSON I created for the responses
-	clipboardy = require('clipboardy'); // This library gives me the ability to copy to the clipboard
+  axios = require('axios'),
+  clipboardy = require('clipboardy'); // This library gives me the ability to copy to the clipboard
 
 /**
  * @description This function simply prints a string for user feedback
  */
 const feedback = () => {
-	console.clear();
-	console.log('\n\u26CF  Response was copied to the clipboard  \u26CF\n');
+  console.clear();
+  console.log('\n\u26CF  Response was copied to the clipboard  \u26CF\n');
 };
 
 
@@ -50,14 +49,14 @@ const feedback = () => {
  * @returns This method returns a string representation of the time of day
  */
 const getTime = () => {
-	let date = new Date();
-	let time = date.getHours();
+  let date = new Date();
+  let time = date.getHours();
 
-	if (time < 12) {
-		return 'morning';
-	} else {
-		return 'afternoon';
-	}
+  if (time < 12) {
+    return 'morning';
+  } else {
+    return 'afternoon';
+  }
 };
 
 /**
@@ -68,25 +67,25 @@ const getTime = () => {
  * @param {*} theMenu  - The "options" of the JSON object
  */
 const showM = (theHeader, theMenu) => {
-	const temp = -1;
+  const temp = -1;
 
-	try {
-		console.log(
-			"\u2301".repeat(18) + `\n${theHeader}\n` + "\u2301".repeat(18) + "\n");
+  try {
+    console.log(
+      "\u2301".repeat(18) + `\n${theHeader}\n` + "\u2301".repeat(18) + "\n");
 
-		for (item in theMenu) {
+    for (item in theMenu) {
 
-			if (theMenu[item].name == "Exit") {
-				console.log(`(${temp}) ${theMenu[item].text}`);
-			} else {
-				console.log(`(${item}) ${theMenu[item].name}`);
-			};
+      if (theMenu[item].name == "Exit") {
+        console.log(`(${temp}) ${theMenu[item].text}`);
+      } else {
+        console.log(`(${item}) ${theMenu[item].name}`);
+      };
 
-		};
-	} catch (error) {
-		console.log("\n**Invalid Input**\n");
+    };
+  } catch (error) {
+    console.log("\n**Invalid Input**\n");
 
-	}
+  }
 
 };
 
@@ -107,63 +106,63 @@ const showM = (theHeader, theMenu) => {
  */
 const formatResponseSub = (theMainMenu, theSelection, theOptions, theName, theDays, theHours, theAsset, theRoom, thePhone, theLink) => {
 
-	try {
+  try {
 
-		// Checking for the exit -1 character
-		if (theSelection >= 0) {
-			let innerInput;
-			let escalate = 2;
-			let wrongD = 1;
-			let theServiceOut;
+    // Checking for the exit -1 character
+    if (theSelection >= 0) {
+      let innerInput;
+      let escalate = 2;
+      let wrongD = 1;
+      let theServiceOut;
 
-			theName = prompt('Enter a first name for this issue: ');
+      theName = prompt('Enter a first name for this issue: ');
 
-			if (prompt("\nNeed more options?\nExamples: Asset / Room # / Service Disruption\nEnter (y/n): ") == 'y') {
-				theAsset = prompt('Enter the asset # if applicable: ');
-				theRoom = prompt('Enter the location if applicable: ');
-				theServiceOut = prompt('Enter the disrupted service if applicable: ');
+      if (prompt("\nNeed more options?\nExamples: Asset / Room # / Service Disruption\nEnter (y/n): ") == 'y') {
+        theAsset = prompt('Enter the asset # if applicable: ');
+        theRoom = prompt('Enter the location if applicable: ');
+        theServiceOut = prompt('Enter the disrupted service if applicable: ');
 
-			};
+      };
 
-			// Showing the menu
-			showM(theMainMenu.options[theSelection].name, theOptions);
+      // Showing the menu
+      showM(theMainMenu.options[theSelection].name, theOptions);
 
-			// Getting a sub option selection
-			innerInput = parseInt(prompt('Enter a sub option: '));
+      // Getting a sub option selection
+      innerInput = parseInt(prompt('Enter a sub option: '));
 
-			// Checking for valid selection options
-			if (innerInput >= 0) {
+      // Checking for valid selection options
+      if (innerInput >= 0) {
 
-				// Grabbing the JSON we need
-				let handle = theMainMenu.options[theSelection].options[innerInput];
+        // Grabbing the JSON we need
+        let handle = theMainMenu.options[theSelection].options[innerInput];
 
-				if (theSelection == escalate || theSelection == wrongD) { // Escalation sub menu will always be 1
+        if (theSelection == escalate || theSelection == wrongD) { // Escalation sub menu will always be 1
 
-					// Reducing the depth of the handle
-					handle = theMainMenu.options[theSelection];
-				}
+          // Reducing the depth of the handle
+          handle = theMainMenu.options[theSelection];
+        }
 
-				// Writing the response to the output file and replacing the placeholders.
-				clipboardy.writeSync(handle.text
-					.replace("{time}", getTime())
-					.replace("{fname}", theName)
-					.replace("{days}", theDays)
-					.replace("{phone}", thePhone)
-					.replace("{hours}", theHours)
-					.replace("{asset}", theAsset)
-					.replace("{team}", theOptions[innerInput].name)
-					.replace("{room}", theRoom)
-					.replace("{APlink}", theLink)
-					.replace("{service}", theServiceOut));
+        // Writing the response to the output file and replacing the placeholders.
+        clipboardy.writeSync(handle.text
+          .replace("{time}", getTime())
+          .replace("{fname}", theName)
+          .replace("{days}", theDays)
+          .replace("{phone}", thePhone)
+          .replace("{hours}", theHours)
+          .replace("{asset}", theAsset)
+          .replace("{team}", theOptions[innerInput].name)
+          .replace("{room}", theRoom)
+          .replace("{APlink}", theLink)
+          .replace("{service}", theServiceOut));
 
-				// Providing user feedback
-				feedback();
-			};
-		};
-	} catch (error) {
-		console.log('Something went wrong!');
-		// formatResponseSub(theMainMenu, theSelection, theOptions, theName, theDays, theHours, theAsset, theRoom, thePhone, theLink);
-	}
+        // Providing user feedback
+        feedback();
+      };
+    };
+  } catch (error) {
+    console.log('Something went wrong!');
+    // formatResponseSub(theMainMenu, theSelection, theOptions, theName, theDays, theHours, theAsset, theRoom, thePhone, theLink);
+  }
 };
 
 /**
@@ -179,23 +178,23 @@ const formatResponseSub = (theMainMenu, theSelection, theOptions, theName, theDa
  */
 const formatResponse = (theMainMenu, theSelection, theName, theDays, theHours, thePhone) => {
 
-	try {
-		theName = prompt('Enter a first name: ');
+  try {
+    theName = prompt('Enter a first name: ');
 
-		showM(theMainMenu.options[theSelection].name);
+    showM(theMainMenu.options[theSelection].name);
 
-		clipboardy.writeSync(theMainMenu.options[theSelection].text
-			.replace("{time}", getTime())
-			.replace("{fname}", theName)
-			.replace("{days}", theDays)
-			.replace("{phone}", thePhone)
-			.replace("{hours}", theHours));
+    clipboardy.writeSync(theMainMenu.options[theSelection].text
+      .replace("{time}", getTime())
+      .replace("{fname}", theName)
+      .replace("{days}", theDays)
+      .replace("{phone}", thePhone)
+      .replace("{hours}", theHours));
 
-		feedback();
-	} catch (error) {
-		console.log('Something went wrong!');
-		// formatResponse(theMainMenu, theSelection, theName, theDays, theHours, thePhone);
-	}
+    feedback();
+  } catch (error) {
+    console.log('Something went wrong!');
+    // formatResponse(theMainMenu, theSelection, theName, theDays, theHours, thePhone);
+  }
 };
 
 
@@ -204,91 +203,102 @@ const formatResponse = (theMainMenu, theSelection, theName, theDays, theHours, t
  */
 const Main = () => {
 
-	// Declare the var
-	// let jsonData;
+  // Preform the API call
+  axios.get('https://quickfill.herokuapp.com/').then((res) => {
 
-	// Preform the API call
-	// axios.get(URL).then((res) => {
-	//jsonData = res;
-	//});
-
-
-	// User input representation
-	let exitNum = -1,
-		userInput = 0,
-		wrongDepartment = 1,
-		escM = 2,
-		compM = 3,
-		commonIssues = 4,
-		fname = '',
-		asset = "",
-		room = "",
-		phone = jsonData.config.phone,
-		days = jsonData.config.days,
-		hours = jsonData.config.hours,
-		APlink = jsonData.config.APlink,
-		mainM = jsonData.mainMenu,
-		header = mainM.name;
+    let config = res.data.config,
+      jsonData = res.data.mainMenu,
+      exitNum = -1,
+      userInput = 0,
+      wrongDepartment = 1,
+      escM = 2,
+      compM = 3,
+      commonIssues = 4,
+      fname = '',
+      asset = "",
+      room = "",
+      phone = config.phone,
+      days = config.days,
+      hours = config.hours,
+      APlink = config.APlink,
+      mainM = jsonData,
+      header = mainM.name;
 
 
-	// Starting the REPL
-	while (userInput != exitNum) {
+    // Starting the REPL
+    while (userInput != exitNum) {
 
-		//Show the main menu
-		showM(header, mainM.options);
+      //Show the main menu
+      showM(header, mainM.options);
 
-		//Getting the response
-		userInput = parseInt(prompt('Enter a number: '));
+      //Getting the response
+      userInput = parseInt(prompt('Enter a number: '));
 
-		try {
+      try {
 
-			//The options that run after the selection
-			if (userInput >= 0) {
+        //The options that run after the selection
+        if (userInput >= 0) {
 
-				// Sub menu 1
-				const compOptions = mainM.options[userInput].options;
+          // Sub menu 1
+          const compOptions = mainM.options[userInput].options;
 
-				// Sub menu 2
-				const escOptions = mainM.options[userInput].options;
+          // Sub menu 2
+          const escOptions = mainM.options[userInput].options;
 
-				// Sub menu 3
-				const issueOptions = mainM.options[userInput].options;
+          // Sub menu 3
+          const issueOptions = mainM.options[userInput].options;
 
-				// Sub menu 4
-				const wrongD = mainM.options[userInput].options;
+          // Sub menu 4
+          const wrongD = mainM.options[userInput].options;
 
-				if (userInput == escM) {
+          if (userInput == escM) {
 
-					formatResponseSub(mainM, userInput, escOptions, fname, days, hours, asset, room, phone, APlink);
-				}
+            formatResponseSub(mainM, userInput, escOptions, fname, days, hours, asset, room, phone, APlink);
+          }
 
-				else if (userInput == commonIssues) {
+          else if (userInput == commonIssues) {
 
-					formatResponseSub(mainM, userInput, issueOptions, fname, days, hours, asset, room, phone, APlink);
-				}
+            formatResponseSub(mainM, userInput, issueOptions, fname, days, hours, asset, room, phone, APlink);
+          }
 
-				else if (userInput == compM) {
+          else if (userInput == compM) {
 
-					formatResponseSub(mainM, userInput, compOptions, fname, days, hours, asset, room, phone, APlink);
+            formatResponseSub(mainM, userInput, compOptions, fname, days, hours, asset, room, phone, APlink);
 
-				}
+          }
 
-				else if (userInput == wrongDepartment) {
+          else if (userInput == wrongDepartment) {
 
-					formatResponseSub(mainM, userInput, wrongD, fname, days, hours, asset, room, phone, APlink);
+            formatResponseSub(mainM, userInput, wrongD, fname, days, hours, asset, room, phone, APlink);
 
-					// General case
-				}
+            // General case
+          }
 
-				else {
-					formatResponse(mainM, userInput, fname, days, hours, phone);
-				};
-			};
+          else {
+            formatResponse(mainM, userInput, fname, days, hours, phone);
+          };
+        };
 
-		} catch (error) {
-			console.log('\n**Invalid Input**\n');
-		};
-	};
+      } catch (error) {
+        console.log('\n**Invalid Input**\n');
+      };
+    };
+
+
+
+
+
+
+
+
+
+
+  });
+
+
+
+
+
 };
 
 // Starting the program
