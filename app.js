@@ -283,22 +283,7 @@ const Main = () => {
         console.log('\n**Invalid Input**\n');
       };
     };
-
-
-
-
-
-
-
-
-
-
   });
-
-
-
-
-
 };
 
 // Starting the program
