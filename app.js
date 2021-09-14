@@ -32,6 +32,7 @@
 
 const prompt = require('prompt-sync')(), // The library that allows for easier user input
   axios = require('axios'),
+  colors = require('colors'),
   clipboardy = require('clipboardy'); // This library gives me the ability to copy to the clipboard
 
 /**
@@ -39,7 +40,7 @@ const prompt = require('prompt-sync')(), // The library that allows for easier u
  */
 const feedback = () => {
   console.clear();
-  console.log('\n\u26CF  Response was copied to the clipboard  \u26CF\n');
+  console.log('\nResponse was copied to the clipboard\n'.bgCyan.bold);
 };
 
 
@@ -71,7 +72,7 @@ const showM = (theHeader, theMenu) => {
 
   try {
     console.log(
-      "\u2301".repeat(18) + `\n${theHeader}\n` + "\u2301".repeat(18) + "\n");
+      "-".repeat(18).cyan + `\n${theHeader}\n`.bold + "-".repeat(18).cyan + "\n");
 
     for (item in theMenu) {
 
@@ -83,7 +84,7 @@ const showM = (theHeader, theMenu) => {
 
     };
   } catch (error) {
-    console.log("\n**Invalid Input**\n");
+    console.log("\nInvalid Input\n".bgRed);
 
   }
 
@@ -114,21 +115,25 @@ const formatResponseSub = (theMainMenu, theSelection, theOptions, theName, theDa
       let escalate = 2;
       let wrongD = 1;
       let theServiceOut;
+      let res;
+      
+      theName = prompt('Enter a first name for this concern: '.red);
 
-      theName = prompt('Enter a first name for this issue: ');
+      console.log('\nNeed to put in more info?\nExamples: Asset # / Room # / Service Disruption');
 
-      if (prompt("\nNeed more options?\nExamples: Asset / Room # / Service Disruption\nEnter (y/n): ") == 'y') {
-        theAsset = prompt('Enter the asset # if applicable: ');
-        theRoom = prompt('Enter the location if applicable: ');
-        theServiceOut = prompt('Enter the disrupted service if applicable: ');
+      res = prompt('Enter (y/n): '.red);
 
+      if (res == "y") {
+        theAsset = prompt('Enter the asset # if applicable: '.red);
+        theRoom = prompt('Enter the location if applicable: '.red);
+        theServiceOut = prompt('Enter the disrupted service if applicable: '.red);
       };
 
       // Showing the menu
       showM(theMainMenu.options[theSelection].name, theOptions);
 
       // Getting a sub option selection
-      innerInput = parseInt(prompt('Enter a sub option: '));
+      innerInput = parseInt(prompt('Enter a sub option: '.red));
 
       // Checking for valid selection options
       if (innerInput >= 0) {
@@ -160,7 +165,7 @@ const formatResponseSub = (theMainMenu, theSelection, theOptions, theName, theDa
       };
     };
   } catch (error) {
-    console.log('Something went wrong!');
+    console.log('Something went wrong! Try again'.bgRed);
     // formatResponseSub(theMainMenu, theSelection, theOptions, theName, theDays, theHours, theAsset, theRoom, thePhone, theLink);
   }
 };
@@ -179,7 +184,7 @@ const formatResponseSub = (theMainMenu, theSelection, theOptions, theName, theDa
 const formatResponse = (theMainMenu, theSelection, theName, theDays, theHours, thePhone) => {
 
   try {
-    theName = prompt('Enter a first name: ');
+    theName = prompt('Enter a first name for this concern: '.red);
 
     showM(theMainMenu.options[theSelection].name);
 
@@ -192,7 +197,7 @@ const formatResponse = (theMainMenu, theSelection, theName, theDays, theHours, t
 
     feedback();
   } catch (error) {
-    console.log('Something went wrong!');
+    console.log('Something went wrong! Try again'.red);
     // formatResponse(theMainMenu, theSelection, theName, theDays, theHours, thePhone);
   }
 };
@@ -202,88 +207,92 @@ const formatResponse = (theMainMenu, theSelection, theName, theDays, theHours, t
  * @description This is the driver for the program
  */
 const Main = () => {
+  try {
+    // Preform the API call
+    axios.get('https://quickfill.herokuapp.com/').then((res) => {
 
-  // Preform the API call
-  axios.get('https://quickfill.herokuapp.com/').then((res) => {
-
-    let config = res.data.config,
-      jsonData = res.data.mainMenu,
-      exitNum = -1,
-      userInput = 0,
-      wrongDepartment = 1,
-      escM = 2,
-      compM = 3,
-      commonIssues = 4,
-      fname = '',
-      asset = "",
-      room = "",
-      phone = config.phone,
-      days = config.days,
-      hours = config.hours,
-      APlink = config.APlink,
-      mainM = jsonData,
-      header = mainM.name;
+      let config = res.data.config,
+        jsonData = res.data.mainMenu,
+        exitNum = -1,
+        userInput = 0,
+        wrongDepartment = 1,
+        escM = 2,
+        compM = 3,
+        commonIssues = 4,
+        fname = '',
+        asset = "",
+        room = "",
+        phone = config.phone,
+        days = config.days,
+        hours = config.hours,
+        APlink = config.APlink,
+        mainM = jsonData,
+        header = mainM.name;
 
 
-    // Starting the REPL
-    while (userInput != exitNum) {
+      // Starting the REPL
+      while (userInput != exitNum) {
 
-      //Show the main menu
-      showM(header, mainM.options);
+        //Show the main menu
+        showM(header, mainM.options);
 
-      //Getting the response
-      userInput = parseInt(prompt('Enter a number: '));
+        //Getting the response
+        userInput = parseInt(prompt('Enter a number: '.red));
 
-      try {
+        try {
 
-        //The options that run after the selection
-        if (userInput >= 0) {
+          //The options that run after the selection
+          if (userInput >= 0) {
 
-          // Sub menu 1
-          const compOptions = mainM.options[userInput].options;
+            // Sub menu 1
+            const compOptions = mainM.options[userInput].options;
 
-          // Sub menu 2
-          const escOptions = mainM.options[userInput].options;
+            // Sub menu 2
+            const escOptions = mainM.options[userInput].options;
 
-          // Sub menu 3
-          const issueOptions = mainM.options[userInput].options;
+            // Sub menu 3
+            const issueOptions = mainM.options[userInput].options;
 
-          // Sub menu 4
-          const wrongD = mainM.options[userInput].options;
+            // Sub menu 4
+            const wrongD = mainM.options[userInput].options;
 
-          if (userInput == escM) {
+            if (userInput == escM) {
 
-            formatResponseSub(mainM, userInput, escOptions, fname, days, hours, asset, room, phone, APlink);
-          }
+              formatResponseSub(mainM, userInput, escOptions, fname, days, hours, asset, room, phone, APlink);
+            }
 
-          else if (userInput == commonIssues) {
+            else if (userInput == commonIssues) {
 
-            formatResponseSub(mainM, userInput, issueOptions, fname, days, hours, asset, room, phone, APlink);
-          }
+              formatResponseSub(mainM, userInput, issueOptions, fname, days, hours, asset, room, phone, APlink);
+            }
 
-          else if (userInput == compM) {
+            else if (userInput == compM) {
 
-            formatResponseSub(mainM, userInput, compOptions, fname, days, hours, asset, room, phone, APlink);
+              formatResponseSub(mainM, userInput, compOptions, fname, days, hours, asset, room, phone, APlink);
 
-          }
+            }
 
-          else if (userInput == wrongDepartment) {
+            else if (userInput == wrongDepartment) {
 
-            formatResponseSub(mainM, userInput, wrongD, fname, days, hours, asset, room, phone, APlink);
+              formatResponseSub(mainM, userInput, wrongD, fname, days, hours, asset, room, phone, APlink);
 
-            // General case
-          }
+              // General case
+            }
 
-          else {
-            formatResponse(mainM, userInput, fname, days, hours, phone);
+            else {
+              formatResponse(mainM, userInput, fname, days, hours, phone);
+            };
           };
-        };
 
-      } catch (error) {
-        console.log('\n**Invalid Input**\n');
+        } catch (error) {
+          console.log('\nInvalid Input\n'.bgRed);
+        };
       };
-    };
-  });
+    });
+  } catch (error) {
+    console.log("There was a problem getting the data!".bgRed);
+  }
+
 };
 
 // Starting the program
