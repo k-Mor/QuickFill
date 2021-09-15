@@ -33,7 +33,9 @@
 const prompt = require('prompt-sync')(), // The library that allows for easier user input
   axios = require('axios'),
   colors = require('colors'),
-  clipboardy = require('clipboardy'); // This library gives me the ability to copy to the clipboard
+  path = require('path'),
+  customResponses = require(path.resolve('responses.json'));
+clipboardy = require('clipboardy'); // This library gives me the ability to copy to the clipboard
 
 /**
  * @description This function simply prints a string for user feedback
@@ -202,6 +204,91 @@ const formatResponse = (theMainMenu, theSelection, theName, theDays, theHours, t
   }
 };
 
+const initCustom = () => {
+
+  let config = customResponses.config,
+    jsonData = customResponses.mainMenu,
+    exitNum = -1,
+    userInput = 0,
+    wrongDepartment = 1,
+    escM = 2,
+    compM = 3,
+    commonIssues = 4,
+    fname = '',
+    asset = "",
+    room = "",
+    phone = config.phone,
+    days = config.days,
+    hours = config.hours,
+    APlink = config.APlink,
+    mainM = jsonData,
+    header = mainM.name;
+
+  // Some app info
+  console.log("QuickFill App \u00A9 K-Mor 2021".gray.dim);
+  console.log("Version: Sep, 2021\n\n".gray.dim);
+
+
+  // Starting the REPL
+  while (userInput != exitNum) {
+
+    //Show the main menu
+    showM(header, mainM.options);
+
+    //Getting the response
+    userInput = parseInt(prompt('Enter a number: '.red));
+
+    try {
+
+      //The options that run after the selection
+      if (userInput >= 0) {
+
+        // Sub menu 1
+        const compOptions = mainM.options[userInput].options;
+
+        // Sub menu 2
+        const escOptions = mainM.options[userInput].options;
+
+        // Sub menu 3
+        const issueOptions = mainM.options[userInput].options;
+
+        // Sub menu 4
+        const wrongD = mainM.options[userInput].options;
+
+        if (userInput == escM) {
+
+          formatResponseSub(mainM, userInput, escOptions, fname, days, hours, asset, room, phone, APlink);
+        }
+
+        else if (userInput == commonIssues) {
+
+          formatResponseSub(mainM, userInput, issueOptions, fname, days, hours, asset, room, phone, APlink);
+        }
+
+        else if (userInput == compM) {
+
+          formatResponseSub(mainM, userInput, compOptions, fname, days, hours, asset, room, phone, APlink);
+
+        }
+
+        else if (userInput == wrongDepartment) {
+
+          formatResponseSub(mainM, userInput, wrongD, fname, days, hours, asset, room, phone, APlink);
+
+          // General case
+        }
+
+        else {
+          formatResponse(mainM, userInput, fname, days, hours, phone);
+        };
+      };
+
+    } catch (error) {
+      console.log('\nInvalid Input\n'.bgRed);
+    };
+  };
+};
+
 
 /**
  * @description This is the driver for the program
@@ -209,97 +296,111 @@ const formatResponse = (theMainMenu, theSelection, theName, theDays, theHours, t
 const Main = () => {
 
 
+  const cusFile = prompt("Would you like to use a custom response file? ");
+
+  if (cusFile == "y") {
+    initCustom();
+  } else {
+
+    try {
+      // Preform the API call
+      axios.get('https://quickfill.herokuapp.com/').then((res) => {
+
+        let config = res.data.config,
+          jsonData = res.data.mainMenu,
+          exitNum = -1,
+          userInput = 0,
+          wrongDepartment = 1,
+          escM = 2,
+          compM = 3,
+          commonIssues = 4,
+          fname = '',
+          asset = "",
+          room = "",
+          phone = config.phone,
+          days = config.days,
+          hours = config.hours,
+          APlink = config.APlink,
+          mainM = jsonData,
+          header = mainM.name;
+
+        // Some app info
+        console.log("QuickFill App \u00A9 K-Mor 2021".gray.dim);
+        console.log("Version: Sep, 2021\n\n".gray.dim);
 
 
-  try {
-    // Preform the API call
-    axios.get('https://quickfill.herokuapp.com/').then((res) => {
+        // Starting the REPL
+        while (userInput != exitNum) {
 
-      let config = res.data.config,
-        jsonData = res.data.mainMenu,
-        exitNum = -1,
-        userInput = 0,
-        wrongDepartment = 1,
-        escM = 2,
-        compM = 3,
-        commonIssues = 4,
-        fname = '',
-        asset = "",
-        room = "",
-        phone = config.phone,
-        days = config.days,
-        hours = config.hours,
-        APlink = config.APlink,
-        mainM = jsonData,
-        header = mainM.name;
+          //Show the main menu
+          showM(header, mainM.options);
 
-      // Some app info
-      console.log("QuickFill App \u00A9 K-Mor 2021".gray.dim);
-      console.log("Version: Sep, 2021\n\n".gray.dim);
+          //Getting the response
+          userInput = parseInt(prompt('Enter a number: '.red));
 
+          try {
 
-      // Starting the REPL
-      while (userInput != exitNum) {
+            //The options that run after the selection
+            if (userInput >= 0) {
 
-        //Show the main menu
-        showM(header, mainM.options);
+              // Sub menu 1
+              const compOptions = mainM.options[userInput].options;
 
-        //Getting the response
-        userInput = parseInt(prompt('Enter a number: '.red));
+              // Sub menu 2
+              const escOptions = mainM.options[userInput].options;
 
-        try {
+              // Sub menu 3
+              const issueOptions = mainM.options[userInput].options;
 
-          //The options that run after the selection
-          if (userInput >= 0) {
+              // Sub menu 4
+              const wrongD = mainM.options[userInput].options;
 
-            // Sub menu 1
-            const compOptions = mainM.options[userInput].options;
+              if (userInput == escM) {
 
-            // Sub menu 2
-            const escOptions = mainM.options[userInput].options;
+                formatResponseSub(mainM, userInput, escOptions, fname, days, hours, asset, room, phone, APlink);
+              }
 
-            // Sub menu 3
-            const issueOptions = mainM.options[userInput].options;
+              else if (userInput == commonIssues) {
 
-            // Sub menu 4
-            const wrongD = mainM.options[userInput].options;
+                formatResponseSub(mainM, userInput, issueOptions, fname, days, hours, asset, room, phone, APlink);
+              }
 
-            if (userInput == escM) {
+              else if (userInput == compM) {
 
-              formatResponseSub(mainM, userInput, escOptions, fname, days, hours, asset, room, phone, APlink);
-            }
+                formatResponseSub(mainM, userInput, compOptions, fname, days, hours, asset, room, phone, APlink);
 
-            else if (userInput == commonIssues) {
+              }
 
-              formatResponseSub(mainM, userInput, issueOptions, fname, days, hours, asset, room, phone, APlink);
-            }
+              else if (userInput == wrongDepartment) {
 
-            else if (userInput == compM) {
+                formatResponseSub(mainM, userInput, wrongD, fname, days, hours, asset, room, phone, APlink);
 
-              formatResponseSub(mainM, userInput, compOptions, fname, days, hours, asset, room, phone, APlink);
+                // General case
+              }
 
-            }
-
-            else if (userInput == wrongDepartment) {
-
-              formatResponseSub(mainM, userInput, wrongD, fname, days, hours, asset, room, phone, APlink);
-
-              // General case
-            }
-
-            else {
-              formatResponse(mainM, userInput, fname, days, hours, phone);
+              else {
+                formatResponse(mainM, userInput, fname, days, hours, phone);
+              };
             };
-          };
 
-        } catch (error) {
-          console.log('\nInvalid Input\n'.bgRed);
+          } catch (error) {
+            console.log('\nInvalid Input\n'.bgRed);
+          };
         };
-      };
-    });
-  } catch (error) {
-    console.log("There was a problem getting the data!".bgRed);
+
+
+
+      });
+
+    } catch (error) {
+      console.log("There was a problem getting the data!".bgRed);
+    }
+
+
   }
+
+
+
 
 };
 

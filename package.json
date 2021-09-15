@@ -16,6 +16,7 @@
     "axios": "^0.21.1",
     "clipboardy": "^2.3.0",
     "colors": "^1.4.0",
+    "path": "^0.12.7",
     "prompt-sync": "^4.2.0"
   }
 }
