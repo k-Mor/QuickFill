@@ -116,7 +116,7 @@ const formatResponseSub = (theMainMenu, theSelection, theOptions, theName, theDa
       let wrongD = 1;
       let theServiceOut;
       let res;
-      
+
       theName = prompt('Enter a first name for this concern: '.red);
 
       console.log('\nNeed to put in more info?\nExamples: Asset # / Room # / Service Disruption');
@@ -207,6 +207,10 @@ const formatResponse = (theMainMenu, theSelection, theName, theDays, theHours, t
  * @description This is the driver for the program
  */
 const Main = () => {
+
+
+
+
   try {
     // Preform the API call
     axios.get('https://quickfill.herokuapp.com/').then((res) => {
@@ -228,6 +232,10 @@ const Main = () => {
         APlink = config.APlink,
         mainM = jsonData,
         header = mainM.name;
+
+      // Some app info
+      console.log("QuickFill App \u00A9 K-Mor 2021".gray.dim);
+      console.log("Version: Sep, 2021\n\n".gray.dim);
 
 
       // Starting the REPL
