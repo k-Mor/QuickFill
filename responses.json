@@ -1,262 +1,269 @@
 {
-  "config": {
-    "phone": "253-841-8600",
-    "hours": "6:30AM to 6:00PM",
-    "APlink": "https://outlook.office365.com/owa/calendar/EdtecHelpdeskCalendar@puyallupsd.onmicrosoft.com/bookings/",
-    "days": "Monday - Friday"
-  },
-  "mainMenu": {
-    "name": "poop Options Menu",
-    "options": [
-      {
-        "name": "General Response",
-        "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. We sincerely appreciate you taking the time to contact us, and we are always happy to help. We are here {days}, {hours} answering calls if you need us. Have a wonderful rest of your day!"
-      },
-      {
-        "name": "Wrong Department Menu",
-        "text": "Good {time} {fname},\n\nWe appreciate you reaching out to the helpdesk and we are always happy to help. However, this concern is not something that is handled by the Helpdesk, or Edtec as a whole. You will need to contact {team}. Have an excellent rest of your day!",
-        "options": [
-          {
-            "name": "Larry Klingele with Facilities"
-          },
-          {
-            "name": "Krista McBride for job applications concerns"
-          },
-          {
-            "name": "Kathy Barnett for Frontline training related concerns / Business apps for missing stuff"
-          },
-          {
-            "name": "Margaret Mason concerns for IEP Online"
-          },
-          {
-            "name": "Megan Davis at ESC for SafeSchools concerns"
-          },
-          {
-            "name": "Exit",
-            "text": "Exit the wrong department menu"
-          }
-        ]
-      },
-      {
-        "name": "Escalation Menu",
-        "text": "Good {time} {fname},\n\nThank you for reaching out to us today and we all appreciate your patience with our ticketing system. This concern was not something that we could resolve at this time at our level, and your request has been sent to our {team} Team. If you need anything else, you are more than welcome to give us a call at {phone}, {days}, {hours}.\n\n\u26A0 Room Number / Location: {room}",
-        "options": [
-          {
-            "name": "Modern Management Engineers"
-          },
-          {
-            "name": "Systems Engineers"
-          },
-          {
-            "name": "Security"
-          },
-          {
-            "name": "Education Applications"
-          },
-          {
-            "name": "Building Technicians"
-          },
-          {
-            "name": "Network & Infrastructure"
-          },
-          {
-            "name": "Business Applications"
-          },
-          {
-            "name": "Web Applications"
-          },
-          {
-            "name": "Exit",
-            "text": "Exit escalation menu"
-          }
-        ]
-      },
-      {
-        "name": "Completion Menu",
-        "options": [
-          {
-            "name": "General Completion",
-            "text": "Good {time} {fname},\n\nWe appreciate you reaching out to the helpdesk and we are glad to have found a resolution for you. If you need us for any other technical support, we are here {days}, {hours}. Have a wonderful rest of your day!\n\n\u26A0 Note that if this problem returns or persists, you have 5 days to respond to this email to keep the ticket open."
-          },
-          {
-            "name": "Completion For No Response",
-            "text": "Good {time} {fname},\n\nWe appreciate you reaching out to us at the helpdesk and I wanted to let you know that I will be marking this ticket as completed due to us not getting a response from you. If you still need our assistance with this issue, you can simply reply to this ticket within 5 days. You can also just give us another call at {phone} between the hours of {hours}, {days}, to keep the ticket open. Have a wonderful rest of your day!"
-          },
-          {
-            "name": "Completion For Duplication",
-            "text": "Good {time} {fname},\n\nWe appreciate you reaching out to the helpdesk and we are always happy to help. However, it appears that this is a duplicate ticket of an existing ticket in our queue, and we will be closing this one as a result. If you have any questions or concerns regarding this, feel free to give us a call at {phone}, {hours}, {days}. Have an excellent rest of your day!"
-          },
-          {
-            "name": "Equipment Pickup",
-            "text": "Good {time} {fname},\n\nThank you for coming into Edtec today to pickup equipment. I assigned you {asset} and ensured it was in good working order. We hope that it serves you well, and we are here to provide support {days}, {hours}. Feel free to call us at {phone} if you need technical support."
-          },
-          {
-            "name": "Equipment Pickup (No Asset)",
-            "text": "Good {time} {fname},\n\nThank you for coming into Edtec today to pickup equipment. We hope that it serves you well, and we are here to provide support {days}, {hours}. Feel free to call us at {phone} if you need technical support."
-          },
-          {
-            "name": "Equipment Drop off",
-            "text": "Good {time} {fname},\n\nThank you for dropping off your equipment at Edtec today. We look forward to serving the staff, students and families in our district. If you need anything else, feel free to call us at {phone}, {days}, {hours}."
-          },
-          {
-            "name": "Voicemail password reset",
-            "text": "Good {time} {fname},\n\nWe appreciate you reaching out to the helpdesk. I have reset your voicemail password to the default 2580. If you need us for any other technical support, we will be here {days}, {hours}. Have a wonderful rest of your day! \n\n\u26A0 Note that if this problem returns or persists, you have 5 days to respond to this email to keep the ticket open."
-          },
-          {
-            "name": "Exit",
-            "text": "Exit the completion menu"
-          }
-        ]
-      },
-      {
-        "name": "Common Issues Menu",
-        "options": [
-          {
-            "name": "Contact Us",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. We sincerely appreciate you taking the time to contact us, and we are always happy to help. For this particular concern, I think it would be best if you gave us a call at {phone} so we can speak with you directly. We are here {days}, {hours} answering calls if you have the time to do so."
-          },
-          {
-            "name": "General Troubleshooting",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. There are a few things you can try when it comes to troubleshooting common hardware or driver related issues.\n\nAttempt the following:\n\n\u2691 Search for 'Check for updates' in the lower left search bar on your taskbar\n\n\u2691 Once that menu opens up, select 'Check for updates'\n\n\u2691 After that process finishes, look for blue text that says 'View optional updates' on that same page. It is usually underneath the button to check for updates. If you do not know how to run the optional updates, check out this link:\nhttps://pureinfotech.com/install-optional-updates-windows-10/ \n\n\u2691 Allow those to finish, restart your computer, then attempt to use the hardware / software that you were initially trying to.\n\n\u2691 If you have a Kensington docking station at your desk, you may also want to power cycle that device as well, as that addresses many of the common display and audio issues staff members run into. To do this, locate the black cylindrical cable that is in the lowest possible port in the back panel. Unplug that cord, allow about 30 seconds to pass, plug the cord back in and see if that resolved your issue.\n\nIf you have concerns about these steps, or they did not work, please feel free to give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!"
-          },
-          {
-            "name": "Service Outage",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. We sincerely appreciate you taking the time to contact us, and we are always happy to help. We are aware at this time that {service} is experiencing service disruptions, and we ask for your patience as that vendor works to resolve the disruption. If you have concerns outside of this reported outage, feel free to give us a call, or reply back {days}, {hours}. Have an excellent rest of your day!"
-          },
-          {
-            "name": "Suspicious Emails",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. We appreciate you taking the time to contact us and we are always happy to help. When it comes to suspicious emails, there is no need to call or email us as Outlook has an excellent tool that does that on your behalf.\n\nIf you simply select 'Report Message' from the upper right-hand side of the application window, you can then select 'Phishing' and that will both remove the email from your inbox, then report that message to Microsoft and our security team. If you have questions or concerns, you are more than welcome to give us a call at {phone}, {days}, {hours}.\n\n\u26A0 If you have interacted with a suspicious email and provided any district login information, please change your password immediately by doing the following:\n\n\u2691 Hit CTRL + ALT + DEL on your keyboard\n\n\u2691 Select 'Change a password'\n\n\u2691 Follow the prompts to change your password\n\n\u2691 Log out of your computer, then log back in with the new password"
-          },
-          {
-            "name": "What is your extension?",
-            "text": "Good {time} {fname},\n\nThank you for reaching out. We at the helpdesk are always happy to provide technical assistance. We need to know what the extension is for that phone. If you can simply reply back to this email with that 4 digit extension, we can pursue a resolution for you.\n\nIf you have additional concerns, feel free to give us a call at {phone}, {days}, {hours}."
-          },
-          {
-            "name": "Have you called?",
-            "text": "Good {time} {fname},\n\nThank you for reaching out. I'm just following up with you to see if you have been able to give us a call so that we can address your concerns? If you have not had time to call, replying to this email to let us know that you are still needing help would be your next best step. You can reach us at {phone}, {days}, {hours}."
-          },
-          {
-            "name": "Voicemail Forwarding",
-            "text": "Good {time} {fname},\n\nThank you for reaching out. We at the helpdesk are always happy to provide technical assistance. When it comes to voicemail forwarding, you can try the following steps to prevent it:\n\n\u2691 Pickup the handset and dial #2\n\n\u2691 Listen for the beep, then hang up\n\n\u2691 Pickup the handset and dial #3\n\n\u2691 Listen for the beep, then hang up\n\nThat is all you need to do! If this did not work, feel free to give us a call at {phone}, {days}, {hours}."
-          },
-          {
-            "name": "Connecting to PSDSTAFF",
-            "text": "Good {time} {fname},\n\nThank you for contacting the helpdesk. We enjoy working to resolve technical problems for our staff, students and families. Connecting to the staff WIFI is a common question and it may be a little more involved than people realize. Here are the steps you can take to connect to PSDSTAFF:\n\n\u2691 Select the PSDSTAFF network\n\n\u2691 Ensure that the EAP setting is set to PEAP\n\n\u2691 Input your district credentials and ensure you only put in the segment before the @ sign. Note that this is case sensitive.\n\n\u2691 Under certificates, ensure that you select 'Do Not Validate'\n\n\u2691 Under advanced, look for an option that says 'Phase 2 Authenticate' then for that, input MSCHP V2\n\nAfter all that, you should be able to connect to the PSDSTAFF wireless network. If you have any questions about this, feel free to give us a call at {phone}, {days}, {hours}."
-          },
-          {
-            "name": "Resetting Passwords",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. We would be happy to work with you to reset your password, however, we have policies in place to protect our staff and students. In order for us to reset your password, you will have to give us a call at {phone}, {days}, {hours}.\n\nThis is so that we can verify your identity, ask some security questions and ensure that your account stays as secure as possible. Thanks for understanding, and we look forward to assisting you soon."
-          },
-          {
-            "name": "Student Login Concerns",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. Student logins can be a little confusing, as there are often numerous students with the same names that then require numbers after their last names in their email addresses. However, for most students, the format is as follows:\n\n\u2691 Username / Email: firstname.lastname@students.puyallupsd.org\n\n\u26A0 Note that for students with a hyphenated last name, simply remove the hyphen and merge the two names into one lowercase word\n\n\u2691 Password: [first initial][last initial][2 digit birth month][2 digit birth day] note that this is all lower case, and the password for K-6 now includes the last 4 digits of the primary phone number on file.\n\nIf you need additional help logging a student in, feel free to give us a call at {phone}, {days}, {hours}."
-          },
-          {
-            "name": "Appointment Scheduling",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to us at the helpdesk. Scheduling an appointment to pickup, swap, or drop off equipment is very easy to do, and you can do so by clicking this link:\n\n{APlink}\n\nor by completing the following steps:\n\n\u2691 Go to the Puyallup School District's website\n\n\u2691 Hover over the 'Staff' box on the upper right-hand side of the page\n\n\u2691 Click the Edtec Helpdesk link\n\n\u2691 Click 'Schedule an Appointment'\n\n\u26A0 Please note that all of our school's libraries typically have staff and student devices on hand that you can either check out, or swap with your current device. Often times, you can avoid having to make a trip to come see us by first checking with your school's library.\n\nIf you have additional questions or concerns, feel free to give us a call at {phone}, {days}, {hours}.\n\n\u2691  Address: 1501 39th Ave. SW. Puyallup, WA. 98373"
-          },
-          {
-            "name": "Assign To TLP",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. This ticket has been assigned to your library's Technology Learning Paraeducator (TLP), so that they are aware of the issue and can coordinate with you to resolve it. If you have any concerns about this service request, please feel free to give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!\n\n\u26A0 Room Number / Location: {room}"
-          },
-          {
-            "name": "Outlook Emails Not Sending",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. Below is a link to a great resource that addresses this concern. The benefit of going to this page is the wonderful documentation, pictures and helpful links. Note that we at the helpdesk are not experts when it comes to the ins and outs of Outlook, so I encourage you to take some time and review this resource.\n\nIf after looking through this support page (and referenced pages), you are not able to find information about your specific concern, please feel free to give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!\n\n\u2691 Link:\n https://kb.intermedia.net/article/1187 \n\nHere are some bonus resources that may address other Outlook concerns that you, or other staff members may have:\n\n\u2691 Setting up custom views:\n https://support.microsoft.com/en-us/office/create-change-or-customize-a-view-f693f3d9-0037-4fa0-9376-3a57b6337b71 \n\n\u2691 Scheduling Teams meetings in Outlook:\n https://support.microsoft.com/en-us/office/schedule-a-teams-meeting-from-outlook-883cc15c-580f-441a-92ea-0992c00a9b0f \n\n\u2691 Setting up signatures:\n https://support.microsoft.com/en-us/office/create-and-add-a-signature-to-messages-8ee5d4f4-68fd-464a-a1c1-0e1c80bb27f2"
-          },
-          {
-            "name": "Adding A Shared Mailbox",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. Below is a link to a great resource that addresses this concern. The benefit of going to this page is the wonderful documentation, pictures and helpful links. Note that we at the helpdesk are not experts when it comes to the ins and outs of Outlook, so I encourage you to take some time and review this resource.\n\nIf after looking through this support page (and referenced pages), you are not able to find information about your specific concern, please feel free to give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!\n\n\u2691 Link:\n https://support.microsoft.com/en-us/office/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd \n\nHere are some bonus resources that may address other Outlook concerns that you, or other staff members may have:\n\n\u2691 Setting up custom views:\n https://support.microsoft.com/en-us/office/create-change-or-customize-a-view-f693f3d9-0037-4fa0-9376-3a57b6337b71 \n\n\u2691 Scheduling Teams meetings in Outlook:\n https://support.microsoft.com/en-us/office/schedule-a-teams-meeting-from-outlook-883cc15c-580f-441a-92ea-0992c00a9b0f \n\n\u2691 Setting up signatures:\n https://support.microsoft.com/en-us/office/create-and-add-a-signature-to-messages-8ee5d4f4-68fd-464a-a1c1-0e1c80bb27f2"
-          },
-          {
-            "name": "Outlook Calendar",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. Below is a link to Microsoft's Support Page which covers a variety of Calendar related concerns. The benefit of going to this page is the wonderful documentation, pictures and helpful links. Note that we at the helpdesk are not experts when it comes to the ins and outs of calendars, so I encourage you to take some time and review this resource.\n\nIf after looking through this support page (and referenced pages), you are not able to find information about your specific calendar concern, please feel free to give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!\n\n\u2691 Link:\n https://support.microsoft.com/en-us/office/introduction-to-the-outlook-calendar-d94c5203-77c7-48ec-90a5-2e2bc10bd6f8 \n\nHere are some bonus resources that may address other Outlook concerns that you, or other staff members may have:\n\n\u2691 Setting up custom views:\n https://support.microsoft.com/en-us/office/create-change-or-customize-a-view-f693f3d9-0037-4fa0-9376-3a57b6337b71 \n\n\u2691 Scheduling Teams meetings in Outlook:\n https://support.microsoft.com/en-us/office/schedule-a-teams-meeting-from-outlook-883cc15c-580f-441a-92ea-0992c00a9b0f \n\n\u2691 Setting up signatures:\n https://support.microsoft.com/en-us/office/create-and-add-a-signature-to-messages-8ee5d4f4-68fd-464a-a1c1-0e1c80bb27f2"
-          },
-          {
-            "name": "Document Cameras",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. There are a few things we can try with document cameras that resolve many of the common issues teachers run into. First, ensure the following are in good order:\n\n\u2691 Check the power cable at the wall, and camera levels. If either side of the cable is loose, that could cause a variety of problems\n\n\u2691 Make sure that the video cable (HDMI) is firmly seated in both the camera, and the other end of the cable. The HDMI cable must be in the 'HDMI out' port in the document camera\n\n\u2691 Note that when booting up, the power light on the camera will flash red for about 3 seconds. After that, press the power button once and the light should turn green\n\n\u2691 Check the status of the power light. If it is amber or orange, check the switch on the right-side of the body, and ensure the little black switch is set to 'RGB.'\n\nIf all these things look in order, and you are still having trouble using your document camera, we may need to send out a building technician to your room. You're more than welcome to give us a call at {phone}, {days}, {hours} to address this further. Have a wonderful rest of your day!"
-          },
-          {
-            "name": "Adobe Creative Cloud",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. Signing into Adobe Creative Cloud is the only way that staff and students can get licenses for Adobe products in our district. If you did not sign into Adobe Creative Cloud with your district credentials, you will likely be warned that your account is about to expire or you may be prompted to pay for the service. To use Adobe products, such as Acrobat, Illustrator or Photoshop the correct way, complete the following: \n\n\u2691 Search for 'Adobe Creative Cloud' on your computer\n\n\u2691 Sign into that service with your district credentials\n\n\u2691 Allow sufficient time for that application to get setup on your device, then open the application of interest from that portal \n\nIf you need additional help getting an Adobe licensing issue resolved, please give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!"
-          },
-          {
-            "name": "ActionTecs",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. There are a few things you can try when it comes to troubleshooting Actiontecs (Black starfish on the wall above, beside, or behind your classroom television).\n\nAttempt the following:\n\n\u2691 Disconnect from the Actiontec on your computer if you are connected to it\n\n\u2691 Locate the Actiontec and unplug the power cable for several seconds\n\n\u2691 Plug the power cable back in and wait for the blue LED light to shine\n\n\u2691 Go back to your computer and attempt to connect to it\n\n\u2691 If prompted for a code input: 12345670\n\n\u2691 If you still can't connect, or you can't see your device, attempt to run all of the required and optional updates, then restart it. If you do not know how to run the optional updates, check out this link:\nhttps://pureinfotech.com/install-optional-updates-windows-10/ \n\n\u2691 If you can now connect, but can't see an image on the TV, you may need to ensure you are on the correct HDMI input\n\n\u2691 If all that checks out, ensure the 'Display Settings' on your computer are what you expect. Often times staff intend to 'Duplicate' a display, but the setting is instead set to 'Extend. Here is a detailed guide that covers the ins and outs of configuring your display settings:\nhttps://www.amd.com/en/support/kb/faq/dh-009 \n\nIf you have any concerns about these steps, or they did not work, please feel free to give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!"
-          },
-          {
-            "name": "NewLine Concerns",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. There are a few things to consider when it comes to troubleshooting your classroom television.\n\nAttempt the following:\n\n\u2691 First, look at the home screen of your TV and take note of the right-hand side. If there is a valid input signal, you will see one of the 'HDMI' boxes illuminated. This is great if you do! It means that your Actiontec (Black starfish on the wall above, beside, or behind your classroom television) is connected to the TV, and the TV is able to talk to it. That is the input you want your TV to be set to\n\n\u2691 If you are in a newer elementary school, locate the black box on the left-hand side of your television to switch between those HDMI options if you need to. Otherwise, you can use the touchscreen function to switch between the HDMI inputs if necessary\n\n\u2691 If everything looks good with the HDMI input, then your issue likely rests with your Actiontec\n\nIf you need more information, or you think your Actiontec is to blame, please feel free to respond back to this ticket for more information, or give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!\n\nHere is the user manual if you would like to dive deeper into a specific topic: https://newline-interactive.com/wp-content/uploads/2019/01/TRUTOUCH-VN_User-Manual.pdf"
-          },
-          {
-            "name": "PSDVPN",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. When it comes to the PSDVPN, there are a couple things to consider. One, you do not need to be connected to the VPN if you are at a school and on one of our networks. Second, the VPN does connect you to TAC, eSchools, BusinessPlus etc. - but only when you are outside of a district building. If you are having issues connecting to the VPN or are seeing error codes, please do give us a call so we can troubleshoot for you. If you are having trouble finding the VPN complete the following:\n\n\u2691 Move your mouse curser down to the right-hand side of the taskbar (The large rectangle on the bottom of the screen). \n\n\u2691 Look for either three curves, or a little computer with a plug next to it\n\n\u2691 Click that and at the top of that menu, look for PSDVPN\n\n\u2691 Click the PSDVPN, then select 'Connect'\n\nIf you have completed the above steps, and are not seeing the PSDVPN complete the next few steps:\n\n\u2691 Search for your 'Company Portal' by typing to search on the left-hand side of your taskbar\n\n\u2691 Open the Company Portal and allow a few moments to load\n\n\u2691 Look for a little gear icon on the lower left-hand side of the window and click that\n\n\u2691 At the top of the window, look for the 'Sync' button and click that\n\n\u2691 Allow up to an hour for this to complete then restart your computer\n\n\u2691 Once logged in, go back to the first set of instructions and look for your VPN.\n\nIf after completing all of these steps, you still do not see the VPN or are not able to connect to it, please give us a call at {phone}, {days}, {hours}. You can also reply back to this ticket to continue working with us. Have a wonderful rest of your day!"
-          },
-          {
-            "name": "Display Settings",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. Below is a link to a page which covers the ins and outs of configuring your display settings. The benefit of going to this page is the wonderful documentation and annotated pictures. I encourage you to take some time and review this resource prior to calling as this may answer your question more quickly than we can on busy days.\n\nIf after looking through this support page, you are not able to find information about your specific display settings concern, please feel free to give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!\n\n\u2691 Link:\nhttps://www.amd.com/en/support/kb/faq/dh-009"
-          },
-          {
-            "name": "Instructional Coaches",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. This concern would be best addressed by one of our instructional coaches who specialize in the software you're referring to. I encourage you to take some time to email one of them to schedule an appointment over Teams, or in person. Here is the most up to date information for the coaches:\n\nK-12 ELA (Reading, Writing) Gena Vincent and Jennifer Chavez\nK-12 Social Studies: Leslie Snyder, Jeanna Kooser\nK-12 Math: Priscilla Millan, Lizzie Herrera\nK-12 Science: Ann Schumacher, Joshua Simondet\nAP Matt White\n\nGLAD/EL Tabitha Aragon\nGLAD/CTE Jessica Anderson\n\nNew Teacher Induction/Mentoring: Sophia Monge, Candice McGregor\nTechnology: Jennifer Matthews, Jeremy Roy\n\nPlease feel free to give us a call at {phone}, {days}, {hours} if you have additional questions. Have a wonderful rest of your day!"
-          },
-          {
-            "name": "Juno Speakers",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. There are a few things we can try with the Juno speakers that resolve many of the common issues teachers run into. Here are some 'if then' steps to follow. If any of these apply, give the solution a try!\n\n\u2691 IF the tower will not wake up from standby mode, THEN: raise the volume and make sure the microphone is on (if you have one) and working correctly\n\n\u2691 IF there is no sound coming out of the Juno, THEN: raise the volume, ensure that you have the correct audio output on your computer. You can do this by clicking the little speaker symbol on the lower right-hand side of your taskbar, then selecting the correct output. You will also want to check the audio cable that links your Juno to the Actiontec in your classroom, if you have one.\n\n\u2691 IF you turn the tower on and only get a white screen, THEN: power off the tower, wait a full and complete minute, then turn the tower back on\n\n\u2691 IF the display will not turn on at all, THEN: verify that the power supply is plugged into both the receiver, and a working wall outlet. You will also want to check the power switch on the device to ensure it is on. Lastly, if you have an additional power supply around, try that one to rule out supply issues\n\n\u2691 IF you are hearing a squealing sound or feedback, THEN: lower the microphone volume controls on the tower. You may also need to position the mic closer to your mouth. Finally, go to your Juno's settings and ensure that the 'Music Audio In' options is not checked. You can find that option in the 'Microphone Volume Screen.' \n\nIf none of these apply to you, or the steps did not address your concern, then we may need to send out your building technician. You're more than welcome to give us a call at {phone}, {days}, {hours} if you have additional questions. Have a wonderful rest of your day!"
-          },
-          {
-            "name": "SMART Board",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. There are a few things we can consider with the SMART Board that tend to resolve many of the common issues teachers run into. Here are some 'if then' statements to go through. If any of these apply, give the solution a try!\n\n\u2691 IF the Ready light (an LED located on the lower-right corner of the frame) is off, THEN: there is no power going to the SMART Board and you'll need to check the power source\n\n\u2691 IF the Ready light is solid green, THEN: the SMART Board is successfully communicating with the SMART software on the connected computer\n\n\u2691 IF the Ready light is flashing green, THEN: the SMART Board is successfully communicating with the computer's USB port, but either the SMART Board software is not installed, or the SMART Board service is not running.\n\n\u26A0 Note that In this mode, the SMART Board operates as a touch screen. The SMART Board tools, such as the pens and eraser, won’t work, but you can move the mouse pointer and perform mouse functions by touching anywhere on the screen. This mode may be desirable for occasional or guest users who don’t require the use of SMART Board tools or pen tray functions.\n\n\u2691 IF the Ready light is solid red, THEN: the SMART Board has power but it is not communicating with the computer. In this case, first check that the connection is solid and there are no breaks or kinks in the cable. Second, unplug the SMART Board's USB connection form the computer, uninstall the SMART Software, restart your computer, then re-install the SMART software. Next, plug in the SMART Board, run the 'Connection Wizard', then run the 'System Tray tools.' If all goes well, you should see that solid green light, and the touchscreen should accept input.\n\nIf none of these steps address your concern, then we may need to send out your building technician. You're more than welcome to give us a call at {phone}, {days}, {hours} if you have additional questions. Have a wonderful rest of your day!"
-          },
-          {
-            "name": "Projectors",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. There are a few things we can try with projectors that resolve many of the common issues teachers run into. First, ensure the following is in good order:\n\n\u2691 Check the power cable at the wall and ensure that it is firmly seated in the outlet. If the cable is loose, that could cause a variety of problems\n\n\u2691 Make sure that the video cable is firmly seated and the input option is set to the correct input\n\n\u2691 If the picture quality is dark, adjust 'BRIGHT' and 'CONTRAST' settings and turn off the 'WHISPER' mode in the settings. This may also be an indication of a failing bulb\n\n\u2691 If the picture appears blurry, adjust the 'FOCUS' and the 'PHASE settings \n\nThe following cases indicate that we need to send out your building technician\n\n\u2691 Blinking red light over the 'LAMP' indicator - This usually indicates a dirty filter, or a damaged bulb. It could also indicate that the cooling fan has failed, the lamp cover is not properly fixed, or overheating has occurred\n\n\u2691 If the green 'POWER', red 'LAMP' and red 'TEMP' lights are blinking, that indicates it is time for the filter to be replaced.\n\nIf you have tried to adjust the settings mentioned above with no progress, or have observed any of these light sequences, we must send a technician to your room. You're more than welcome to give us a call at {phone}, {days}, {hours} if you have additional concerns. Have a wonderful rest of your day!"
-          },
-          {
-            "name": "Adding Object From SharePoint",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to us at the helpdesk. Fortunately, adding folders from SharePoint to your File Explorer is very easy. Below is a visual guide that will take will walk you through how to do this.\n\n\u2691 Link:\nhttps://support.microsoft.com/en-us/office/view-and-open-sharepoint-files-with-file-explorer-66b574bb-08b4-46b6-a6a0-435fd98194cc \n\nIf you would rather not review the documentation, you can complete the following steps:\n\n\u2691 First, open an internet browser (Microsoft Edge or Google Chrome)\n\n\u2691 Navigate over to your SharePoint of interest\n\n\u2691 Find the folder that you want to add to your File Explorer\n\n\u2691 Select the folder and look for the option to 'Sync' on the upper right-hand side of the page\n\n\u2691 Click that option and allow OneDrive to complete this function\n\n\u2691 Done! The folder will now be available in your File Explorer.\n\nIf you have any questions about these steps, or the resource, feel free to give us a call at {phone}, {days}, {hours}."
-          },
-          {
-            "name": "Printing issues",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. Connecting to our printers can be challenging at times and there are a few things you need to check prior to a successful print. First, ensure that your PSDVPN is disconnected, and the box to connect automatically is unchecked. Second, ensure that you are on the PSDWIRELESS network or your connection shows psd.local. Lastly, ensure that you have added this printer through Printix. If these things are in order and you still can't print, follow the next steps:\n\n\u2691 Open your Company Portal\n\n\u2691 Search for 'Printix Service Fix' and install it\n\n\u2691 Attempt to print to the printer\n\n\u2691 If that is not successful, try removing the printer in your 'Printers & Scanners' menu, then re-add the printer through Printix.\n\nIf adding a printer through Printix is something you are not sure about, complete the following steps\n\n\u2691 Move your mouse cursor down to the lower right-hand side of your taskbar (The long rectangle on the bottom of your screen)\n\n\u2691 Look for an upwards facing arrow \u2227 and click that to open a small menu\n\n\u2691 Search for a little black and white 'P' and click that to open another menu\n\n\u2691 Search for the top menu option that says 'Printers' and click that to open another menu\n\n\u2691 In this menu, search for the printer you want to add, select the checkbox next to it, then click 'add' on the lower right-hand side of that menu\n\nPlease feel free to give us a call if you have additional questions at {phone}, {days}, {hours}. Have a wonderful rest of your day!"
-          },
-          {
-            "name": "Employee Online Login",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. Thankfully, logging into Employee Online is pretty straight forward if you know where to go and your staff credentials:\n\n\u2691 Username / Email: Everything before the @ sign in your staff email\n\n\u2691 Password: The same password you use to log into a staff device. If you have never reset this password it will follow this format - E000000Welcome! where the 0's are your employee ID. If you do not know your employee ID number, HR can provide that information to you by calling 253-841-1301.\n\n\u2691 Link to Employee Online\nhttps://employeeonline.puyallup.k12.wa.us/ifas7/login/login.aspx?ReturnUrl=%2fbusinessplus%2femployeeonline%2fEOHomePage \n\nIf you need additional help logging in, feel free to give us a call at {phone}, {days}, {hours}."
-          },
-          {
-            "name": "Student Securly Concerns",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. Securly is a very powerful tool that we use throughout the district, and it does a great job of keeping out inappropriate content. However, it can be an inconvenience when something gets blocked that was previously accessible. Securly undergoes frequent updates that add websites, or web applications to its blocked list.\n\nAs such, if you are seeing the Securly page when trying to access a resource, that web page has likely been added to that list. As a student, you will not be able to access that resource, and you are also not able to submit a request to unblock the resource. You can however work with your teacher to consider the process of requesting security changes. If you have other questions, feel free to reach out to us at {phone}, {days}, {hours}."
-          },
-          {
-            "name": "Parent Securly Concerns",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. Securly is a very powerful tool that we use throughout the district, and it does a great job of keeping out inappropriate content. However it can be an inconvenience when something gets blocked that was previously accessible. Securly undergoes frequent updates that add websites, or web applications to its blocked list.\n\nAs such, if you are seeing the Securly page when trying to access a resource, that web page has likely been added to that list. Note that as a parent, you also have access to the Securly Home App which gives you granular control of your student's device. You can disable applications, block websites and control screen time all from your smart phone.\n\nIf you would like to know more about this, feel free to navigate to the link below! You are also more than welcome to reach out to Securly support by emailing: support@securly.com if you have specific questions about the service. If you need anything else, or have other questions, feel free to reach out to us at {phone}, {days}, {hours}\n\n\u2691 Link:\nhttps://homesupport.securly.com/hc/en-us/categories/360000431333-Securly-Home-App"
-          },
-          {
-            "name": "Device Internet Issues",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. Often times, troubleshooting a device's connectivity  is simple and only requires the following:\n\n\u2691 Locate the power button on the device\n\n\u2691 Hold down that button until the screen goes completely black, then let go\n\n\u2691 Wait about 30 seconds, then press the button one time \n\n\u2691 After a few moments, you should see the boot screen that eventually brings you to the login screen\n\n\u2691 Log in and check your internet status. If you are not sure how to do this, click on the link below:\nhttps://support.microsoft.com/en-us/windows/connect-to-a-wi-fi-network-in-windows-10-1f881677-b569-0cd5-010d-e3cd3579d263 \n\n\u26A0 Note that you may need to repeat the previous steps up to three separate times to have a stable wireless connection.\n\nHere are some bonus resources that may answer questions you, or others might have:\n\n\u2691 Turning airplane mode on or off\nhttps://support.microsoft.com/en-us/windows/turn-airplane-mode-on-or-off-f2c2e0a1-706f-ff26-c4b2-4a37f9796df1 \n\n\u2691 Microsoft troubleshooting tips\nhttps://support.microsoft.com/en-us/sbs/topic/can't-connect-to-internet-a85b5012-804f-517a-b548-f2f9274e3563?ui=en-US&rs=en-US&ad=US\n\nIf you need additional help troubleshooting your connectivity, feel free to give us a call at {phone}, {days}, {hours}."
-          },
-          {
-            "name": "How To Install An Application",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. All of our devices should have an application installed by default named Company Portal. Company Portal is like the app store on your phone and it has all of the applications that you are allowed to download available. Here is a short step by step guide on how to get to Company Portal and download an app:\n\n\u2691 Click your Start Menu, or use the 'Search' function on the lower left-hand side of your Start Menu, and search for 'Company Portal'\n\n\u2691 Once you launch Company Portal, you will see a search function on the upper left-hand side of the window that looks like a magnifying glass\n\n\u2691 Click that, and search for whatever it is you're trying to download. If you do not see an application that you are looking for one of two things are happening. One, your account does not have access to that application, and you can make a follow up request to be granted that access. Or two, your Company Portal is out of date and you need to preform a 'Sync' \n\n\u2691 To preform a Sync, click on the little gear icon on the lower left-hand side of the Company Portal window\n\n\u2691 That will bring you to a separate page which has a 'Sync' button at the top of it. Click that and allow up to 30 minutes for it to complete \n\n\u26A0 Note that you CAN NOT download applications from the internet on any of our managed devices. If you wish to download and install something that is not in Company Portal, you must submit a follow up request for consideration. \n\nIf you have additional questions about downloading applications, feel free to give us a call at {phone}, {days}, {hours}."
-          },
-          {
-            "name": "How To Install Office 365",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. All of our staff and students have access to the full Office Suite and you can download it by doing the following on a personal device (not owned by the district):\n\n\u2691 Navigate to 'portal.office.com' in any internet browser\n\n\u2691 Once there, login with your district credentials then draw your attention to the upper right-hand side of the screen\n\n\u2691 There, you should see a button to 'Install Office.' Click that to begin the installation\n\nAlternatively, on a district issued device, you can 'Sync' your Company Portal to bring down the required Office applications. To do so, follow the remaining steps:\n\n\u2691 Locate the Company Portal application on your device. You can search for it with the 'Search Bar' down on the lower-left-hand side of your taskbar\n\n\u2691 To preform a Sync, click on the little gear icon on the lower left-hand side of the Company Portal window\n\n\u2691 That will bring you to a separate page which has a 'Sync' button at the top of it. Click that and allow up to 30 minutes for it to complete \n\n\u26A0 Note that you CAN NOT download applications from the internet on any of our managed devices. If you wish to download and install something that is not in Company Portal, with the exception of Microsoft Office, you must submit a follow up request for consideration. \n\nIf you have additional questions about downloading applications, feel free to give us a call at {phone}, {days}, {hours}."
-          },
-          {
-            "name": "How to Sync CP",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. All of our devices should have an application installed by default named Company Portal. Company Portal is like the app store on your phone and it has all of the applications that you are allowed to download available. It also contains a tool that allows your device to check in with our systems and correct some common issues, such as the one you are experiencing. Here is a short step by step guide on how to get to Company Portal and perform a 'Sync':\n\n\u2691 Click your Start Menu, or use the 'Search' function on the lower left-hand side of your Start Menu, and search for 'Company Portal'\n\n\u2691 To preform a Sync, click on the little gear icon on the lower left-hand side of the Company Portal window\n\n\u2691 That will bring you to a separate page which has a 'Sync' button at the top of it which you can click to begin the process \n\n\u26A0 Note that you should allow up to 45 minutes for this process to complete, then restart your device after it does.\n\nIf you have additional questions about this process, or it was unsuccessful, feel free to give us a call at {phone}, {days}, {hours}."
-          },
-          {
-            "name": "Exit",
-            "text": "Exit the common issues menu"
-          }
-        ]
-      },
-      {
-        "name": "Exit",
-        "text": "Exit the main menu"
-      }
-    ]
+    "config": {
+      "phone": "253-841-8600",
+      "hours": "6:30AM to 4:00PM",
+      "APlink": "https://outlook.office365.com/owa/calendar/EdtecHelpdeskCalendar@puyallupsd.onmicrosoft.com/bookings/",
+      "days": "Monday - Friday"
+    },
+    "mainMenu": {
+      "name": "Main Options Menu\nLocal File",
+      "options": [
+        {
+          "name": "General Response",
+          "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. We sincerely appreciate you taking the time to contact us, and we are always happy to help. We are here {days}, {hours} answering calls if you need us. Have a wonderful rest of your day!"
+        },
+        {
+          "name": "Wrong Department Menu",
+          "text": "Good {time} {fname},\n\nWe appreciate you reaching out to the helpdesk and we are always happy to help. However, this concern is not something that is handled by the Helpdesk, or Edtec as a whole. You will need to contact {team}. Have an excellent rest of your day!",
+          "options": [
+            {
+              "name": "Larry Klingele with Facilities"
+            },
+            {
+              "name": "Krista McBride for job applications concerns"
+            },
+            {
+              "name": "Assessments Department for Acadience related concerns"
+            },
+            {
+              "name": "Kathy Barnett for Frontline training related concerns (If missing something, escalate to Business Apps)"
+            },
+            {
+              "name": "Margaret Mason for IEP Online concerns"
+            },
+            {
+              "name": "Megan Davis at ESC for SafeSchools concerns"
+            },
+            {
+              "name": "Exit",
+              "text": "Exit the wrong department menu"
+            }
+          ]
+        },
+        {
+          "name": "Escalation Menu",
+          "text": "Good {time} {fname},\n\nThank you for reaching out to us today and we all appreciate your patience with our ticketing system. This concern was not something that we could resolve at this time at our level, and your request has been sent to our {team} Team. If you need anything else, you are more than welcome to give us a call at {phone}, {days}, {hours}.\n\n\u26A0 Room Number / Location: {room}",
+          "options": [
+            {
+              "name": "Modern Management Engineers"
+            },
+            {
+              "name": "Systems Engineers"
+            },
+            {
+              "name": "Security"
+            },
+            {
+              "name": "Education Applications"
+            },
+            {
+              "name": "Building Technicians"
+            },
+            {
+              "name": "Network & Infrastructure"
+            },
+            {
+              "name": "Business Applications"
+            },
+            {
+              "name": "Web Applications"
+            },
+            {
+              "name": "Exit",
+              "text": "Exit escalation menu"
+            }
+          ]
+        },
+        {
+          "name": "Completion Menu",
+          "options": [
+            {
+              "name": "General Completion",
+              "text": "Good {time} {fname},\n\nWe appreciate you reaching out to the helpdesk and we are glad to have found a resolution for you. If you need us for any other technical support, we are here {days}, {hours}. Have a wonderful rest of your day!\n\n\u26A0 Note that if this problem returns or persists, you have 5 days to respond to this email to keep the ticket open."
+            },
+            {
+              "name": "Completion For No Response",
+              "text": "Good {time} {fname},\n\nWe appreciate you reaching out to us at the helpdesk and I wanted to let you know that I will be marking this ticket as completed due to us not getting a response from you. If you still need our assistance with this issue, you can simply reply to this ticket within 5 days. You can also just give us another call at {phone} between the hours of {hours}, {days}, to keep the ticket open. Have a wonderful rest of your day!"
+            },
+            {
+              "name": "Completion For Duplication",
+              "text": "Good {time} {fname},\n\nWe appreciate you reaching out to the helpdesk and we are always happy to help. However, it appears that this is a duplicate ticket of an existing ticket in our queue, and we will be closing this one as a result. If you have any questions or concerns regarding this, feel free to give us a call at {phone}, {hours}, {days}. Have an excellent rest of your day!"
+            },
+            {
+              "name": "Equipment Pickup",
+              "text": "Good {time} {fname},\n\nThank you for coming into Edtec today to pickup equipment. I assigned you {asset} and ensured it was in good working order. We hope that it serves you well, and we are here to provide support {days}, {hours}. Feel free to call us at {phone} if you need technical support."
+            },
+            {
+              "name": "Equipment Pickup (No Asset)",
+              "text": "Good {time} {fname},\n\nThank you for coming into Edtec today to pickup equipment. We hope that it serves you well, and we are here to provide support {days}, {hours}. Feel free to call us at {phone} if you need technical support."
+            },
+            {
+              "name": "Equipment Drop off",
+              "text": "Good {time} {fname},\n\nThank you for dropping off your equipment at Edtec today. We look forward to serving the staff, students and families in our district. If you need anything else, feel free to call us at {phone}, {days}, {hours}."
+            },
+            {
+              "name": "Voicemail password reset",
+              "text": "Good {time} {fname},\n\nWe appreciate you reaching out to the helpdesk. I have reset your voicemail password to the default 2580. If you need us for any other technical support, we will be here {days}, {hours}. Have a wonderful rest of your day! \n\n\u26A0 Note that if this problem returns or persists, you have 5 days to respond to this email to keep the ticket open."
+            },
+            {
+              "name": "Exit",
+              "text": "Exit the completion menu"
+            }
+          ]
+        },
+        {
+          "name": "Common Issues Menu",
+          "options": [
+            {
+              "name": "Contact Us",
+              "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. We sincerely appreciate you taking the time to contact us, and we are always happy to help. For this particular concern, I think it would be best if you gave us a call at {phone} so we can speak with you directly. We are here {days}, {hours} answering calls if you have the time to do so."
+            },
+            {
+              "name": "General Troubleshooting",
+              "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. There are a few things you can try when it comes to troubleshooting common hardware or driver related issues.\n\nAttempt the following:\n\n\u2691 Search for 'Check for updates' in the lower left search bar on your taskbar\n\n\u2691 Once that menu opens up, select 'Check for updates'\n\n\u2691 After that process finishes, look for blue text that says 'View optional updates' on that same page. It is usually underneath the button to check for updates. If you do not know how to run the optional updates, check out this link:\nhttps://pureinfotech.com/install-optional-updates-windows-10/ \n\n\u2691 Allow those to finish, restart your computer, then attempt to use the hardware / software that you were initially trying to.\n\n\u2691 If you have a Kensington docking station at your desk, you may also want to power cycle that device as well, as that addresses many of the common display and audio issues staff members run into. To do this, locate the black cylindrical cable that is in the lowest possible port in the back panel. Unplug that cord, allow about 30 seconds to pass, plug the cord back in and see if that resolved your issue.\n\nIf you have concerns about these steps, or they did not work, please feel free to give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!"
+            },
+            {
+              "name": "Service Outage",
+              "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. We sincerely appreciate you taking the time to contact us, and we are always happy to help. We are aware at this time that {service} is experiencing service disruptions, and we ask for your patience as that vendor works to resolve the disruption. If you have concerns outside of this reported outage, feel free to give us a call, or reply back {days}, {hours}. Have an excellent rest of your day!"
+            },
+            {
+              "name": "Suspicious Emails",
+              "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. We appreciate you taking the time to contact us and we are always happy to help. When it comes to suspicious emails, there is no need to call or email us as Outlook has an excellent tool that does that on your behalf.\n\nIf you simply select 'Report Message' from the upper right-hand side of the application window, you can then select 'Phishing' and that will both remove the email from your inbox, then report that message to Microsoft and our security team. If you have questions or concerns, you are more than welcome to give us a call at {phone}, {days}, {hours}.\n\n\u26A0 If you have interacted with a suspicious email and provided any district login information, please change your password immediately by doing the following:\n\n\u2691 Hit CTRL + ALT + DEL on your keyboard\n\n\u2691 Select 'Change a password'\n\n\u2691 Follow the prompts to change your password\n\n\u2691 Log out of your computer, then log back in with the new password"
+            },
+            {
+              "name": "What is your extension?",
+              "text": "Good {time} {fname},\n\nThank you for reaching out. We at the helpdesk are always happy to provide technical assistance. We need to know what the extension is for that phone. If you can simply reply back to this email with that 4 digit extension, we can pursue a resolution for you.\n\nIf you have additional concerns, feel free to give us a call at {phone}, {days}, {hours}."
+            },
+            {
+              "name": "Have you called?",
+              "text": "Good {time} {fname},\n\nThank you for reaching out. I'm just following up with you to see if you have been able to give us a call so that we can address your concerns? If you have not had time to call, replying to this email to let us know that you are still needing help would be your next best step. You can reach us at {phone}, {days}, {hours}."
+            },
+            {
+              "name": "Voicemail Forwarding",
+              "text": "Good {time} {fname},\n\nThank you for reaching out. We at the helpdesk are always happy to provide technical assistance. When it comes to voicemail forwarding, you can try the following steps to prevent it:\n\n\u2691 Pickup the handset and dial #2\n\n\u2691 Listen for the beep, then hang up\n\n\u2691 Pickup the handset and dial #3\n\n\u2691 Listen for the beep, then hang up\n\nThat is all you need to do! If this did not work, feel free to give us a call at {phone}, {days}, {hours}."
+            },
+            {
+              "name": "Connecting to PSDSTAFF",
+              "text": "Good {time} {fname},\n\nThank you for contacting the helpdesk. We enjoy working to resolve technical problems for our staff, students and families. Connecting to the staff WIFI is a common question and it may be a little more involved than people realize. Here are the steps you can take to connect to PSDSTAFF:\n\n\u2691 Select the PSDSTAFF network\n\n\u2691 Ensure that the EAP setting is set to PEAP\n\n\u2691 Input your district credentials and ensure you only put in the segment before the @ sign. Note that this is case sensitive.\n\n\u2691 Under certificates, ensure that you select 'Do Not Validate'\n\n\u2691 Under advanced, look for an option that says 'Phase 2 Authenticate' then for that, input MSCHP V2\n\nAfter all that, you should be able to connect to the PSDSTAFF wireless network. If you have any questions about this, feel free to give us a call at {phone}, {days}, {hours}."
+            },
+            {
+              "name": "Resetting Passwords",
+              "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. We would be happy to work with you to reset your password, however, we have policies in place to protect our staff and students. In order for us to reset your password, you will have to give us a call at {phone}, {days}, {hours}.\n\nThis is so that we can verify your identity, ask some security questions and ensure that your account stays as secure as possible. Thanks for understanding, and we look forward to assisting you soon."
+            },
+            {
+              "name": "Student Login Concerns",
+              "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. Student logins can be a little confusing, as there are often numerous students with the same names that then require numbers after their last names in their email addresses. However, for most students, the format is as follows:\n\n\u2691 Username / Email: firstname.lastname@students.puyallupsd.org\n\n\u26A0 Note that for students with a hyphenated last name, simply remove the hyphen and merge the two names into one lowercase word\n\n\u2691 Password: [first initial][last initial][2 digit birth month][2 digit birth day] note that this is all lower case, and the password for K-6 now includes the last 4 digits of the home phone number on file.\n\nIf you need additional help logging a student in, feel free to give us a call at {phone}, {days}, {hours}."
+            },
+            {
+              "name": "Appointment Scheduling",
+              "text": "Good {time} {fname},\n\nThank you for reaching out to us at the helpdesk. Scheduling an appointment to pickup, swap, or drop off equipment is very easy to do, and you can do so by clicking this link:\n\n{APlink}\n\nor by completing the following steps:\n\n\u2691 Go to the Puyallup School District's website\n\n\u2691 Hover over the 'Staff' box on the upper right-hand side of the page\n\n\u2691 Click the Edtec Helpdesk link\n\n\u2691 Click 'Schedule an Appointment'\n\n\u26A0 Please note that all of our school's libraries typically have staff and student devices on hand that you can either check out, or swap with your current device. Often times, you can avoid having to make a trip to come see us by first checking with your school's library.\n\nIf you have additional questions or concerns, feel free to give us a call at {phone}, {days}, {hours}.\n\n\u2691  Address: 1501 39th Ave. SW. Puyallup, WA. 98373"
+            },
+            {
+              "name": "Assign To TLP",
+              "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. This ticket has been assigned to your library's Technology Learning Paraeducator (TLP), so that they are aware of the issue and can coordinate with you to resolve it. If you have any concerns about this service request, please feel free to give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!\n\n\u26A0 Room Number / Location: {room}"
+            },
+            {
+              "name": "Outlook Emails Not Sending",
+              "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. Below is a link to a great resource that addresses this concern. The benefit of going to this page is the wonderful documentation, pictures and helpful links. Note that we at the helpdesk are not experts when it comes to the ins and outs of Outlook, so I encourage you to take some time and review this resource.\n\nIf after looking through this support page (and referenced pages), you are not able to find information about your specific concern, please feel free to give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!\n\n\u2691 Link:\n https://kb.intermedia.net/article/1187 \n\nHere are some bonus resources that may address other Outlook concerns that you, or other staff members may have:\n\n\u2691 Setting up custom views:\n https://support.microsoft.com/en-us/office/create-change-or-customize-a-view-f693f3d9-0037-4fa0-9376-3a57b6337b71 \n\n\u2691 Scheduling Teams meetings in Outlook:\n https://support.microsoft.com/en-us/office/schedule-a-teams-meeting-from-outlook-883cc15c-580f-441a-92ea-0992c00a9b0f \n\n\u2691 Setting up signatures:\n https://support.microsoft.com/en-us/office/create-and-add-a-signature-to-messages-8ee5d4f4-68fd-464a-a1c1-0e1c80bb27f2"
+            },
+            {
+              "name": "Adding A Shared Mailbox",
+              "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. Below is a link to a great resource that addresses this concern. The benefit of going to this page is the wonderful documentation, pictures and helpful links. Note that we at the helpdesk are not experts when it comes to the ins and outs of Outlook, so I encourage you to take some time and review this resource.\n\nIf after looking through this support page (and referenced pages), you are not able to find information about your specific concern, please feel free to give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!\n\n\u2691 Link:\n https://support.microsoft.com/en-us/office/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd \n\nHere are some bonus resources that may address other Outlook concerns that you, or other staff members may have:\n\n\u2691 Setting up custom views:\n https://support.microsoft.com/en-us/office/create-change-or-customize-a-view-f693f3d9-0037-4fa0-9376-3a57b6337b71 \n\n\u2691 Scheduling Teams meetings in Outlook:\n https://support.microsoft.com/en-us/office/schedule-a-teams-meeting-from-outlook-883cc15c-580f-441a-92ea-0992c00a9b0f \n\n\u2691 Setting up signatures:\n https://support.microsoft.com/en-us/office/create-and-add-a-signature-to-messages-8ee5d4f4-68fd-464a-a1c1-0e1c80bb27f2"
+            },
+            {
+              "name": "Outlook Calendar",
+              "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. Below is a link to Microsoft's Support Page which covers a variety of Calendar related concerns. The benefit of going to this page is the wonderful documentation, pictures and helpful links. Note that we at the helpdesk are not experts when it comes to the ins and outs of calendars, so I encourage you to take some time and review this resource.\n\nIf after looking through this support page (and referenced pages), you are not able to find information about your specific calendar concern, please feel free to give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!\n\n\u2691 Link:\n https://support.microsoft.com/en-us/office/introduction-to-the-outlook-calendar-d94c5203-77c7-48ec-90a5-2e2bc10bd6f8 \n\nHere are some bonus resources that may address other Outlook concerns that you, or other staff members may have:\n\n\u2691 Setting up custom views:\n https://support.microsoft.com/en-us/office/create-change-or-customize-a-view-f693f3d9-0037-4fa0-9376-3a57b6337b71 \n\n\u2691 Scheduling Teams meetings in Outlook:\n https://support.microsoft.com/en-us/office/schedule-a-teams-meeting-from-outlook-883cc15c-580f-441a-92ea-0992c00a9b0f \n\n\u2691 Setting up signatures:\n https://support.microsoft.com/en-us/office/create-and-add-a-signature-to-messages-8ee5d4f4-68fd-464a-a1c1-0e1c80bb27f2"
+            },
+            {
+              "name": "Document Cameras",
+              "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. There are a few things we can try with document cameras that resolve many of the common issues teachers run into. First, ensure the following are in good order:\n\n\u2691 Check the power cable at the wall, and camera levels. If either side of the cable is loose, that could cause a variety of problems\n\n\u2691 Make sure that the video cable (HDMI) is firmly seated in both the camera, and the other end of the cable. The HDMI cable must be in the 'HDMI out' port in the document camera\n\n\u2691 Note that when booting up, the power light on the camera will flash red for about 3 seconds. After that, press the power button once and the light should turn green\n\n\u2691 Check the status of the power light. If it is amber or orange, check the switch on the right-side of the body, and ensure the little black switch is set to 'RGB.'\n\nIf all these things look in order, and you are still having trouble using your document camera, we may need to send out a building technician to your room. You're more than welcome to give us a call at {phone}, {days}, {hours} to address this further. Have a wonderful rest of your day!"
+            },
+            {
+              "name": "Adobe Creative Cloud",
+              "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. Signing into Adobe Creative Cloud is the only way that staff and students can get licenses for Adobe products in our district. If you did not sign into Adobe Creative Cloud with your district credentials, you will likely be warned that your account is about to expire or you may be prompted to pay for the service. To use Adobe products, such as Acrobat, Illustrator or Photoshop the correct way, complete the following: \n\n\u2691 Search for 'Adobe Creative Cloud' on your computer\n\n\u2691 Sign into that service with your district credentials\n\n\u2691 Allow sufficient time for that application to get setup on your device, then open the application of interest from that portal \n\nIf you need additional help getting an Adobe licensing issue resolved, please give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!"
+            },
+            {
+              "name": "Frontline login",
+              "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. Logging into Frontline is not the most straightforward thing, and you do need to ensure that you are in the correct spot before you can successfully login.\n\nAttempt the following:\n\n\u2691 Go to this link: https://www.puyallup.k12.wa.us/cms/one.aspx?portalid=141151&pageid=5621433 \n\n\u2691 You should be prompted to login through Microsoft at which point you'll input your district credentials. If you are not able to log in through Microsoft, you may want to reach out to Kathy Barnett at ESC via email.\n\nIf you have any concerns about these steps, or they did not work, please feel free to give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!"
+            },
+            {
+              "name": "ActionTecs",
+              "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. There are a few things you can try when it comes to troubleshooting Actiontecs (Black starfish on the wall above, beside, or behind your classroom television).\n\nAttempt the following:\n\n\u2691 Disconnect from the Actiontec on your computer if you are connected to it\n\n\u2691 Locate the Actiontec and unplug the power cable for several seconds\n\n\u2691 Plug the power cable back in and wait for the blue LED light to shine\n\n\u2691 Go back to your computer and attempt to connect to it\n\n\u2691 If prompted for a code input: 12345670\n\n\u2691 If you still can't connect, or you can't see your device, attempt to run all of the required and optional updates, then restart it. If you do not know how to run the optional updates, check out this link:\nhttps://pureinfotech.com/install-optional-updates-windows-10/ \n\n\u2691 If you can now connect, but can't see an image on the TV, you may need to ensure you are on the correct HDMI input\n\n\u2691 If all that checks out, ensure the 'Display Settings' on your computer are what you expect. Often times staff intend to 'Duplicate' a display, but the setting is instead set to 'Extend. Here is a detailed guide that covers the ins and outs of configuring your display settings:\nhttps://www.amd.com/en/support/kb/faq/dh-009 \n\nIf you have any concerns about these steps, or they did not work, please feel free to give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!"
+            },
+            {
+              "name": "NewLine Concerns",
+              "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. There are a few things to consider when it comes to troubleshooting your classroom television.\n\nAttempt the following:\n\n\u2691 First, look at the home screen of your TV and take note of the right-hand side. If there is a valid input signal, you will see one of the 'HDMI' boxes illuminated. This is great if you do! It means that your Actiontec (Black starfish on the wall above, beside, or behind your classroom television) is connected to the TV, and the TV is able to talk to it. That is the input you want your TV to be set to\n\n\u2691 If you are in a newer elementary school, locate the black box on the left-hand side of your television to switch between those HDMI options if you need to. Otherwise, you can use the touchscreen function to switch between the HDMI inputs if necessary\n\n\u2691 If everything looks good with the HDMI input, then your issue likely rests with your Actiontec\n\nIf you need more information, or you think your Actiontec is to blame, please feel free to respond back to this ticket for more information, or give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!\n\nHere is the user manual if you would like to dive deeper into a specific topic: https://newline-interactive.com/wp-content/uploads/2019/01/TRUTOUCH-VN_User-Manual.pdf"
+            },
+            {
+              "name": "PSDVPN",
+              "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. When it comes to the PSDVPN, there are a couple things to consider. One, you do not need to be connected to the VPN if you are at a school and on one of our networks. Second, the VPN does connect you to TAC, eSchools, BusinessPlus etc. - but only when you are outside of a district building. If you are having issues connecting to the VPN or are seeing error codes, please do give us a call so we can troubleshoot for you. If you are having trouble finding the VPN complete the following:\n\n\u2691 Move your mouse curser down to the right-hand side of the taskbar (The large rectangle on the bottom of the screen). \n\n\u2691 Look for either three curves, or a little computer with a plug next to it\n\n\u2691 Click that and at the top of that menu, look for PSDVPN\n\n\u2691 Click the PSDVPN, then select 'Connect'\n\nIf you have completed the above steps, and are not seeing the PSDVPN complete the next few steps:\n\n\u2691 Search for your 'Company Portal' by typing to search on the left-hand side of your taskbar\n\n\u2691 Open the Company Portal and allow a few moments to load\n\n\u2691 Look for a little gear icon on the lower left-hand side of the window and click that\n\n\u2691 At the top of the window, look for the 'Sync' button and click that\n\n\u2691 Allow up to an hour for this to complete then restart your computer\n\n\u2691 Once logged in, go back to the first set of instructions and look for your VPN.\n\nIf after completing all of these steps, you still do not see the VPN or are not able to connect to it, please give us a call at {phone}, {days}, {hours}. You can also reply back to this ticket to continue working with us. Have a wonderful rest of your day!"
+            },
+            {
+              "name": "Display Settings",
+              "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. Below is a link to a page which covers the ins and outs of configuring your display settings. The benefit of going to this page is the wonderful documentation and annotated pictures. I encourage you to take some time and review this resource prior to calling as this may answer your question more quickly than we can on busy days.\n\nIf after looking through this support page, you are not able to find information about your specific display settings concern, please feel free to give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!\n\n\u2691 Link:\nhttps://www.amd.com/en/support/kb/faq/dh-009"
+            },
+            {
+              "name": "Instructional Coaches",
+              "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. This concern would be best addressed by one of our instructional coaches who specialize in the software you're referring to. I encourage you to take some time to email one of them to schedule an appointment over Teams, or in person. Here is the most up to date information for the coaches:\n\nK-12 ELA (Reading, Writing) Gena Vincent and Jennifer Chavez\nK-12 Social Studies: Leslie Snyder, Jeanna Kooser\nK-12 Math: Priscilla Millan, Lizzie Herrera\nK-12 Science: Ann Schumacher, Joshua Simondet\nAP Matt White\n\nGLAD/EL Tabitha Aragon\nGLAD/CTE Jessica Anderson\n\nNew Teacher Induction/Mentoring: Sophia Monge, Candice McGregor\nTechnology: Jennifer Matthews, Jeremy Roy\n\nPlease feel free to give us a call at {phone}, {days}, {hours} if you have additional questions. Have a wonderful rest of your day!"
+            },
+            {
+              "name": "Juno Speakers",
+              "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. There are a few things we can try with the Juno speakers that resolve many of the common issues teachers run into. Here are some 'if then' steps to follow. If any of these apply, give the solution a try!\n\n\u2691 IF the tower will not wake up from standby mode, THEN: raise the volume and make sure the microphone is on (if you have one) and working correctly\n\n\u2691 IF there is no sound coming out of the Juno, THEN: raise the volume, ensure that you have the correct audio output on your computer. You can do this by clicking the little speaker symbol on the lower right-hand side of your taskbar, then selecting the correct output. You will also want to check the audio cable that links your Juno to the Actiontec in your classroom, if you have one.\n\n\u2691 IF you turn the tower on and only get a white screen, THEN: power off the tower, wait a full and complete minute, then turn the tower back on\n\n\u2691 IF the display will not turn on at all, THEN: verify that the power supply is plugged into both the receiver, and a working wall outlet. You will also want to check the power switch on the device to ensure it is on. Lastly, if you have an additional power supply around, try that one to rule out supply issues\n\n\u2691 IF you are hearing a squealing sound or feedback, THEN: lower the microphone volume controls on the tower. You may also need to position the mic closer to your mouth. Finally, go to your Juno's settings and ensure that the 'Music Audio In' options is not checked. You can find that option in the 'Microphone Volume Screen.' \n\nIf none of these apply to you, or the steps did not address your concern, then we may need to send out your building technician. You're more than welcome to give us a call at {phone}, {days}, {hours} if you have additional questions. Have a wonderful rest of your day!"
+            },
+            {
+              "name": "SMART Board",
+              "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. There are a few things we can consider with the SMART Board that tend to resolve many of the common issues teachers run into. Here are some 'if then' statements to go through. If any of these apply, give the solution a try!\n\n\u2691 IF the Ready light (an LED located on the lower-right corner of the frame) is off, THEN: there is no power going to the SMART Board and you'll need to check the power source. Try plugging the USB cable into your computer directly. Plugging the SMART Board into your computer is typically how it will get power. \n\n\u2691 IF the Ready light is solid green, THEN: the SMART Board is successfully communicating with the SMART software on the connected computer\n\n\u2691 IF the Ready light is flashing green, THEN: the SMART Board is successfully communicating with the computer's USB port, but either the SMART Board software is not installed, or the SMART Board service is not running.\n\n\u26A0 Note that In this mode, the SMART Board operates as a touch screen. The SMART Board tools, such as the pens and eraser, won’t work, but you can move the mouse pointer and perform mouse functions by touching anywhere on the screen. This mode may be desirable for occasional or guest users who don’t require the use of SMART Board tools or pen tray functions.\n\n\u2691 IF the Ready light is solid red, THEN: the SMART Board has power but it is not communicating with the computer. In this case, first check that the connection is solid and there are no breaks or kinks in the cable. Second, unplug the SMART Board's USB connection form the computer, uninstall the SMART Software, restart your computer, then re-install the SMART software. Next, plug in the SMART Board, run the 'Connection Wizard', then run the 'System Tray tools.' If all goes well, you should see that solid green light, and the touchscreen should accept input.\n\nIf none of these steps address your concern, then we may need to send out your building technician. You're more than welcome to give us a call at {phone}, {days}, {hours} if you have additional questions. Have a wonderful rest of your day!"
+            },
+            {
+              "name": "Projectors",
+              "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. There are a few things we can try with projectors that resolve many of the common issues teachers run into. First, ensure the following is in good order:\n\n\u2691 Check the power cable at the wall and ensure that it is firmly seated in the outlet. If the cable is loose, that could cause a variety of problems\n\n\u2691 Make sure that the video cable is firmly seated and the input option is set to the correct input\n\n\u2691 If the picture quality is dark, adjust 'BRIGHT' and 'CONTRAST' settings and turn off the 'WHISPER' mode in the settings. This may also be an indication of a failing bulb\n\n\u2691 If the picture appears blurry, adjust the 'FOCUS' and the 'PHASE settings \n\nThe following cases indicate that we need to send out your building technician\n\n\u2691 Blinking red light over the 'LAMP' indicator - This usually indicates a dirty filter, or a damaged bulb. It could also indicate that the cooling fan has failed, the lamp cover is not properly fixed, or overheating has occurred\n\n\u2691 If the green 'POWER', red 'LAMP' and red 'TEMP' lights are blinking, that indicates it is time for the filter to be replaced.\n\nIf you have tried to adjust the settings mentioned above with no progress, or have observed any of these light sequences, we must send a technician to your room. You're more than welcome to give us a call at {phone}, {days}, {hours} if you have additional concerns. Have a wonderful rest of your day!"
+            },
+            {
+              "name": "Adding Object From SharePoint",
+              "text": "Good {time} {fname},\n\nThank you for reaching out to us at the helpdesk. Fortunately, adding folders from SharePoint to your File Explorer is very easy. Below is a visual guide that will take will walk you through how to do this.\n\n\u2691 Link:\nhttps://support.microsoft.com/en-us/office/view-and-open-sharepoint-files-with-file-explorer-66b574bb-08b4-46b6-a6a0-435fd98194cc \n\nIf you would rather not review the documentation, you can complete the following steps:\n\n\u2691 First, open an internet browser (Microsoft Edge or Google Chrome)\n\n\u2691 Navigate over to your SharePoint of interest\n\n\u2691 Find the folder that you want to add to your File Explorer\n\n\u2691 Select the folder and look for the option to 'Sync' on the upper right-hand side of the page\n\n\u2691 Click that option and allow OneDrive to complete this function\n\n\u2691 Done! The folder will now be available in your File Explorer.\n\nIf you have any questions about these steps, or the resource, feel free to give us a call at {phone}, {days}, {hours}."
+            },
+            {
+              "name": "Printing issues",
+              "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. Connecting to our printers can be challenging at times and there are a few things you need to check prior to a successful print. First, ensure that your PSDVPN is disconnected, and the box to connect automatically is unchecked. Second, ensure that you are on the PSDWIRELESS network or your connection shows psd.local. Lastly, ensure that you have added this printer through Printix. If these things are in order and you still can't print, follow the next steps:\n\n\u2691 Open your Company Portal\n\n\u2691 Search for 'Printix Service Fix' and install it\n\n\u2691 Attempt to print to the printer\n\n\u2691 If that is not successful, try removing the printer in your 'Printers & Scanners' menu, then re-add the printer through Printix.\n\nIf adding a printer through Printix is something you are not sure about, complete the following steps\n\n\u2691 Move your mouse cursor down to the lower right-hand side of your taskbar (The long rectangle on the bottom of your screen)\n\n\u2691 Look for an upwards facing arrow \u2227 and click that to open a small menu\n\n\u2691 Search for a little black and white 'P' and click that to open another menu\n\n\u2691 Search for the top menu option that says 'Printers' and click that to open another menu\n\n\u2691 In this menu, search for the printer you want to add, select the checkbox next to it, then click 'add' on the lower right-hand side of that menu\n\nPlease feel free to give us a call if you have additional questions at {phone}, {days}, {hours}. Have a wonderful rest of your day!"
+            },
+            {
+              "name": "Employee Online Login",
+              "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. Thankfully, logging into Employee Online is pretty straight forward if you know where to go and your staff credentials:\n\n\u2691 Username / Email: Everything before the @ sign in your staff email\n\n\u2691 Password: The same password you use to log into a staff device. If you have never reset this password it will follow this format - E000000Welcome! where the 0's are your employee ID. If you do not know your employee ID number, HR can provide that information to you by calling 253-841-1301.\n\n\u2691 Link to Employee Online\nhttps://employeeonline.puyallup.k12.wa.us/ifas7/login/login.aspx?ReturnUrl=%2fbusinessplus%2femployeeonline%2fEOHomePage \n\nIf you need additional help logging in, feel free to give us a call at {phone}, {days}, {hours}."
+            },
+            {
+              "name": "Student Securly Concerns",
+              "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. Securly is a very powerful tool that we use throughout the district, and it does a great job of keeping out inappropriate content. However, it can be an inconvenience when something gets blocked that was previously accessible. Securly undergoes frequent updates that add websites, or web applications to its blocked list.\n\nAs such, if you are seeing the Securly page when trying to access a resource, that web page has likely been added to that list. As a student, you will not be able to access that resource, and you are also not able to submit a request to unblock the resource. You can however work with your teacher to consider the process of requesting security changes. If you have other questions, feel free to reach out to us at {phone}, {days}, {hours}."
+            },
+            {
+              "name": "Parent Securly Concerns",
+              "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. Securly is a very powerful tool that we use throughout the district, and it does a great job of keeping out inappropriate content. However it can be an inconvenience when something gets blocked that was previously accessible. Securly undergoes frequent updates that add websites, or web applications to its blocked list.\n\nAs such, if you are seeing the Securly page when trying to access a resource, that web page has likely been added to that list. Note that as a parent, you also have access to the Securly Home App which gives you granular control of your student's device. You can disable applications, block websites and control screen time all from your smart phone.\n\nIf you would like to know more about this, feel free to navigate to the link below! You are also more than welcome to reach out to Securly support by emailing: support@securly.com if you have specific questions about the service. If you need anything else, or have other questions, feel free to reach out to us at {phone}, {days}, {hours}\n\n\u2691 Link:\nhttps://homesupport.securly.com/hc/en-us/categories/360000431333-Securly-Home-App"
+            },
+            {
+              "name": "Device Internet Issues",
+              "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. Often times, troubleshooting a device's connectivity  is simple and only requires the following:\n\n\u2691 Locate the power button on the device\n\n\u2691 Hold down that button until the screen goes completely black, then let go\n\n\u2691 Wait about 30 seconds, then press the button one time \n\n\u2691 After a few moments, you should see the boot screen that eventually brings you to the login screen\n\n\u2691 Log in and check your internet status. If you are not sure how to do this, click on the link below:\nhttps://support.microsoft.com/en-us/windows/connect-to-a-wi-fi-network-in-windows-10-1f881677-b569-0cd5-010d-e3cd3579d263 \n\n\u26A0 Note that you may need to repeat the previous steps up to three separate times to have a stable wireless connection.\n\nHere are some bonus resources that may answer questions you, or others might have:\n\n\u2691 Turning airplane mode on or off\nhttps://support.microsoft.com/en-us/windows/turn-airplane-mode-on-or-off-f2c2e0a1-706f-ff26-c4b2-4a37f9796df1 \n\n\u2691 Microsoft troubleshooting tips\nhttps://support.microsoft.com/en-us/sbs/topic/can't-connect-to-internet-a85b5012-804f-517a-b548-f2f9274e3563?ui=en-US&rs=en-US&ad=US\n\nIf you need additional help troubleshooting your connectivity, feel free to give us a call at {phone}, {days}, {hours}."
+            },
+            {
+              "name": "How To Install An Application",
+              "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. All of our devices should have an application installed by default named Company Portal. Company Portal is like the app store on your phone and it has all of the applications that you are allowed to download available. Here is a short step by step guide on how to get to Company Portal and download an app:\n\n\u2691 Click your Start Menu, or use the 'Search' function on the lower left-hand side of your Start Menu, and search for 'Company Portal'\n\n\u2691 Once you launch Company Portal, you will see a search function on the upper left-hand side of the window that looks like a magnifying glass\n\n\u2691 Click that, and search for whatever it is you're trying to download. If you do not see an application that you are looking for one of two things are happening. One, your account does not have access to that application, and you can make a follow up request to be granted that access. Or two, your Company Portal is out of date and you need to preform a 'Sync' \n\n\u2691 To preform a Sync, click on the little gear icon on the lower left-hand side of the Company Portal window\n\n\u2691 That will bring you to a separate page which has a 'Sync' button at the top of it. Click that and allow up to 30 minutes for it to complete \n\n\u26A0 Note that you CAN NOT download applications from the internet on any of our managed devices. If you wish to download and install something that is not in Company Portal, you must submit a follow up request for consideration. \n\nIf you have additional questions about downloading applications, feel free to give us a call at {phone}, {days}, {hours}."
+            },
+            {
+              "name": "How To Install Office 365",
+              "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. All of our staff and students have access to the full Office Suite and you can download it by doing the following on a personal device (not owned by the district):\n\n\u2691 Navigate to 'portal.office.com' in any internet browser\n\n\u2691 Once there, login with your district credentials then draw your attention to the upper right-hand side of the screen\n\n\u2691 There, you should see a button to 'Install Office.' Click that to begin the installation\n\nAlternatively, on a district issued device, you can 'Sync' your Company Portal to bring down the required Office applications. To do so, follow the remaining steps:\n\n\u2691 Locate the Company Portal application on your device. You can search for it with the 'Search Bar' down on the lower-left-hand side of your taskbar\n\n\u2691 To preform a Sync, click on the little gear icon on the lower left-hand side of the Company Portal window\n\n\u2691 That will bring you to a separate page which has a 'Sync' button at the top of it. Click that and allow up to 30 minutes for it to complete \n\n\u26A0 Note that you CAN NOT download applications from the internet on any of our managed devices. If you wish to download and install something that is not in Company Portal, with the exception of Microsoft Office, you must submit a follow up request for consideration. \n\nIf you have additional questions about downloading applications, feel free to give us a call at {phone}, {days}, {hours}."
+            },
+            {
+              "name": "How to Sync CP",
+              "text": "Good {time} {fname},\n\nThank you for reaching out to the helpdesk. All of our devices should have an application installed by default named Company Portal. Company Portal is like the app store on your phone and it has all of the applications that you are allowed to download available. It also contains a tool that allows your device to check in with our systems and correct some common issues, such as the one you are experiencing. Here is a short step by step guide on how to get to Company Portal and perform a 'Sync':\n\n\u2691 Click your Start Menu, or use the 'Search' function on the lower left-hand side of your Start Menu, and search for 'Company Portal'\n\n\u2691 To preform a Sync, click on the little gear icon on the lower left-hand side of the Company Portal window\n\n\u2691 That will bring you to a separate page which has a 'Sync' button at the top of it which you can click to begin the process \n\n\u26A0 Note that you should allow up to 45 minutes for this process to complete, then restart your device after it does.\n\nIf you have additional questions about this process, or it was unsuccessful, feel free to give us a call at {phone}, {days}, {hours}."
+            },
+            {
+              "name": "Exit",
+              "text": "Exit the common issues menu"
+            }
+          ]
+        },
+        {
+          "name": "Exit",
+          "text": "Exit the main menu"
+        }
+      ]
+    }
   }
-}
