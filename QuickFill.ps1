@@ -97,7 +97,7 @@ function showMenu($theJson) {
 
         # Changing the number designation from last indicie to -1
         if ($options.name[$i] -like "*xit*") {
-            Write-Output "-1 $($options.name[$i])"
+            Write-Output "(-1) $($options.name[$i])"
         } else {
             Write-Output "($($i)) $($options.name[$i])"
         }
@@ -144,7 +144,7 @@ function formatResponses($theJSONFile, $theMainMenu, $theSubRes) {
         $links = $theMainMenu.options[$theSubRes].options[$outputSelection].links
 
         # Replacing the values
-        $txt = $txt -replace "{time}", "$(formatTime)" -replace "{fname}", $fname -replace "{phone}", "$($phone)" -replace "{hours}", "$($hours)" -replace "{days}", "$($days)" -replace "{APlink}", "$($APlink)"
+        $txt = $txt -replace "{time}", "$(formatTime)" -replace "{fname}", $fname -replace "{phone}", "$($phone)" -replace "{hours}", "$($hours)" -replace "{days}", "$($days)" -replace "{APlink}", "$($APlink)" -replace "{service}", "$($service)" -replace "{room}", "$($room)"
 
         # Copy the formated response to the clipboard
         Set-Clipboard -value $txt
