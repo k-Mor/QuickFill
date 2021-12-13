@@ -37,9 +37,9 @@ function main() {
     
     # First set the location
     # TODO : Configure the relative path 
-    # Set-Location 'C:\Users\MorenKS\myStuff\psScripts'
+    Set-Location 'C:\Users\MorenKS\myStuff\psScripts'
     # Set-Location "C:\myStuff
-    Set-Location "C:\Users\Kaleb\OneDrive\Documents"
+    # Set-Location "C:\Users\Kaleb\OneDrive\Documents"
 
 
     # Get the JSON file
@@ -152,17 +152,21 @@ function formatResponses($theJSONFile, $theMainMenu, $theSubRes) {
         # If there are questions
         Clear-Host
         $questions
-        Write-Output "`n"
 
         # User feedback
         feedBack
+
+        # Allow for more extensive documentation options
+        foreach($link in $links) {
+            openLink($link)
+        }
+        
     }
 }
 
-
 # TODO
 function feedBack() {
-    write-output "**Response was copied to your clipboard**`n"
+    write-output "**Ticket response was copied to your clipboard - Paste if applicable**`n"
 }
 
 
@@ -171,15 +175,24 @@ function formatTime() {
     $returnVal = $null
 
     if ($currentTime -lt 12) {
-        $returnVal = "Morning"
+        $returnVal = "morning"
     } else {
-        $returnVal = "Afternoon"
+        $returnVal = "afternoon"
     }
-
     return $returnVal
 }
 
 
+function openLink($theLink) {
+    # Handling the documentation links
+    $openLinks = Read-Host "Do you need this resources? ($($theLink.label))"
+    # Set-Location "C:\"
+    # $chrome = (Get-ItemProperty 'HKLM:\SOFTWARE\Classes\ChromeHTML\shell\open\command').'(default)'
+    if ($openLinks -like "*y*") {
+        Write-Host "**Opening: $($theLink.label) - Check your Taskbar**`n"
+        Start-Process "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" -ArgumentList $theLink.uri
+    }
+}
 
 
 #TODO
