@@ -2,7 +2,7 @@
 # Version: 12/10/21
 
 # .DESCRIPTION
-    # The purpose of this script is to.. 
+# The purpose of this script is to.. 
 
 <#
 
@@ -37,8 +37,8 @@ function main() {
     
     # First set the location
     # TODO : Configure the relative path 
-    Set-Location 'C:\Users\MorenKS\myStuff\psScripts'
-    # Set-Location "C:\myStuff
+    # Set-Location 'C:\Users\MorenKS\myStuff\psScripts'
+    Set-Location "C:\myStuff" #laptop
     # Set-Location "C:\Users\Kaleb\OneDrive\Documents"
 
 
@@ -55,7 +55,7 @@ function main() {
     # Show the main menu
     showMenu $mainMenu
 
-    while($userResponse -ne $terminate) { 
+    while ($userResponse -ne $terminate) { 
         $userResponse = Read-Host "Enter a sub option"
         
         # Cast the string to an int 
@@ -93,12 +93,13 @@ function showMenu($theJson) {
     # Write-Output "`n"
      
     # The options for the main menu
-    for($i = 0; $i -lt $options.name.Length; $i++) {
+    for ($i = 0; $i -lt $options.name.Length; $i++) {
 
         # Changing the number designation from last indicie to -1
         if ($options.name[$i] -like "*xit*") {
             Write-Output "(-1) $($options.name[$i])"
-        } else {
+        }
+        else {
             Write-Output "($($i)) $($options.name[$i])"
         }
     }
@@ -108,9 +109,9 @@ function showMenu($theJson) {
 function getSubMenu($theMainMenu, $theRes) { 
 
     # If the input sub menu option is found
-    if ($theRes -ne $null) {
+    if ($null -ne $theRes) {
         showMenu $theMainMenu.options[$theRes]
-     }
+    }
 }
 
 
@@ -128,36 +129,41 @@ function formatResponses($theJSONFile, $theMainMenu, $theSubRes) {
     
         # Grabbing an additional response for indexing
         $outputSelection = Read-Host "Select an option"
-        $fname = Read-Host "Enter the first name of the caller"
-        $moreInfo = Read-Host "Do you need more data in the response?"
-
-        # Checking to see if the responses need more information
-        if ($moreInfo -like "*y*") {
-            $room = Read-Host "Enter the room number"
-            $service = Read-Host "Enter the disrupted service"
-        }
         
-
-        # Grabbing more data
-        $txt = $theMainMenu.options[$theSubRes].options[$outputSelection].text
-        $questions = $theMainMenu.options[$theSubRes].options[$outputSelection].questions
+        # Grabbing the links 
         $links = $theMainMenu.options[$theSubRes].options[$outputSelection].links
 
-        # Replacing the values
-        $txt = $txt -replace "{time}", "$(formatTime)" -replace "{fname}", $fname -replace "{phone}", "$($phone)" -replace "{hours}", "$($hours)" -replace "{days}", "$($days)" -replace "{APlink}", "$($APlink)" -replace "{service}", "$($service)" -replace "{room}", "$($room)"
+        # If user just wants resources skip all this
+        if ($theSubRes -ne 0) { 
+            $fname = Read-Host "Enter the first name of the caller"
+            $moreInfo = Read-Host "Do you need more data in the response?"
+    
+            # Checking to see if the responses need more information
+            if ($moreInfo -like "*y*") {
+                $room = Read-Host "Enter the room number"
+                $service = Read-Host "Enter the disrupted service"
+            }
+    
+            # Grabbing more data
+            $txt = $theMainMenu.options[$theSubRes].options[$outputSelection].text
+            $questions = $theMainMenu.options[$theSubRes].options[$outputSelection].questions
 
-        # Copy the formated response to the clipboard
-        Set-Clipboard -value $txt
-
-        # If there are questions
-        Clear-Host
-        $questions
-
-        # User feedback
-        feedBack
+            # Replacing the values
+            $txt = $txt -replace "{time}", "$(formatTime)" -replace "{fname}", $fname -replace "{phone}", "$($phone)" -replace "{hours}", "$($hours)" -replace "{days}", "$($days)" -replace "{APlink}", "$($APlink)" -replace "{service}", "$($service)" -replace "{room}", "$($room)"
+    
+            # Copy the formated response to the clipboard
+            Set-Clipboard -value $txt
+    
+            # If there are questions
+            Clear-Host
+            $questions
+    
+            # User feedback
+            feedBack
+        }
 
         # Allow for more extensive documentation options
-        foreach($link in $links) {
+        foreach ($link in $links) {
             openLink($link)
         }
         
@@ -176,7 +182,8 @@ function formatTime() {
 
     if ($currentTime -lt 12) {
         $returnVal = "morning"
-    } else {
+    }
+    else {
         $returnVal = "afternoon"
     }
     return $returnVal
@@ -192,6 +199,7 @@ function openLink($theLink) {
         Write-Host "**Opening: $($theLink.label) - Check your Taskbar**`n"
         Start-Process "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" -ArgumentList $theLink.uri
     }
+    Clear-Host
 }
 
 
