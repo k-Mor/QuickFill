@@ -13,11 +13,28 @@
         "options": [
           {
             "name": "Approved Applications List",
-            "text": "",
             "links": [
               {
                 "uri": "https://puyallupsd.sharepoint.com/:x:/r/sites/PSD-EdTec2-TechSupport/_layouts/15/Doc.aspx?sourcedoc=%7B93B2B16A-A6AE-44DA-8FF4-F665E5F89978%7D&file=Copy%20of%20District%20Approved%20Application%20List%202020-21.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1",
                 "label": "Approved Applications List"
+              }
+            ]
+          },
+          {
+            "name": "Documentation Hub",
+            "links": [
+              {
+                "uri": "https://puyallupsd-my.sharepoint.com/personal/konsmdm_puyallup_k12_wa_us/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fkonsmdm%5Fpuyallup%5Fk12%5Fwa%5Fus%2FDocuments%2FTopDesk%2FDocumentation",
+                "label": "Devin's Documentation"
+              }
+            ]
+          },
+          {
+            "name": "Helpful Helpdesk Guide",
+            "links": [
+              {
+                "uri": " https://puyallupsd-my.sharepoint.com/:x:/g/personal/morenks_puyallup_k12_wa_us/EWlq7yV6nbdLoNerhhbuML4BVpQcclNOuUzfrgJq5jIRTw?e=vZcWh3",
+                "label": "Helpful Helpdesk Guide"
               }
             ]
           },
@@ -32,14 +49,93 @@
             ]
           },
           {
+            "name": "TLPs",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/:x:/r/sites/PSD-EdTec2-TechSupport/_layouts/15/doc2.aspx?action=edit&sourcedoc=%7B9469AAD7-961C-4F7D-9D0D-0AB542BB15AB%7D",
+                "label": "TLP List"
+              }
+            ]
+          },
+          {
+            "name": "Appointments Link",
+            "links": [
+              {
+                "uri": "https://outlook.office365.com/owa/calendar/EdtecHelpdeskCalendar@puyallupsd.onmicrosoft.com/bookings/",
+                "label": "Appointments Link"
+              }
+            ]
+          },
+          {
+            "name": "One Pagers",
+            "links": [
+              {
+                "uri": "https://puyallupsd-my.sharepoint.com/personal/hortoag_puyallup_k12_wa_us/_layouts/15/onedrive.aspx?view=4",
+                "label": "One Pagers"
+              }
+            ]
+          },
+          {
+            "name": "Student Teachers",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/:x:/r/sites/72/_layouts/15/Doc.aspx?sourcedoc=%7B96A3E69F-CA38-4FBF-84E8-868B98A1C8E2%7D&file=StudentTeachers2021-2022.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1",
+                "label": "Student Teachers List"
+              }
+            ]
+          },
+          {
             "name": "Tech Regions",
-            "text": "",
             "links": [
               {
                 "uri": "https://puyallupsd.sharepoint.com/:x:/r/sites/PSD-EdTec2-TechSupport/_layouts/15/Doc.aspx?sourcedoc=%7BFBF336E8-27AB-4A7D-8DC5-526412AA7377%7D&file=Tech%20Regions%202021%20.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1",
                 "label": "Technician Regions"
               }
             ]
+          },
+          {
+            "name": "Xima",
+            "links": [
+              {
+                "uri": "https://ciwy9.acr.ximasoftware.com/ccagent/en/wallboards",
+                "label": "Phone System"
+              }
+            ]
+          },
+          {
+            "name": "TOPDesk",
+            "links": [
+              {
+                "uri": "https://puyallupsd.topdesk.net/tas/secure/mango/window/0?t=1623165266185",
+                "label": "TOPDesk"
+              }
+            ]
+          },
+          {
+            "name": "Policy & Procedure",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72-Docs/Policies-and-Procedures",
+                "label": "P&P"
+              }
+            ]
+          },
+          {
+            "name": "Status Pages",
+            "links": [
+              {
+                "uri": "https://status.powerschool.com/",
+                "label": "Schoology / PowerSchool status page"
+              },
+              {
+                "uri": "https://portal.office.com/servicestatus",
+                "label": "Microsoft Services Health"
+              }
+            ]
+          },
+          {
+            "name": "Back",
+            "text": "Exit the resources menu"
           }
         ]
       },
@@ -53,6 +149,20 @@
           {
             "name": "What is your extension?",
             "text": "Good {time} {fname},\n\nThank you for reaching out. We at the Helpdesk are always happy to provide technical assistance. We need to know what the extension is for that phone. If you can simply reply back to this email with that 4 digit extension, we can pursue a resolution for you.\n\nIf you have additional concerns, feel free to give us a call at {phone}, {days}, {hours}."
+          },
+          {
+            "name": "Service Outage - [Service Name]",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. We sincerely appreciate you taking the time to contact us, and we are always happy to help. We are aware at this time that {service} is experiencing service disruptions, and we ask for your patience as that vendor works to resolve the disruption. If you have concerns outside of this reported outage, feel free to give us a call, or reply back {days}, {hours}. Have an excellent rest of your day!",
+            "links": [
+              {
+                "uri": "https://status.powerschool.com/",
+                "label": "Schoology / PowerSchool status page"
+              },
+              {
+                "uri": "https://portal.office.com/servicestatus",
+                "label": "Microsoft Services Health"
+              }
+            ]
           },
           {
             "name": "Have you called?",
@@ -71,6 +181,7 @@
           {
             "name": "Assign To TLP - [Room #]",
             "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. This ticket has been assigned to your library's Technology Learning Paraeducator (TLP), so that they are aware of the issue and can coordinate with you to resolve it. If you have any concerns about this service request, please feel free to give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!\n\n\u26A0 Room Number / Location: {room}",
+            "questions":"Make sure you send the TLP the ticket via TOPdesk. Their emails are in the resource below.\n",
             "links": [
               {
                 "uri": "https://puyallupsd.sharepoint.com/:x:/r/sites/PSD-EdTec2-TechSupport/_layouts/15/doc2.aspx?action=edit&sourcedoc=%7B9469AAD7-961C-4F7D-9D0D-0AB542BB15AB%7D",
@@ -80,11 +191,19 @@
           },
           {
             "name": "Appointment Scheduling",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to us at the Helpdesk. Scheduling an appointment to pickup, swap, or drop off equipment is very easy to do, and you can do so by clicking this link:\n\n{APlink}\n\nor by completing the following steps:\n\n\u2691 Go to the Puyallup School District's website\n\n\u2691 Hover over the 'Staff' box on the upper right-hand side of the page\n\n\u2691 Click the Edtec Helpdesk link\n\n\u2691 Click 'Schedule an Appointment'\n\n\u26A0 Please note that all of our school's libraries typically have staff and student devices on hand that you can either check out, or swap with your current device. Often times, you can avoid having to make a trip to come see us by first checking with your school's library.\n\nIf you have additional questions or concerns, feel free to give us a call at {phone}, {days}, {hours}.\n\n\u2691  Address: 1501 39th Ave. SW. Puyallup, WA. 98373"
+            "text": "Good {time} {fname},\n\nThank you for reaching out to us at the Helpdesk. Scheduling an appointment to pickup, swap, or drop off equipment is very easy to do, and you can do so by clicking this link:\n\n{APlink}\n\nor by completing the following steps:\n\n\u2691 Go to the Puyallup School District's website\n\n\u2691 Hover over the 'Staff' box on the upper right-hand side of the page\n\n\u2691 Click the Edtec Helpdesk link\n\n\u2691 Click 'Schedule an Appointment'\n\n\u26A0 Please note that all of our school's libraries typically have staff and student devices on hand that you can either check out, or swap with your current device. Often times, you can avoid having to make a trip to come see us by first checking with your school's library.\n\nIf you have additional questions or concerns, feel free to give us a call at {phone}, {days}, {hours}.\n\n\u2691  Address: 1501 39th Ave. SW. Puyallup, WA. 98373",
+            "questions":"Things to consider\n---------------------\n\n-> Teachers and students can perform device swaps at their school's libraries. \n-> Students MUST go to their schools for a device swap. They will not come to Edtec unless otherwise directed.\n-> Make sure you record the ticket number in the calendar appointment if you're scheduling the appointment for a caller.\n-> Leave a brief description of why this appointment was scheduled, so other techs know what to expect.\n",
+            "links": [
+              {
+                "uri": "https://outlook.office365.com/owa/calendar/EdtecHelpdeskCalendar@puyallupsd.onmicrosoft.com/bookings/",
+                "label": "Appointments Link"
+              }
+            ]
           },
           {
             "name": "Instructional Coaches",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. This concern would be best addressed by one of our instructional coaches who specialize in the software you're referring to. I encourage you to take some time to email one of them to schedule an appointment over Teams, or in person. Here is the most up to date information for the coaches:\n\nK-12 ELA (Reading, Writing) Gena Vincent and Jennifer Chavez\nK-12 Social Studies: Leslie Snyder, Jeanna Kooser\nK-12 Math: Priscilla Millan, Lizzie Herrera\nK-12 Science: Ann Schumacher, Joshua Simondet\nAP Matt White\n\nGLAD/EL Tabitha Aragon\nGLAD/CTE Jessica Anderson\n\nNew Teacher Induction/Mentoring: Sophia Monge, Candice McGregor\nTechnology: Jennifer Matthews, Jeremy Roy\n\nPlease feel free to give us a call at {phone}, {days}, {hours} if you have additional questions. Have a wonderful rest of your day!"
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. This concern would be best addressed by one of our instructional coaches who specialize in the software you're referring to. I encourage you to take some time to email one of them to schedule an appointment over Teams, or in person. Here is the most up to date information for the coaches:\n\nK-12 ELA (Reading, Writing) Gena Vincent and Jennifer Chavez\nK-12 Social Studies: Leslie Snyder, Jeanna Kooser\nK-12 Math: Priscilla Millan, Lizzie Herrera\nK-12 Science: Ann Schumacher, Joshua Simondet\nAP Matt White\n\nGLAD/EL Tabitha Aragon\nGLAD/CTE Jessica Anderson\n\nNew Teacher Induction/Mentoring: Sophia Monge, Candice McGregor\nTechnology: Jennifer Matthews, Jeremy Roy\n\nPlease feel free to give us a call at {phone}, {days}, {hours} if you have additional questions. Have a wonderful rest of your day!",
+            "questions":"Things to consider\n---------------------\n\n-> The coaches are great for setting up Teams meetings, OneNote Notebooks etc. \n-> Coaches provided one on one training for staff in classroom technology as well. \n-> Ask about current office hours!\n"
           },
           {
             "name": "Back",
@@ -105,7 +224,14 @@
           },
           {
             "name": "Frontline",
-            "text": "Good {time} {fname},\n\nWe appreciate you reaching out to the Helpdesk and we are always happy to help. However, this concern is not something that is handled by the Helpdesk, or Edtec as a whole. You will need to contact Kathy Barnett at ESC. Have an excellent rest of your day!"
+            "text": "Good {time} {fname},\n\nWe appreciate you reaching out to the Helpdesk and we are always happy to help. However, this concern is not something that is handled by the Helpdesk, or Edtec as a whole. You will need to contact Kathy Barnett at ESC. Have an excellent rest of your day!",
+            "questions": "If this is simply for getting a user logged in, make sure the caller is on the correct page. There are a couple different sign in pages for Frontline.\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FFrontline-Subsystem.one%7C2d33d2b2-cd81-4dee-80de-20018b9ae767%2FFrontline%20Training%20Video%7C0c5e5bb7-d225-4a39-ac97-d46f8cb913f7%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
           },
           {
             "name": "IEP Online",
@@ -113,7 +239,13 @@
           },
           {
             "name": "SafeSchools",
-            "text": "Good {time} {fname},\n\nWe appreciate you reaching out to the Helpdesk and we are always happy to help. However, this concern is not something that is handled by the Helpdesk, or Edtec as a whole. You will need to contact Megan Davis at ESC. Have an excellent rest of your day!"
+            "text": "Good {time} {fname},\n\nWe appreciate you reaching out to the Helpdesk and we are always happy to help. However, this concern is not something that is handled by the Helpdesk, or Edtec as a whole. You will need to contact Megan Davis at ESC. Have an excellent rest of your day!",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FSafeSchools.one%7C31512376-f0f2-4631-a3de-522746071dbe%2FSchool%20Information%7C72445585-6c40-4a5e-a628-80bb6383355d%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
           },
           {
             "name": "Acadience",
@@ -126,7 +258,7 @@
         ]
       },
       {
-        "name": "Hardware Concern",
+        "name": "General Hardware Concerns",
         "options": [
           {
             "name": "Document Cameras",
@@ -151,7 +283,7 @@
             ]
           },
           {
-            "name": "NewLine Concerns",
+            "name": "NewLine",
             "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. There are a few things to consider when it comes to troubleshooting your classroom television.\n\nAttempt the following:\n\n\u2691 First, look at the home screen of your TV and take note of the right-hand side. If there is a valid input signal, you will see one of the 'HDMI' boxes illuminated. This is great if you do! It means that your Actiontec (Black starfish on the wall above, beside, or behind your classroom television) is connected to the TV, and the TV is able to talk to it. That is the input you want your TV to be set to\n\n\u2691 If you are in a newer elementary school, locate the black box on the left-hand side of your television to switch between those HDMI options if you need to. Otherwise, you can use the touchscreen function to switch between the HDMI inputs if necessary\n\n\u2691 If everything looks good with the HDMI input, then your issue likely rests with your Actiontec\n\nIf you need more information, or you think your Actiontec is to blame, please feel free to respond back to this ticket for more information, or give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!\n\nHere is the user manual if you would like to dive deeper into a specific topic: https://newline-interactive.com/wp-content/uploads/2019/01/TRUTOUCH-VN_User-Manual.pdf",
             "links": [
               {
@@ -169,12 +301,8 @@
             "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. There are a few things we can try with the Juno speakers that resolve many of the common issues teachers run into. Here are some 'if then' steps to follow. If any of these apply, give the solution a try!\n\n\u2691 IF the tower will not wake up from standby mode, THEN: raise the volume and make sure the microphone is on (if you have one) and working correctly\n\n\u2691 IF there is no sound coming out of the Juno, THEN: raise the volume, ensure that you have the correct audio output on your computer. You can do this by clicking the little speaker symbol on the lower right-hand side of your taskbar, then selecting the correct output. You will also want to check the audio cable that links your Juno to the Actiontec in your classroom, if you have one.\n\n\u2691 IF you turn the tower on and only get a white screen, THEN: power off the tower, wait a full and complete minute, then turn the tower back on\n\n\u2691 IF the display will not turn on at all, THEN: verify that the power supply is plugged into both the receiver, and a working wall outlet. You will also want to check the power switch on the device to ensure it is on. Lastly, if you have an additional power supply around, try that one to rule out supply issues\n\n\u2691 IF you are hearing a squealing sound or feedback, THEN: lower the microphone volume controls on the tower. You may also need to position the mic closer to your mouth. Finally, go to your Juno's settings and ensure that the 'Music Audio In' options is not checked. You can find that option in the 'Microphone Volume Screen.' \n\nIf none of these apply to you, or the steps did not address your concern, then we may need to send out your building technician. You're more than welcome to give us a call at {phone}, {days}, {hours} if you have additional questions. Have a wonderful rest of your day!",
             "links": [
               {
-                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Hardware%2FDocument%20Camera.one%7Ca7d74578-093f-41c5-8118-c5be8678af5c%2FAverVision%20HD%20User%20Manual%20F70W%7Cfe091930-3bda-4a9e-a746-40bf206c3d0a%2F%29",
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Hardware%2FJuno.one%7C3cc8adc1-661b-4deb-af71-f76daf82a419%2FTroubleshooting%7Ce8494e72-286b-4fdb-8cae-c4118e2331cd%2F%29",
                 "label": "OneNote Notebook"
-              },
-              {
-                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Hardware%2FDocument%20Camera.one%7Ca7d74578-093f-41c5-8118-c5be8678af5c%2FAverVision%20HD%20User%20Manual%20F70W%7Cfe091930-3bda-4a9e-a746-40bf206c3d0a%2F%29",
-                "label": "Test"
               }
             ]
           },
@@ -183,12 +311,8 @@
             "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. There are a few things we can consider with the SMART Board that tend to resolve many of the common issues teachers run into. Here are some 'if then' statements to go through. If any of these apply, give the solution a try!\n\n\u2691 IF the Ready light (an LED located on the lower-right corner of the frame) is off, THEN: there is no power going to the SMART Board and you'll need to check the power source\n\n\u2691 IF the Ready light is solid green, THEN: the SMART Board is successfully communicating with the SMART software on the connected computer\n\n\u2691 IF the Ready light is flashing green, THEN: the SMART Board is successfully communicating with the computer's USB port, but either the SMART Board software is not installed, or the SMART Board service is not running.\n\n\u26A0 Note that In this mode, the SMART Board operates as a touch screen. The SMART Board tools, such as the pens and eraser, won’t work, but you can move the mouse pointer and perform mouse functions by touching anywhere on the screen. This mode may be desirable for occasional or guest users who don’t require the use of SMART Board tools or pen tray functions.\n\n\u2691 IF the Ready light is solid red, THEN: the SMART Board has power but it is not communicating with the computer. In this case, first check that the connection is solid and there are no breaks or kinks in the cable. Second, unplug the SMART Board's USB connection form the computer, uninstall the SMART Software, restart your computer, then re-install the SMART software. Next, plug in the SMART Board, run the 'Connection Wizard', then run the 'System Tray tools.' If all goes well, you should see that solid green light, and the touchscreen should accept input.\n\nIf none of these steps address your concern, then we may need to send out your building technician. You're more than welcome to give us a call at {phone}, {days}, {hours} if you have additional questions. Have a wonderful rest of your day!",
             "links": [
               {
-                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Hardware%2FDocument%20Camera.one%7Ca7d74578-093f-41c5-8118-c5be8678af5c%2FAverVision%20HD%20User%20Manual%20F70W%7Cfe091930-3bda-4a9e-a746-40bf206c3d0a%2F%29",
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Hardware%2FSmartboard.one%7C8e0ffb18-315a-49f8-997c-debcc2fd4792%2FSmartboard%20Indicator%20Lights%7C1a586b6b-3215-4a0d-b086-d158942d644d%2F%29",
                 "label": "OneNote Notebook"
-              },
-              {
-                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Hardware%2FDocument%20Camera.one%7Ca7d74578-093f-41c5-8118-c5be8678af5c%2FAverVision%20HD%20User%20Manual%20F70W%7Cfe091930-3bda-4a9e-a746-40bf206c3d0a%2F%29",
-                "label": "Test"
               }
             ]
           },
@@ -211,12 +335,8 @@
             "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. There are a few things we can try with projectors that resolve many of the common issues teachers run into. First, ensure the following is in good order:\n\n\u2691 Check the power cable at the wall and ensure that it is firmly seated in the outlet. If the cable is loose, that could cause a variety of problems\n\n\u2691 Make sure that the video cable is firmly seated and the input option is set to the correct input\n\n\u2691 If the picture quality is dark, adjust 'BRIGHT' and 'CONTRAST' settings and turn off the 'WHISPER' mode in the settings. This may also be an indication of a failing bulb\n\n\u2691 If the picture appears blurry, adjust the 'FOCUS' and the 'PHASE settings \n\nThe following cases indicate that we need to send out your building technician\n\n\u2691 Blinking red light over the 'LAMP' indicator - This usually indicates a dirty filter, or a damaged bulb. It could also indicate that the cooling fan has failed, the lamp cover is not properly fixed, or overheating has occurred\n\n\u2691 If the green 'POWER', red 'LAMP' and red 'TEMP' lights are blinking, that indicates it is time for the filter to be replaced.\n\nIf you have tried to adjust the settings mentioned above with no progress, or have observed any of these light sequences, we must send a technician to your room. You're more than welcome to give us a call at {phone}, {days}, {hours} if you have additional concerns. Have a wonderful rest of your day!",
             "links": [
               {
-                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Hardware%2FDocument%20Camera.one%7Ca7d74578-093f-41c5-8118-c5be8678af5c%2FAverVision%20HD%20User%20Manual%20F70W%7Cfe091930-3bda-4a9e-a746-40bf206c3d0a%2F%29",
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Hardware%2FProjection%20Units.one%7Cb0fec74b-95be-45e6-97ec-a27b4abfdf4a%2FProjector%20Bulb%20Info%7Ce2bcbd96-a844-494e-8288-c31e2c6c19c3%2F%29",
                 "label": "OneNote Notebook"
-              },
-              {
-                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Hardware%2FDocument%20Camera.one%7Ca7d74578-093f-41c5-8118-c5be8678af5c%2FAverVision%20HD%20User%20Manual%20F70W%7Cfe091930-3bda-4a9e-a746-40bf206c3d0a%2F%29",
-                "label": "Test"
               }
             ]
           },
@@ -241,22 +361,8 @@
         ]
       },
       {
-        "name": "Software Concern",
+        "name": "General Software Concerns",
         "options": [
-          {
-            "name": "Service Outage - [Service Name]",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. We sincerely appreciate you taking the time to contact us, and we are always happy to help. We are aware at this time that {service} is experiencing service disruptions, and we ask for your patience as that vendor works to resolve the disruption. If you have concerns outside of this reported outage, feel free to give us a call, or reply back {days}, {hours}. Have an excellent rest of your day!",
-            "links": [
-              {
-                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Hardware%2FDocument%20Camera.one%7Ca7d74578-093f-41c5-8118-c5be8678af5c%2FAverVision%20HD%20User%20Manual%20F70W%7Cfe091930-3bda-4a9e-a746-40bf206c3d0a%2F%29",
-                "label": "OneNote Notebook"
-              },
-              {
-                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Hardware%2FDocument%20Camera.one%7Ca7d74578-093f-41c5-8118-c5be8678af5c%2FAverVision%20HD%20User%20Manual%20F70W%7Cfe091930-3bda-4a9e-a746-40bf206c3d0a%2F%29",
-                "label": "Test"
-              }
-            ]
-          },
           {
             "name": "Suspicious Emails",
             "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. We appreciate you taking the time to contact us and we are always happy to help. When it comes to suspicious emails, there is no need to call or email us as Outlook has an excellent tool that does that on your behalf.\n\nIf you simply select 'Report Message' from the upper right-hand side of the application window, you can then select 'Phishing' and that will both remove the email from your inbox, then report that message to Microsoft and our security team. If you have questions or concerns, you are more than welcome to give us a call at {phone}, {days}, {hours}.\n\n\u26A0 If you have interacted with a suspicious email and provided any district login information, please change your password immediately by doing the following:\n\n\u2691 Hit CTRL + ALT + DEL on your keyboard\n\n\u2691 Select 'Change a password'\n\n\u2691 Follow the prompts to change your password\n\n\u2691 Log out of your computer, then log back in with the new password",
@@ -500,7 +606,7 @@
             ]
           },
           {
-            "name": "How to Sync CP",
+            "name": "How to Sync the Company Portal",
             "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. All of our devices should have an application installed by default named Company Portal. Company Portal is like the app store on your phone and it has all of the applications that you are allowed to download available. It also contains a tool that allows your device to check in with our systems and correct some common issues, such as the one you are experiencing. Here is a short step by step guide on how to get to Company Portal and perform a 'Sync':\n\n\u2691 Click your Start Menu, or use the 'Search' function on the lower left-hand side of your Start Menu, and search for 'Company Portal'\n\n\u2691 To preform a Sync, click on the little gear icon on the lower left-hand side of the Company Portal window\n\n\u2691 That will bring you to a separate page which has a 'Sync' button at the top of it which you can click to begin the process \n\n\u26A0 Note that you should allow up to 45 minutes for this process to complete, then restart your device after it does.\n\nIf you have additional questions about this process, or it was unsuccessful, feel free to give us a call at {phone}, {days}, {hours}.",
             "links": [
               {
@@ -516,6 +622,230 @@
           {
             "name": "Back",
             "text": "Exit the common issues menu"
+          }
+        ]
+      },
+      {
+        "name": "Education Application's Apps",
+        "options": [
+          {
+            "name": "eTrition",
+            "text": "",
+            "questions": "\n**Escalate to EdApps**\n\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FeTrition.one%7C78aac3b6-71b1-4e0b-8d4f-27bbeb49b95a%2FeTrition%20Installation%7C85d226e6-939c-44b5-9c8d-2a6e36ce31b0%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "TransFinder / RouteFinder",
+            "text": "",
+            "questions": "\n**Escalate to EdApps**\n\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FTransfinder.one%7Cc6eb663a-333d-4604-a54a-8aadf687beb8%2FRouteFinder%20not%20opening%20after%20login%7Cde0eca75-7022-4a9e-a67b-3bbead232c44%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "eSchoolPLUS / TAC / HAC",
+            "text": "",
+            "questions": "\n**Most things will be escalated to EdApps**\n\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FeSchoolPLUS.one%7C3052b7e6-5603-4085-adac-3f31900f2d11%2FeSchoolPLUS%20Admin%20Mobile%20App%7C993573e7-59a9-46ac-a9dc-9904cb48862c%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "Typing Agent",
+            "text": "",
+            "questions": "\n**Escalate to EdApps**\n\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FTyping%20Agent.one%7C36611354-676e-4ffd-a571-a2ef0e25edd2%2FTyping%20Agent%20%20User%20Log%20In%7C8b7bbc66-c1a1-4801-be7e-387aadfbd649%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "Destiny",
+            "text": "",
+            "questions": "\n**Escalate to EdApps - Kylie tends to oversee this app**\n\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FDestiny.one%7C8607bde9-9d23-4e96-9e97-072d0e55bd7a%2FHelpdesk%20Procedure%7C9b2cd6b0-b8e2-4e35-92f2-b9c05f510022%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "Schoology",
+            "text": "",
+            "questions": "\n*If the call concerns the grade book - escalate to EdApps**\n\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={e6d1618c-ea4b-4d75-8dba-ebf58836a389}&action=edit&wd=target%28To%20View%20Parent%20Access%20Codes%20for%20Students%7C41bb2cd5-f963-41bd-805c-a970f0c80cf1%2F%29",
+                "label": "How to find parent access code"
+              },
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={e6d1618c-ea4b-4d75-8dba-ebf58836a389}&action=edit&wd=target%28Parent%20Account%20How-to%7C051e64ef-bd84-4285-8154-dd7bd8f49b70%2F%29",
+                "label": "How to register for a parent account"
+              },
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={e6d1618c-ea4b-4d75-8dba-ebf58836a389}&action=edit&wd=target%28FAQs%7C21dfa36b-6f28-4a92-b77f-4ff4e7d79c48%2F%29",
+                "label": "General FAQ"
+              }
+            ]
+          },
+          {
+            "name": "OpenText",
+            "text": "",
+            "questions": "\n**Escalate to EdApps**\n\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FOpenText.one%7Cf5adcb3a-69e9-4ac0-93f2-cdf38e0c741a%2FOpenText%7Cf6d7aad5-1c5c-49e4-afec-2713a3172dcc%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "Quaver",
+            "text": "",
+            "questions": "\n**Escalate to EdApps**\n\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FQuaver.one%7C52ad947d-a6dc-4bb5-8508-d12f5758f8fb%2FTouch%5C%2FWhiteboard%20Troubleshooting%7Cfa51ce49-56c7-4796-a36f-fb0703943d64%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "Renaissance / AR / STAR",
+            "text": "",
+            "questions": "\n**Escalate to EdApps**\n\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FRenaissance%20Place.one%7C8369cdfa-119c-4988-bbef-e660af01789a%2FSchool%20Login%20Instructions%7Cf5a59a32-9a9a-4f11-96fa-c5d7a23bba43%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "Back",
+            "text": "Exit Ed Apps"
+          }
+        ]
+      },
+      {
+        "name": "Modern Management Team ",
+        "options": [
+          {
+            "name": "Teams",
+            "text": "",
+            "questions": "\n**Escalate to EdApps**\n\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FeTrition.one%7C78aac3b6-71b1-4e0b-8d4f-27bbeb49b95a%2FeTrition%20Installation%7C85d226e6-939c-44b5-9c8d-2a6e36ce31b0%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "Class Policy",
+            "text": "",
+            "questions": "\n**Escalate to EdApps**\n\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FTransfinder.one%7Cc6eb663a-333d-4604-a54a-8aadf687beb8%2FRouteFinder%20not%20opening%20after%20login%7Cde0eca75-7022-4a9e-a67b-3bbead232c44%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "Office 365 add-ins (ex. Jasperactive, Ablebits)",
+            "text": "",
+            "questions": "\n**Most things will be escalated to EdApps**\n\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FeSchoolPLUS.one%7C3052b7e6-5603-4085-adac-3f31900f2d11%2FeSchoolPLUS%20Admin%20Mobile%20App%7C993573e7-59a9-46ac-a9dc-9904cb48862c%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "Securly",
+            "text": "",
+            "questions": "\n**Escalate to EdApps**\n\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FTyping%20Agent.one%7C36611354-676e-4ffd-a571-a2ef0e25edd2%2FTyping%20Agent%20%20User%20Log%20In%7C8b7bbc66-c1a1-4801-be7e-387aadfbd649%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "CTE Hardware / Software",
+            "text": "",
+            "questions": "\n**Escalate to EdApps - Kylie tends to oversee this app**\n\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FDestiny.one%7C8607bde9-9d23-4e96-9e97-072d0e55bd7a%2FHelpdesk%20Procedure%7C9b2cd6b0-b8e2-4e35-92f2-b9c05f510022%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "DAS program",
+            "text": "",
+            "questions": "\n*If the call concerns the grade book - escalate to EdApps**\n\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={e6d1618c-ea4b-4d75-8dba-ebf58836a389}&action=edit&wd=target%28To%20View%20Parent%20Access%20Codes%20for%20Students%7C41bb2cd5-f963-41bd-805c-a970f0c80cf1%2F%29",
+                "label": "How to find parent access code"
+              }
+            ]
+          },
+          {
+            "name": "Adobe account issues",
+            "text": "",
+            "questions": "\n**Escalate to EdApps**\n\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FOpenText.one%7Cf5adcb3a-69e9-4ac0-93f2-cdf38e0c741a%2FOpenText%7Cf6d7aad5-1c5c-49e4-afec-2713a3172dcc%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "iPads / Apple products",
+            "text": "",
+            "questions": "\n**Escalate to EdApps**\n\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FQuaver.one%7C52ad947d-a6dc-4bb5-8508-d12f5758f8fb%2FTouch%5C%2FWhiteboard%20Troubleshooting%7Cfa51ce49-56c7-4796-a36f-fb0703943d64%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "Company Portal",
+            "text": "",
+            "questions": "\n**Escalate to EdApps**\n\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FRenaissance%20Place.one%7C8369cdfa-119c-4988-bbef-e660af01789a%2FSchool%20Login%20Instructions%7Cf5a59a32-9a9a-4f11-96fa-c5d7a23bba43%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "Back",
+            "text": "Exit MME"
           }
         ]
       },
