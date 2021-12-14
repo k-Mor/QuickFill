@@ -650,6 +650,17 @@
               }
             ]
           },
+           {
+            "name": "Khan Academy",
+            "text": "",
+            "questions": "\n**Escalate to EdApps**\n\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FTransfinder.one%7Cc6eb663a-333d-4604-a54a-8aadf687beb8%2FRouteFinder%20not%20opening%20after%20login%7Cde0eca75-7022-4a9e-a67b-3bbead232c44%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
           {
             "name": "eSchoolPLUS / TAC / HAC",
             "text": "",
