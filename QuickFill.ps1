@@ -37,8 +37,8 @@ function main() {
     
     # First set the location
     # TODO : Configure the relative path 
-    # Set-Location 'C:\Users\MorenKS\myStuff\psScripts'
-    Set-Location "C:\myStuff" #laptop
+    Set-Location 'C:\Users\MorenKS\myStuff\psScripts'
+    # Set-Location "C:\myStuff" #laptop
     # Set-Location "C:\Users\Kaleb\OneDrive\Documents"
 
 
@@ -84,7 +84,7 @@ function showMenu($theJson) {
     $options = $theJson.options 
 
     # Dashes for the menu header
-    $dashes = "-" * 20
+    $dashes = "-" * 30
     
     # Writing the menu header
     Write-Output $dashes
@@ -170,7 +170,6 @@ function formatResponses($theJSONFile, $theMainMenu, $theSubRes) {
     }
 }
 
-# TODO
 function feedBack() {
     write-output "**Ticket response was copied to your clipboard - Paste if applicable**`n"
 }
