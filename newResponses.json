@@ -388,7 +388,7 @@
           {
             "name": "Suspicious Emails",
             "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. We appreciate you taking the time to contact us and we are always happy to help. When it comes to suspicious emails, there is no need to call or email us as Outlook has an excellent tool that does that on your behalf.\n\nIf you simply select 'Report Message' from the upper right-hand side of the application window, you can then select 'Phishing' and that will both remove the email from your inbox, then report that message to Microsoft and our security team. If you have questions or concerns, you are more than welcome to give us a call at {phone}, {days}, {hours}.\n\n\u26A0 If you have interacted with a suspicious email and provided any district login information, please change your password immediately by doing the following:\n\n\u2691 Hit CTRL + ALT + DEL on your keyboard\n\n\u2691 Select 'Change a password'\n\n\u2691 Follow the prompts to change your password\n\n\u2691 Log out of your computer, then log back in with the new password",
-            "questions": "Things to consider\n---------------------\n\n-> See the link on how to report a message in Outlook. That's all they have to do." ,
+            "questions": "Things to consider\n---------------------\n\n-> See the link on how to report a message in Outlook. That's all they have to do.\n" ,
             "links": [
               {
                 "uri": "https://support.lucidity.co.nz/support/solutions/articles/42000082250-how-to-use-the-outlook-report-message-add-in",
@@ -426,7 +426,7 @@
           {
             "name": "Trusted Platform Module Error",
             "text": "No common response for this error - It's tricky to identify sometimes",
-            "questions": "Things to consider\n---------------------\n\n-> Reboot, reboot, reboot\n-> Try clearing credentials if that does not work\n\n-> If it persists, approve them for a swap\n",
+            "questions": "Things to consider\n---------------------\n\n-> Reboot, reboot, reboot\n-> Try clearing credentials if that does not work\n-> If it persists, approve them for a swap\n",
             "links": [
               {
                 "uri": "https://docs.rackspace.com/support/how-to/clear-credential-manager/",
