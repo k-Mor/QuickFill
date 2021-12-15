@@ -595,7 +595,7 @@
         "options": [
           {
             "name": "eTrition",
-            "text": "Direct the user to contact us..",
+            "text": "",
             "questions": "Things to consider\n---------------------\n\n-> eTrition sometimes requires admin creds to open which can be input over TeamViewer \n-> If the app is not working as expected, try and uninstall it then re-install it\n-> If that doesn't resolve it - escalate over to EdApps\n",
             "links": [
               {
@@ -606,7 +606,7 @@
           },
           {
             "name": "TransFinder / RouteFinder",
-            "text": "Escalate over to EdApps..",
+            "text": "",
             "questions": "Things to consider\n---------------------\n\n-> Escalate over to EdApps - we don't do anything with this.\n",
             "links": [
               {
@@ -618,7 +618,7 @@
           {
             "name": "eSchoolPLUS / TAC / HAC",
             "text": "",
-            "questions": "Things to consider\n---------------------\n\n-> eSchools:\n\t-> ",
+            "questions": "Things to consider\n---------------------\n\n-> eSchools:\n\t-> There is a lot of information here and it's the source of everything in the district in terms of data\n\t-> Here, you can reset HAC passwords for parents, check student schedules, find ID numbers, emails etc..\n\t-> We do not do any troubleshooting however with eSchools with the exception of ensuring the VPN is on or off depending on if they are at home or work. Escalate to EdApps\nTAC:\n\t-> TAC is where teachers take attendance and perform teacher specific duties\n\t-> We don't do anything with this either. Escalate to EdApps\nHAC:\n\t-> All we can do here is reset passwords for parent logins which is done in eSchools\n",
             "links": [
               {
                 "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FeSchoolPLUS.one%7C3052b7e6-5603-4085-adac-3f31900f2d11%2FeSchoolPLUS%20Admin%20Mobile%20App%7C993573e7-59a9-46ac-a9dc-9904cb48862c%2F%29",
@@ -629,7 +629,7 @@
           {
             "name": "Typing Agent",
             "text": "",
-            "questions": "\n**Escalate to EdApps**\n\n",
+            "questions": "Things to consider\n---------------------\n\n-> Just escalate to EdApps\n",
             "links": [
               {
                 "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FTyping%20Agent.one%7C36611354-676e-4ffd-a571-a2ef0e25edd2%2FTyping%20Agent%20%20User%20Log%20In%7C8b7bbc66-c1a1-4801-be7e-387aadfbd649%2F%29",
@@ -640,7 +640,7 @@
           {
             "name": "Destiny",
             "text": "",
-            "questions": "\n**Escalate to EdApps - Kylie tends to oversee this app**\n\n",
+            "questions":"Things to consider\n---------------------\n\n-> If someone is missing - just escalate to EdApps\n-> Otherwise, some light training is something we can do\n",
             "links": [
               {
                 "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FDestiny.one%7C8607bde9-9d23-4e96-9e97-072d0e55bd7a%2FHelpdesk%20Procedure%7C9b2cd6b0-b8e2-4e35-92f2-b9c05f510022%2F%29",
@@ -651,7 +651,7 @@
           {
             "name": "Schoology",
             "text": "",
-            "questions": "\n*If the call concerns the grade book - escalate to EdApps**\n\n",
+            "questions":"Things to consider\n---------------------\n\n-> Here we can find Schoology access codes, reset passwords for parent logins and other troubleshooting.\n-> Note that the search function in Schoology is very finicky and searching by first name, email or student ID only, tends to produce the best results.\n-> You can also authorize OneDrive under 'Resources' in Schoology for assignment submission if necessary\n-> The links detail the common things we have to do\n",
             "links": [
               {
                 "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={e6d1618c-ea4b-4d75-8dba-ebf58836a389}&action=edit&wd=target%28To%20View%20Parent%20Access%20Codes%20for%20Students%7C41bb2cd5-f963-41bd-805c-a970f0c80cf1%2F%29",
@@ -670,7 +670,7 @@
           {
             "name": "OpenText",
             "text": "",
-            "questions": "\n**Escalate to EdApps**\n\n",
+            "questions": "Things to consider\n---------------------\n\n-> Escalate over to EdApps - we don't do anything with this.\n",
             "links": [
               {
                 "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FOpenText.one%7Cf5adcb3a-69e9-4ac0-93f2-cdf38e0c741a%2FOpenText%7Cf6d7aad5-1c5c-49e4-afec-2713a3172dcc%2F%29",
@@ -679,9 +679,9 @@
             ]
           },
           {
-            "name": "COGNOS",
+            "name": "Cognos",
             "text": "",
-            "questions": "\n**Escalate to EdApps**\n\n",
+            "questions": "Things to consider\n---------------------\n\n-> Escalate over to EdApps - we don't do anything with this.\n",
             "links": [
               {
                 "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FQuaver.one%7C52ad947d-a6dc-4bb5-8508-d12f5758f8fb%2FTouch%5C%2FWhiteboard%20Troubleshooting%7Cfa51ce49-56c7-4796-a36f-fb0703943d64%2F%29",
@@ -692,7 +692,7 @@
           {
             "name": "Quaver",
             "text": "",
-            "questions": "\n**Escalate to EdApps**\n\n",
+            "questions": "Things to consider\n---------------------\n\n-> Escalate over to EdApps - we don't do anything with this.\n",
             "links": [
               {
                 "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FQuaver.one%7C52ad947d-a6dc-4bb5-8508-d12f5758f8fb%2FTouch%5C%2FWhiteboard%20Troubleshooting%7Cfa51ce49-56c7-4796-a36f-fb0703943d64%2F%29",
@@ -703,7 +703,7 @@
           {
             "name": "Renaissance / AR / STAR",
             "text": "",
-            "questions": "\n**Escalate to EdApps**\n\n",
+            "questions": "Things to consider\n---------------------\n\n-> Escalate over to EdApps - we don't do anything with this.\n",
             "links": [
               {
                 "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FRenaissance%20Place.one%7C8369cdfa-119c-4988-bbef-e660af01789a%2FSchool%20Login%20Instructions%7Cf5a59a32-9a9a-4f11-96fa-c5d7a23bba43%2F%29",
@@ -714,13 +714,7 @@
           {
             "name": "Clever",
             "text": "",
-            "questions": "\n**Escalate to EdApps**\n\n",
-            "links": [
-              {
-                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FRenaissance%20Place.one%7C8369cdfa-119c-4988-bbef-e660af01789a%2FSchool%20Login%20Instructions%7Cf5a59a32-9a9a-4f11-96fa-c5d7a23bba43%2F%29",
-                "label": "OneNote Notebook"
-              }
-            ]
+            "questions": "Things to consider\n---------------------\n\n-> Note that Clever is how students should be accessing Schoology and all of the other curriculum programs in the district, with few exceptions \n-> The only thing we really do with Clever is ensure that students can log into it. There is no troubleshooting beyond that. Escalate over to EdApps.\n"
           },
           {
             "name": "Back",
