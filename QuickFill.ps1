@@ -159,7 +159,10 @@ function formatResponses($theJSONFile, $theMainMenu, $theSubRes) {
             $questions
     
             # User feedback
-            feedBack
+            if ($txt.Length -ge 1) {
+                feedBack
+            }
+
         }
 
         # Allow for more extensive documentation options
