@@ -1,24 +1,25 @@
-# Author: Kaleb Moreno
-# Version: 12/10/21
-
-# .DESCRIPTION
-# The purpose of this script is to.. 
-
 <#
+    Author: Kaleb Moreno
+    Version: 12/10/21
 
-Copyright © 2021 Kaleb Moreno
+    .DESCRIPTION
+        The purpose of this script is to.. 
 
-Permission is hereby granted, free of charge, 
-to any person obtaining a copy of this software and associated documentation files (the “Software”), 
-to deal in the Software without restriction, including without limitation the rights to use, copy, modify, 
-merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom 
-the Software is furnished to do so, subject to the following conditions: The above copyright notice and this 
-permission notice shall be included in all copies or substantial portions of the Software.THE SOFTWARE IS 
-PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE 
-WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL 
-THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
-WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE 
-SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+    Copyright © 2021 Kaleb Moreno
+
+    Permission is hereby granted, free of charge, 
+    to any person obtaining a copy of this software and associated documentation files (the “Software”), 
+    to deal in the Software without restriction, including without limitation the rights to use, copy, modify, 
+    merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom 
+    the Software is furnished to do so, subject to the following conditions: The above copyright notice and this 
+    permission notice shall be included in all copies or substantial portions of the Software.THE SOFTWARE IS 
+    PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE 
+    WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL 
+    THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
+    WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE 
+    SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #>
         
@@ -37,8 +38,8 @@ function main() {
     
     # First set the location
     # TODO : Configure the relative path 
-    Set-Location 'C:\Users\MorenKS\myStuff\psScripts'
-    # Set-Location "C:\myStuff" #laptop
+    # Set-Location 'C:\Users\MorenKS\myStuff\psScripts'
+    Set-Location "C:\myStuff" #laptop
     # Set-Location "C:\Users\Kaleb\OneDrive\Documents"
 
 
@@ -46,8 +47,8 @@ function main() {
     $jsonFileObject = Get-Content '.\newResponses.json' | Out-String | ConvertFrom-Json
 
     # Prompt for response file type
-    $fileResponse = Read-Host "Would you like to use a custom response file?"
-    Write-Output "`n"
+    $fileResponse = formatPrompt "Would you like to use a custom response file?"
+    Clear-Host
 
     # Grabbing the main menu
     $mainMenu = $jsonFileObject.mainMenu
@@ -56,21 +57,19 @@ function main() {
     showMenu $mainMenu
 
     while ($userResponse -ne $terminate) { 
-        $userResponse = Read-Host "Enter a sub option"
+        $userResponse = formatPrompt "Enter a sub option"
         
-        # Cast the string to an int 
-        $userResponse = [int]$userResponse
-
         # Get the sub menu options
         getSubMenu $mainMenu $userResponse
 
         # Get an option from the sub menu
         formatResponses $jsonFileObject $mainMenu $userResponse
 
+        # Clear the questions
+        Clear-Host
+
         # Redirect back to the main menu
         showMenu $mainMenu
-
-       
     }
 }
 
@@ -84,23 +83,23 @@ function showMenu($theJson) {
     $options = $theJson.options 
 
     # Dashes for the menu header
-    $dashes = "-" * 30
+    $dashes = "-" * $header.Length
     
     # Writing the menu header
-    Write-Output $dashes
-    Write-Output $header
-    Write-Output $dashes
-    # Write-Output "`n"
+    Write-Host $dashes
+    Write-Host $header
+    Write-Host $dashes
+    # Write-Host "`n"
      
     # The options for the main menu
     for ($i = 0; $i -lt $options.name.Length; $i++) {
 
         # Changing the number designation from last indicie to -1
         if ($options.name[$i] -like "*xit*") {
-            Write-Output "(-1) $($options.name[$i])"
+            Write-Host "(-1) $($options.name[$i])"
         }
         else {
-            Write-Output "($($i)) $($options.name[$i])"
+            Write-Host "($($i)) $($options.name[$i])"
         }
     }
 }
@@ -108,6 +107,7 @@ function showMenu($theJson) {
 
 function getSubMenu($theMainMenu, $theRes) { 
 
+    Clear-Host
     # If the input sub menu option is found
     if ($null -ne $theRes) {
         showMenu $theMainMenu.options[$theRes]
@@ -117,8 +117,8 @@ function getSubMenu($theMainMenu, $theRes) {
 
 
 function formatResponses($theJSONFile, $theMainMenu, $theSubRes) {
-
-    if ($theSubRes -ne -1) {
+    $terminate = -1
+    if ($theSubRes -ne $terminate) {
         
         # The values that must be replaced in the JSON file
         $phone = $theJSONFile.config.phone
@@ -128,42 +128,51 @@ function formatResponses($theJSONFile, $theMainMenu, $theSubRes) {
         
     
         # Grabbing an additional response for indexing
-        $outputSelection = Read-Host "Select an option"
+        $outputSelection = formatPrompt "Select an option"
+        $outputSelection = [int]$outputSelection
         
         # Grabbing the links 
         $links = $theMainMenu.options[$theSubRes].options[$outputSelection].links
+        
+        # Grabbing more data
+        $txt = $theMainMenu.options[$theSubRes].options[$outputSelection].text
+        $questions = $theMainMenu.options[$theSubRes].options[$outputSelection].questions
 
         # If user just wants resources skip all this
-        if ($theSubRes -ne 0) { 
-            $fname = Read-Host "Enter the first name of the caller"
-            $moreInfo = Read-Host "Do you need more data in the response?"
+        if ($theSubRes -ne 0 -And $txt.Length -ge 1) { 
+            $fname = formatPrompt "Enter the first name of the caller"
+            $moreInfo = formatPrompt "Do you need more data in the response? ex.[Room #], [Service Name]"
     
             # Checking to see if the responses need more information
             if ($moreInfo -like "*y*") {
-                $room = Read-Host "Enter the room number"
-                $service = Read-Host "Enter the disrupted service"
+                $room = formatPrompt "Enter the room number"
+                $service = formatPrompt "Enter the disrupted service"
             }
     
-            # Grabbing more data
-            $txt = $theMainMenu.options[$theSubRes].options[$outputSelection].text
-            $questions = $theMainMenu.options[$theSubRes].options[$outputSelection].questions
+
 
             # Replacing the values
-            $txt = $txt -replace "{time}", "$(formatTime)" -replace "{fname}", $fname -replace "{phone}", "$($phone)" -replace "{hours}", "$($hours)" -replace "{days}", "$($days)" -replace "{APlink}", "$($APlink)" -replace "{service}", "$($service)" -replace "{room}", "$($room)"
+            $txt = $txt `
+                -replace "{time}", "$(formatTime)" `
+                -replace "{fname}", $fname `
+                -replace "{phone}", "$($phone)" `
+                -replace "{hours}", "$($hours)" `
+                -replace "{days}", "$($days)" `
+                -replace "{APlink}", "$($APlink)" `
+                -replace "{service}", "$($service)" `
+                -replace "{room}", "$($room)"
     
-            # Copy the formated response to the clipboard
-            Set-Clipboard -value $txt
-    
-            # If there are questions
-            Clear-Host
-            $questions
-    
+            
             # User feedback
-            if ($txt.Length -ge 1) {
-                feedBack
+            if ($txt.Length -ge 1 -And $null -ne $txt) {
+                Set-Clipboard -value $txt
+                feedback
             }
-
         }
+
+        # If there are questions
+        # Clear-Host
+        $questions
 
         # Allow for more extensive documentation options
         foreach ($link in $links) {
@@ -174,15 +183,23 @@ function formatResponses($theJSONFile, $theMainMenu, $theSubRes) {
 }
 
 function feedBack() {
-    write-output "**Ticket response was copied to your clipboard - Paste if applicable**`n"
+    $delayTime = 1.4
+    Write-Host "`n** Ticket response was copied to your clipboard **`n" -ForegroundColor DarkGreen
+    Start-Sleep -Seconds $delayTime
+    Clear-Host
+}
+
+function formatPrompt($thePrompt) {
+    return "$(Write-Host "$($thePrompt): " -ForegroundColor Red -NoNewline) $(Read-Host)"
 }
 
 
 function formatTime() {
     $currentTime = Get-Date -Format HH
     $returnVal = $null
+    $noon = 12
 
-    if ($currentTime -lt 12) {
+    if ($currentTime -lt $noon) {
         $returnVal = "morning"
     }
     else {
@@ -193,15 +210,15 @@ function formatTime() {
 
 
 function openLink($theLink) {
+    $delayTime = 1.4
+
     # Handling the documentation links
-    $openLinks = Read-Host "Do you need this resources? ($($theLink.label))"
-    # Set-Location "C:\"
-    # $chrome = (Get-ItemProperty 'HKLM:\SOFTWARE\Classes\ChromeHTML\shell\open\command').'(default)'
+    $openLinks = formatPrompt "`nDo you need this resources? ($($theLink.label))"
     if ($openLinks -like "*y*") {
-        Write-Host "**Opening: $($theLink.label) - Check your Taskbar**`n"
+        Write-Host "** Opening: $($theLink.label) **`n" -ForegroundColor DarkGreen
         Start-Process "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" -ArgumentList $theLink.uri
+        Start-Sleep $delayTime
     }
-    Clear-Host
 }
 
 
@@ -213,6 +230,5 @@ function initCustomResponses() {
 
 # Starting the App
 Main
-
 
 
