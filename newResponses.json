@@ -203,7 +203,7 @@
           {
             "name": "Assign To TLP ~ [Room #]",
             "text": "Good {time} {fname},\nThank you for reaching out to the Helpdesk. This ticket has been assigned to your library's Technology Learning Paraeducator (TLP), so that they are aware of the issue and can coordinate with you to resolve it. If you have any concerns about this service request, please feel free to give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!\n\n\u26A0 Room Number / Location: {data}",
-            "questions":"Things to consider\n---------------------\n\n\u2022 Make sure you send the TLP the ticket via TOPdesk. Their emails are in the resource below.\n\u2022 Note that student't do not need to know\n",
+            "questions":"Things to consider\n---------------------\n\n\u2022 Make sure you send the TLP the ticket via TOPdesk. Their emails are in the resource below.\n\u2022 Note that student's don't need prior approval to swap out a device as of: 12/21\n",
             "links": [
               {
                 "uri": "https://puyallupsd.sharepoint.com/:x:/r/sites/PSD-EdTec2-TechSupport/_layouts/15/doc2.aspx?action=edit&sourcedoc=%7B9469AAD7-961C-4F7D-9D0D-0AB542BB15AB%7D",
@@ -225,7 +225,7 @@
           {
             "name": "Instructional Coaches",
             "text": "Good {time} {fname},\nThank you for reaching out to the Helpdesk. This concern would be best addressed by one of our instructional coaches who specialize in the software you're referring to. I encourage you to take some time to email one of them to schedule an appointment over Teams, or in person. Here is the most up to date information for the coaches:\n\nK-12 ELA (Reading, Writing) Gena Vincent and Jennifer Chavez\nK-12 Social Studies: Leslie Snyder, Jeanna Kooser\nK-12 Math: Priscilla Millan, Lizzie Herrera\nK-12 Science: Ann Schumacher, Joshua Simondet\nAP Matt White\n\nGLAD/EL Tabitha Aragon\nGLAD/CTE Jessica Anderson\n\nNew Teacher Induction/Mentoring: Sophia Monge, Candice McGregorTechnology: Jennifer Matthews, Jeremy Roy\n\nPlease feel free to give us a call at {phone}, {days}, {hours} if you have additional questions. Have a wonderful rest of your day!",
-            "questions":"Things to consider\n---------------------\n\n\u2022 The coaches are great for setting up Teams meetings, OneNote Notebooks etc. \n\u2022 Coaches provided one on one training for staff in classroom technology as well. \n\u2022 Ask about current office hours!\n"
+            "questions":"Things to consider\n---------------------\n\n\u2022 The coaches are great for setting up Teams meetings, OneNote Notebooks etc. \n\u2022 Coaches provide one on one training for staff in classroom technology as well. \n\u2022 Ask about current office hours!\n"
           },
           {
             "name": "Back",
@@ -238,7 +238,8 @@
         "options": [
           {
             "name": "Facilities",
-            "text": "Good {time} {fname},\n\nWe appreciate you reaching out to the Helpdesk and we are always happy to help. However, this concern is not something that is handled by the Helpdesk, or Edtec as a whole. You will need to contact Facilities. Have an excellent rest of your day!"
+            "text": "Good {time} {fname},\n\nWe appreciate you reaching out to the Helpdesk and we are always happy to help. However, this concern is not something that is handled by the Helpdesk, or Edtec as a whole. You will need to contact Facilities. Have an excellent rest of your day!",
+            "questions":"Things to consider\n---------------------\n\n\u2022 Badge access\n\u2022 HVAC\n\u2022 Intercom systems\n\u2022 Clocks\n"
           },
           {
             "name": "Job applications",
@@ -399,11 +400,22 @@
           {
             "name": "Connecting to PSDSTAFF on Android",
             "text": "Good {time} {fname},\nThank you for contacting the Helpdesk. We enjoy working to resolve technical problems for our staff, students and families. Connecting to the staff WIFI is a common question and it may be a little more involved than people realize. Here are the steps you can take to connect to PSDSTAFF:\n\n\u2022 Select the PSDSTAFF network\n\n\u2022 Ensure that the EAP setting is set to PEAP\n\n\u2022 Input your district credentials and ensure you only put in the segment before the @ sign. Note that this is case sensitive.\n\n\u2022 Under certificates, ensure that you select 'Do Not Validate'\n\n\u2022 Under advanced, look for an option that says 'Phase 2 Authenticate' then for that, input MSCHP V2\n\nAfter all that, you should be able to connect to the PSDSTAFF wireless network. If you have any questions about this, feel free to give us a call at {phone}, {days}, {hours}.",
-            "questions": "Things to consider\n---------------------\n\n\u2022 See the link on what settings to input" ,
+            "questions": "Things to consider\n---------------------\n\n\u2022 Ensure that the EAP setting is set to PEAP\n\u2022 Input your district creds - just before the @ sign\n\u2022 Ensure that you do not validate certificates\n\u2022 Under the advanced settings, make sure to select 'MSCHP V2' as a Phase 2 Authentication option\n" ,
             "links": [
               {
                 "uri": " https://puyallupsd-my.sharepoint.com/:x:/g/personal/morenks_puyallup_k12_wa_us/EWlq7yV6nbdLoNerhhbuML4BVpQcclNOuUzfrgJq5jIRTw?e=vZcWh3",
-                "label": "Helpful Helpdesk Guide - See cell 25"
+                "label": "Helpful Helpdesk Guide - See cell 25 for more"
+              }
+            ]
+          },
+          {
+            "name": "Connecting to PSDSTAFF on IOS",
+            "text": "Good {time} {fname},\nThank you for contacting the Helpdesk. We enjoy working to resolve technical problems for our staff, students and families. Connecting to the staff WIFI is a common question and it is very simple on IOS. Here are the steps you can take to connect to PSDSTAFF:\n\n\u2022 Select the PSDSTAFF network\n\n\u2022 Input your district credentials and ensure you only put in the segment before the @ sign. Note that this is case sensitive.\n\u2022 Enter your district account password\nAfter that, you should be able to connect to the PSDSTAFF wireless network. If you have any questions about this, feel free to give us a call at {phone}, {days}, {hours}.",
+            "questions": "Things to consider\n---------------------\n\n\u2022 Just drop in the first portion of their email\n\u2022 Put in their SSO password, and thats it!\n" ,
+            "links": [
+              {
+                "uri": " https://puyallupsd-my.sharepoint.com/:x:/g/personal/morenks_puyallup_k12_wa_us/EWlq7yV6nbdLoNerhhbuML4BVpQcclNOuUzfrgJq5jIRTw?e=vZcWh3",
+                "label": "Helpful Helpdesk Guide - See cell 26 for more"
               }
             ]
           },
@@ -723,9 +735,9 @@
             ]
           },
           {
-            "name": "Clever",
+            "name": "Clever & Clever Badges",
             "text": "",
-            "questions": "Things to consider\n---------------------\n\n\u2022 Note that Clever is how students should be accessing Schoology and all of the other curriculum programs in the district, with few exceptions \n\u2022 The only thing we really do with Clever is ensure that students can log into it. There is no troubleshooting beyond that. Escalate over to EdApps.\n"
+            "questions": "Things to consider\n---------------------\n\n\u2022 Note that Clever is how students should be accessing Schoology and all of the other curriculum programs in the district, with few exceptions \n\u2022 The only thing we really do with Clever is ensure that students can log into it. Escalate over to EdApps.\n"
           },
           {
             "name": "Back",
@@ -965,6 +977,38 @@
           {
             "name": "Back",
             "text": "Exit Sys. Eng. Menu"
+          }
+        ]
+      },
+      {
+        "name": "About this app",
+        "options": [
+          {
+            "name": "README",
+            "text": "",
+            "questions": "\n\u2022 Documentation on how to get the most out of this program!\n\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd-my.sharepoint.com/:o:/g/personal/morenks_puyallup_k12_wa_us/EvEcaDV6pflBoNAAAFaH8SsBPXIGzUQRNI4K1gkyUJALxw?e=RaLajA",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "Back",
+            "text": "Exit About"
+          }
+        ]
+      },
+      {
+        "name": "Search",
+        "options": [
+          {
+            "name": "Test"
+          },
+          {
+            "name": "Back",
+            "text": "Exit Search"
           }
         ]
       },
