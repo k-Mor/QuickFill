@@ -35,6 +35,7 @@ function main() {
     # General vars
     $terminate = -1
     $mainMenu = $jsonFileObject.mainMenu
+    $api = "https://quickfill.herokuapp.com/"
     
     # First set the location
     # TODO : Configure the relative path 
@@ -43,11 +44,17 @@ function main() {
     # Set-Location "C:\Users\Kaleb\OneDrive\Documents"
   
   
-    # Get the JSON file
+    # Get the custom JSON file if one exists
     $jsonFileObject = Get-Content '.\newResponses.json' | Out-String | ConvertFrom-Json
   
     # Prompt for response file type
-    $fileResponse = formatPrompt "Would you like to use a custom response file?"
+    $fileResponse = formatPrompt "Would you like to use the corporate response file?"
+    
+    # If the user wants to use the API that I wrote for this program
+    if ($fileResponse -Like "*y*") {
+        $jsonFileObject = Invoke-restmethod -Uri $api
+    }
+
     Clear-Host
   
     # Grabbing the main menu
@@ -63,60 +70,55 @@ function main() {
         # Breaking the loop if the input is -1
         if ($userResponse -like "*$($terminate)*") { break }
 
+        # Checking to see if the user wants to search
+        if ($mainMenu.options[$userResponse].name -eq "Search") { 
+            $key = formatPrompt "Enter the search term"
+            doSearch $mainMenu $key.Trim()
+         } else {
 
+            # Get the sub menu options
+            getSubMenu $mainMenu $userResponse
+    
+            # Get an option from the sub menu
+            formatResponses $jsonFileObject $mainMenu $userResponse
 
-        if ($mainMenu.options[$userResponse].name -Like "*Search*") {
+         }
 
-            $term = formatPrompt "Enter a search term"
-
-            foreach ($item in $mainMenu.options.options.name) {
-
-                # Write-Host $item.ToLower()
-
-                if ($item -Like "*$($term)*") { 
-                    # Write-Host "Matching item:`n$($item)`nFound in:`n$($mainMenu.options | where-object -Property "name" -Like "*$($item)*")"
-                    # foreach ($menuItem in $mainMenu) {
-                    #     Write-Host $menuItem.options.options.name
-                    #     Write-Host $item + "`n"
-                    #     if ($menuItem.options.options.name -eq $item) {
-
-                    #         Write-Host "POOP************************************************************" + $menuItem.name
-                    #     }
-                    # }
-                    for ($i = 0; $i -lt $mainMenu.Count; $i++) {
-                        for ($j = 0; $j -lt $mainMenu.options.options.Count; $j++) {
-                            Write-Host $mainMenu.options.options[$j].name;
-
-                            if ($mainMenu.options.options[$j].name -eq $item) {
-                                Write-host $mainMenu.options[$i]
-                                break
-                            }
-                            # Write-Host $mainMenu.Count[$i].name;
-                        }
-                        
-                    }
-
-                    break 
-                }
-            }
-        }
-
-        
-        # Get the sub menu options
-        # getSubMenu $mainMenu $userResponse
-  
-        # Get an option from the sub menu
-        # formatResponses $jsonFileObject $mainMenu $userResponse
-  
         # Clear the questions
-        # Clear-Host
-  
+        Clear-Host
+
         # Redirect back to the main menu
-        # showMenu $mainMenu
+        showMenu $mainMenu
+
+
     }
   }
   
   
+  function doSearch($theMainMenu, $theKey) {
+
+    $results
+    foreach ($item in $theMainMenu.options) {
+ 
+        for ($i = 0; $i -lt $item.options.Count; $i++) {
+
+            if ($item.options[$i].name -Like "*$($theKey)*") {
+                Write-host "There was a match in: $($item.name) -> [$($item.options[$i].name)]"
+                $results += "There was a match in: $($item.name) -> [$($item.options[$i].name)]`n"
+            }
+        }
+    }
+
+    if ($results.Count -ge 1) {
+        Set-Clipboard $results
+        feedBack(5)
+    } else {
+        Write-Host "Nothing was found.." -ForegroundColor Red
+        Start-Sleep -Seconds 1
+    }
+  }
+
+
   function showMenu($theJson) {
     
     # The menu header
@@ -146,7 +148,6 @@ function main() {
         }
     }
   }
-  
   
   function getSubMenu($theMainMenu, $theRes) { 
   
@@ -212,7 +213,7 @@ function main() {
             # User feedback
             if ($txt.Length -ge $minLen -And $null -ne $txt) {
                 Set-Clipboard -value $txt
-                feedback
+                feedback(1.4)
             }
         }
   
@@ -234,10 +235,9 @@ function main() {
     }
   }
   
-  function feedBack() {
-    $delayTime = 1.4
-    Write-Host "`n** Ticket response was copied to your clipboard **`n" -ForegroundColor DarkGreen
-    Start-Sleep -Seconds $delayTime
+  function feedBack($theTime) {
+    Write-Host "`n** Item was copied to your clipboard **`n" -ForegroundColor DarkGreen
+    Start-Sleep -Seconds $theTime
   }
   
   function formatPrompt($thePrompt) {
@@ -278,9 +278,5 @@ function main() {
   
   }
   
-  
   # Starting the App
   Main
-  
-  
-  
