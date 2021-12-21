@@ -3,7 +3,7 @@
     Version: 12/10/21
 
     .DESCRIPTION
-        The purpose of this script is to
+        The purpose of this script is to.. 
 
 
 
@@ -266,9 +266,16 @@ function main() {
   
     # Handling the documentation links
     $openLinks = formatPrompt "Do you need this resources? ($($theLink.label))"
+   
     if ($openLinks -like "*y*") {
         Write-Host "** Opening: $($theLink.label) **`n" -ForegroundColor DarkGreen
-        Start-Process "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" -ArgumentList $theLink.uri
+        $browser = "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" # Defaults to Chrome
+        if (Test-Path $browser) {
+            Start-Process $browser -ArgumentList $theLink.uri
+        } else {
+            $browser = "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
+            Start-Process $browser -ArgumentList $theLink.uri
+        }
         Start-Sleep $delayTime
     }
   }
@@ -281,3 +288,5 @@ function main() {
   
   # Starting the App
   Main
+
+  
