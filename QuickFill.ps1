@@ -3,7 +3,7 @@
     Version: 12/10/21
 
     .DESCRIPTION
-        The purpose of this script is to.. 
+        The purpose of this script is to
 
 
 
