@@ -94,7 +94,8 @@ function main() {
     }
   }
   
-  
+# O(n)^2 searching algorithm that works effeciently on small n - may need revision if n
+# grows exponentially  
   function doSearch($theMainMenu, $theKey) {
 
     $results
@@ -102,9 +103,9 @@ function main() {
  
         for ($i = 0; $i -lt $item.options.Count; $i++) {
 
-            if ($item.options[$i].name -Like "*$($theKey)*") {
-                Write-host "There was a match in: $($item.name) -> [$($item.options[$i].name)]"
-                $results += "There was a match in: $($item.name) -> [$($item.options[$i].name)]`n"
+            if ($item.options[$i].name -Like "*$($theKey)*" -Or $item.options[$i].questions -Like "*$($theKey)*") {
+                Write-host "Search key was found in: $($item.name) -> [$($item.options[$i].name)]"
+                $results += "Search key was found in: $($item.name) -> [$($item.options[$i].name)]`n"
             }
         }
     }
@@ -113,7 +114,7 @@ function main() {
         Set-Clipboard $results
         feedBack(5)
     } else {
-        Write-Host "Nothing was found.." -ForegroundColor Red
+        Write-Host "Nothing was found.. Try different variations of the key" -ForegroundColor Red
         Start-Sleep -Seconds 1
     }
   }
