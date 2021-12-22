@@ -39,7 +39,7 @@ function main() {
     
     # First set the location
     # TODO : Configure the relative path 
-    Set-Location 'C:\Users\MorenKS\myStuff\psScripts'
+    Set-Location 'C:\Users\MorenKS\myStuff\QuickFill'
     # Set-Location "C:\myStuff" #laptop
     # Set-Location "C:\Users\Kaleb\OneDrive\Documents"
   
@@ -73,6 +73,7 @@ function main() {
         # Checking to see if the user wants to search
         if ($mainMenu.options[$userResponse].name -eq "Search") { 
             $key = formatPrompt "Enter the search term"
+            Write-Host ""
             doSearch $mainMenu $key.Trim()
          } else {
 
@@ -84,7 +85,7 @@ function main() {
 
          }
 
-        # Clear the questions
+        # Clear the remarks
         Clear-Host
 
         # Redirect back to the main menu
@@ -103,16 +104,18 @@ function main() {
  
         for ($i = 0; $i -lt $item.options.Count; $i++) {
 
-            if ($item.options[$i].name -Like "*$($theKey)*" -Or $item.options[$i].questions -Like "*$($theKey)*") {
-                Write-host "Search key was found in: $($item.name) -> [$($item.options[$i].name)]"
-                $results += "Search key was found in: $($item.name) -> [$($item.options[$i].name)]`n"
+            if ($item.options[$i].name -Like "*$($theKey)*" -Or $item.options[$i].remarks -Like "*$($theKey)*") {
+                # Write-Host "Search key was found in: " -NoNewline
+                Write-host "$($item.name)" -ForegroundColor Blue -NoNewline
+                Write-Host " -> [$($item.options[$i].name)]" -ForegroundColor Cyan
+                $results += "$($item.name) -> [$($item.options[$i].name)]`n"
             }
         }
     }
 
     if ($results.Count -ge 1) {
         Set-Clipboard $results
-        feedBack(5)
+        feedBack(2.4)
     } else {
         Write-Host "Nothing was found.. Try different variations of the key" -ForegroundColor Red
         Start-Sleep -Seconds 1
@@ -187,7 +190,7 @@ function main() {
         
         # Grabbing more data
         $txt = $options[$outputSelection].text
-        $questions = $options[$outputSelection].questions
+        $remarks = $options[$outputSelection].remarks
   
   
   
@@ -195,7 +198,7 @@ function main() {
         if ($theSubRes -ne $empty -And $txt.Length -ge $minLen) { 
             $fname = formatPrompt "Enter the first name of the user"
   
-            # Asking additional questions if that is indicated in the response name
+            # Asking additional remarks if that is indicated in the response name
             if ($options[$outputSelection].name -Like "*~*") { 
               $moreInfo = formatPrompt "Enter the additional data"
             }
@@ -203,7 +206,7 @@ function main() {
             # Replacing the values
             $txt = $txt `
                 -replace "{time}", "$(formatTime)" `
-                -replace "{fname}", $fname `
+                -replace "{fname}", "$($fname.Trim())" `
                 -replace "{phone}", "$($phone)" `
                 -replace "{hours}", "$($hours)" `
                 -replace "{days}", "$($days)" `
@@ -218,10 +221,10 @@ function main() {
             }
         }
   
-        # Handling the questions
+        # Handling the remarks
         Clear-Host
         Write-Host "[$($options[$outputSelection].name)]"
-        Write-Host $questions
+        Write-Host $remarks
   
         # Handling the items with no links 
         if ($null -eq $links) {
