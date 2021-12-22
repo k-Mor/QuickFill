@@ -975,7 +975,7 @@
           {
             "name": "Resetting voicemail passwords",
             "text": "",
-            "remarks": "\n\u2022 Make sure you check the extension in HelpOne before you escalate it over to Network. The link is below!\n\n",
+            "remarks": "\nRemarks\n----------\n\u2022 Make sure you check the extension in HelpOne before you escalate it over to Network. The link is below!\n\u2022 Make sure you put the extension and the location in the ticket!\n",
             "links": [
               {
                 "uri": "http://helpone/HelpOne/Update.aspx?AssetID=1",
@@ -986,23 +986,17 @@
           {
             "name": "Handheld radio concerns",
             "text": "",
-            "remarks": "\n\u2022 Escalate to Network - We do nothing with this\n\n"
+            "remarks": "\nRemarks\n----------\n\u2022 Escalate over to Network Eng\n\u2022 Make sure you get the location of the radios in the ticket\n"
           },
           {
             "name": "Any phone concerns",
             "text": "",
-            "remarks": "\n\u2022 Make sure you grab the extension before you escalate the concern. Grab the WHO, WHAT, WHERE as well and put it all in the ticket.\n\n"
+            "remarks": "\nRemarks\n----------\n\u2022 Make sure you grab the extension before you escalate the concern. Grab the WHO, WHAT, WHERE as well and put it all in the ticket.\n\n"
           },
           {
             "name": "Wireless / wired network issues",
             "text": "",
-            "remarks": "remarks to consider\n----------\n\u2022 Where are you?\n\u2022 Can you get onto any internet resources? Or is everything inaccessible?\n\u2022 When did you notice the network issues?\n\u2022 Have you tried to reboot your device?\n\u2022 Which network are you connected to? (PSDWIRELESS, PSDDEVICES etc.)\n\u2022 Try and remote in and identify anything obviously out of place.\n\t\u2022 Note that if you can remote in, they do have internet.\n\n",
-            "links": [
-              {
-                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FDestiny.one%7C8607bde9-9d23-4e96-9e97-072d0e55bd7a%2FHelpdesk%20Procedure%7C9b2cd6b0-b8e2-4e35-92f2-b9c05f510022%2F%29",
-                "label": "OneNote Notebook"
-              }
-            ]
+            "remarks": "\nRemarks\n----------\n\u2022 Some questions to consider\n\t\u2022 Where are you?\n\t\u2022 Can you get onto any internet resources? Or is everything inaccessible?\n\t\u2022 When did you notice the network issues?\n\t\u2022 Have you tried disconnecting from the PSDVPN?\n\t\u2022 Have you tried to reboot your device?\n\t\u2022 Which network are you connected to? (PSDWIRELESS, PSDDEVICES etc.)\n\u2022 Try and remote in and identify anything obviously out of place.\n\u2022 Note that if you can remote in, they do have internet.\n\u2022 If you can't determine the cause - escalate over to Network Eng.\n\u2022 Note that FaceBook pictures will typically not load on our wireless networks - this is by design. They have to hard-line in.\n\u2022 Staff member's / Student's can't connect personal devices to our wireless networks - only PSDGUEST. \n\u2022 No Credentials? No access. No exceptions.\n"
           },
           {
             "name": "Back",
