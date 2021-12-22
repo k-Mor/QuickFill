@@ -415,6 +415,11 @@
             ]
           },
           {
+            "name": "Bit locker recovery error",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Try and have the user restart their computer a few times\n\u2022 Head over to MME and see if they can give you the key\n\u2022 A device swap is an acceptable solution\n"
+          },
+          {
             "name": "Help I have a virus! (Chrome notifications)",
             "text": "Good {time} {fname},\nThank you for reaching out to the Helpdesk. We sincerely appreciate you taking the time to contact us, and we are always happy to help. For this particular concern, I think it would be best if you gave us a call at {phone} so we can speak with you directly. We are here {days}, {hours} answering calls if you have the time to do so.",
             "remarks": "\nRemarks\n----------\n\u2022 Rarely is there an actual virus to be concerned about in these situations. To resolve this:\n\t\u2022 Close whatever browser they are using by killing the application in Task Manager (See resource if you don't know how to do this)\n\t\u2022 Once the browser has closed, go and disable notifications for that browser\n\t\u2022 Close the browser, restart it and they are good to go!\n\t\u2022 There is no need to swap the device and you can safely assure them there is nothing to worry about.\n\u2022 Now, if they interacted with the malicious software and input their district credentials into any form, have them change their password / do it for them immediately.\n\u2022 For extra peace of mind, you can do a virus scan with Windows Defender - see the resource if you are unfamiliar.\n"
@@ -930,13 +935,7 @@
           {
             "name": "Microsoft account problems",
             "text": "",
-            "remarks": "\nRemarks\n----------\n\u2022 Escalate to Sys. Eng. Team\n",
-            "links": [
-              {
-                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FeSchoolPLUS.one%7C3052b7e6-5603-4085-adac-3f31900f2d11%2FeSchoolPLUS%20Admin%20Mobile%20App%7C993573e7-59a9-46ac-a9dc-9904cb48862c%2F%29",
-                "label": "OneNote Notebook"
-              }
-            ]
+            "remarks": "\nRemarks\n----------\n\u2022 Escalate if:\n\t\u2022 Wrong profile picture\n\t\u2022 Microsoft account errors\n\t\u2022 Wrong name / email combination\n\t\u2022 You can't find a quick resolution to the problem\n"
           },
           {
             "name": "SharePoint access requests",
@@ -946,35 +945,23 @@
           {
             "name": "Y-Drive concerns / access requests",
             "text": "",
-            "remarks": "\nRemarks\n----------\n\u2022 Access requests have to be escalated\n\u2022 If someone is not able to get to the Y drive:\n",
+            "remarks": "\nRemarks\n----------\n\u2022 Access requests have to be escalated\n\u2022 If someone is not able to get to the Y drive:\n\t\u2022 Make sure the drive is mapped properly\n\t\u2022 Ensure that they are on the correct network - PSDWIRELESS \n\t\u2022 Ensure that the PSDVPN is disconnected\n\t\u2022 If they still are not able to connect - escalate over to Sys. Eng.\n",
             "links": [
               {
-                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={e6d1618c-ea4b-4d75-8dba-ebf58836a389}&action=edit&wd=target%28To%20View%20Parent%20Access%20Codes%20for%20Students%7C41bb2cd5-f963-41bd-805c-a970f0c80cf1%2F%29",
-                "label": "How to find parent access code"
+                "uri": "https://support.microsoft.com/en-us/windows/map-a-network-drive-in-windows-10-29ce55d1-34e3-a7e2-4801-131475f9557d",
+                "label": "How to map a network drive"
               }
             ]
           },
           {
             "name": "Email access requests",
             "text": "",
-            "remarks": "\n\u2022 Escalate to Sys. Eng. Team\n\n",
-            "links": [
-              {
-                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FOpenText.one%7Cf5adcb3a-69e9-4ac0-93f2-cdf38e0c741a%2FOpenText%7Cf6d7aad5-1c5c-49e4-afec-2713a3172dcc%2F%29",
-                "label": "OneNote Notebook"
-              }
-            ]
+            "remarks": "\nRemarks\n----------\n\u2022 Escalate over to Sys. Eng\n"
           },
           {
             "name": "Adding a printer to Printix",
             "text": "",
-            "remarks": "\n\u2022 Escalate to Sys. Eng. Team\n\n",
-            "links": [
-              {
-                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FQuaver.one%7C52ad947d-a6dc-4bb5-8508-d12f5758f8fb%2FTouch%5C%2FWhiteboard%20Troubleshooting%7Cfa51ce49-56c7-4796-a36f-fb0703943d64%2F%29",
-                "label": "OneNote Notebook"
-              }
-            ]
+            "remarks": "\nRemarks\n----------\n\u2022 Escalate over to Sys. Eng\n"
           },
           {
             "name": "Back",
