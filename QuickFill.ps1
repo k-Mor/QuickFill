@@ -99,7 +99,7 @@ function main() {
 # grows exponentially  
   function doSearch($theMainMenu, $theKey) {
 
-    $results
+    $results += "You searched for: $($theKey)`n`n"
     foreach ($item in $theMainMenu.options) {
  
         for ($i = 0; $i -lt $item.options.Count; $i++) {
