@@ -1,13 +1,16 @@
 <#
     Author: Kaleb Moreno
-    Version: 12/10/21
+    Version: 2022.01.01
 
     .DESCRIPTION
-        The purpose of this script is to.. 
+        The purpose of his script is to allow Helpdesk techs to do their jobs more efficiently 
+        by giving them the responses and resources that they use on a frequent basis. In the 
+        attached response file, there are a variety of remarks on specific selected issues that give
+        newer and more established techs alike things to consider.
 
 
 
-    Copyright © 2021 Kaleb Moreno
+    Copyright © 2022 Kaleb Moreno
 
     Permission is hereby granted, free of charge, 
     to any person obtaining a copy of this software and associated documentation files (the “Software”), 
@@ -23,45 +26,40 @@
 
 #>
         
-
-
-
-# TODO make the unicode easier to change / replace
+# Program driver 
 function main() {
-
-    # Create the enviornment to run scripts
-    # Set-ExecutionPolicy -ExecutionPolicy Bypass
-    
-    # General vars
     $terminate = -1
     $mainMenu = $jsonFileObject.mainMenu
     $api = "https://quickfill.herokuapp.com/"
     
     # First set the location
-    # TODO : Configure the relative path 
-    Set-Location 'C:\Users\MorenKS\myStuff\QuickFill'
-    # Set-Location "C:\myStuff" #laptop
-    # Set-Location "C:\Users\Kaleb\OneDrive\Documents"
-  
-  
-    # Get the custom JSON file if one exists
-    $jsonFileObject = Get-Content '.\newResponses.json' | Out-String | ConvertFrom-Json
+    Set-Location "C:\myStuff" #TODO: C:\QuickFill
   
     # Prompt for response file type
-    $fileResponse = formatPrompt "Would you like to use the corporate response file?"
+    $fileResponse = formatPrompt "Would you like to use a custom response file?"
     
     # If the user wants to use the API that I wrote for this program
     if ($fileResponse -Like "*y*") {
-        $jsonFileObject = Invoke-restmethod -Uri $api
+        $jsonFileObject = Get-Content '.\newResponses.json' | Out-String | ConvertFrom-Json
+    } else {
+
+        # Default to the API for the response file
+        try {
+            $jsonFileObject = Invoke-restmethod -Uri $api 
+        }
+        catch {
+            Write-Host "There was an error connecting to the API..`nCheck your internet connection."
+        }
     }
 
+    # Clearing for the main menu
     Clear-Host
   
     # Grabbing the main menu
     $mainMenu = $jsonFileObject.mainMenu
   
     # Show the main menu
-    Write-Host "QuickFill App $([char]0x00A9) Kaleb Moreno`nVersion: 12/21`n" -ForegroundColor DarkGray
+    Write-Host "QuickFill App $([char]0x00A9) Kaleb Moreno`nVersion: 22.01.01`n" -ForegroundColor DarkGray
     showMenu $mainMenu
   
     while ($userResponse -ne $terminate) { 
@@ -82,7 +80,6 @@ function main() {
     
             # Get an option from the sub menu
             formatResponses $jsonFileObject $mainMenu $userResponse
-
          }
 
         # Clear the remarks
@@ -90,22 +87,20 @@ function main() {
 
         # Redirect back to the main menu
         showMenu $mainMenu
-
-
     }
   }
   
-# O(n)^2 searching algorithm that works effeciently on small n - may need revision if n
-# grows exponentially  
+# O(n)^2 searching algorithm that works effeciently on small n - may need revision if n continues to
+# grow
   function doSearch($theMainMenu, $theKey) {
+    $results = "You searched for: $($theKey)`n`n"
+    $initialLen = $results.Length
+    $minVal = 2
+    $delay = 2.4
 
-    $results += "You searched for: $($theKey)`n`n"
     foreach ($item in $theMainMenu.options) {
- 
         for ($i = 0; $i -lt $item.options.Count; $i++) {
-
             if ($item.options[$i].name -Like "*$($theKey)*" -Or $item.options[$i].remarks -Like "*$($theKey)*") {
-                # Write-Host "Search key was found in: " -NoNewline
                 Write-host "$($item.name)" -ForegroundColor Blue -NoNewline
                 Write-Host " -> [$($item.options[$i].name)]" -ForegroundColor Cyan
                 $results += "$($item.name) -> [$($item.options[$i].name)]`n"
@@ -113,16 +108,17 @@ function main() {
         }
     }
 
-    if ($results.Count -ge 1) {
-        Set-Clipboard $results
-        feedBack(2.4)
+    if ($results.Length -ne $initialLen) { # ensuring a non null search
+        Set-Clipboard $results 
+        feedBack($delay)
     } else {
-        Write-Host "Nothing was found.. Try different variations of the key" -ForegroundColor Red
-        Start-Sleep -Seconds 1
+        Write-Host "Nothing was found.. Try different variations of the search" -ForegroundColor Red
+        Start-Sleep -Seconds $minVal
     }
   }
 
-
+  # The purpose of this function is to display the provided menus 
+  # In a consistent and clear format
   function showMenu($theJson) {
     
     # The menu header
@@ -138,9 +134,8 @@ function main() {
     Write-Host $dashes -ForegroundColor White
     Write-Host $header -ForegroundColor White
     Write-Host $dashes -ForegroundColor White
-    # Write-Host "`n"
      
-    # The options for the main menu
+    # The options for the menu
     for ($i = 0; $i -lt $options.name.Length; $i++) {
   
         # Changing the number designation from last indicie to -1
@@ -153,8 +148,10 @@ function main() {
     }
   }
   
+  # The purpose of this function is to get the sub menus that live
+  # inside of the parent menu
   function getSubMenu($theMainMenu, $theRes) { 
-  
+
     # Clearing previous menus when moving between them
     Clear-Host
   
@@ -164,18 +161,19 @@ function main() {
     }
   }
   
-  
-  
+  # The purpose of this function is to format the responses, replace the dynamic data 
+  # interact with the clipboard, and open links when the user selects that option
   function formatResponses($theJSONFile, $theMainMenu, $theSubRes) {
     $terminate = -1
     $empty = 0
     $minLen = 1
     $options = $theMainMenu.options[$theSubRes].options
+    $delay = 1.4
   
     # Grabbing an additional response for indexing
     $outputSelection = formatPrompt "Select an option"
     
-    # This condition is checking for two things - the termination character
+    # This condition is checking for two things - the termination characters
     # And if the last menu item is selected. This is the reserved spot for sub menu termination
     if ($theSubRes -ne $terminate -And $options[$outputSelection] -ne $options[$terminate]) {
   
@@ -192,13 +190,11 @@ function main() {
         $txt = $options[$outputSelection].text
         $remarks = $options[$outputSelection].remarks
   
-  
-  
         # If user just wants resources skip all this
         if ($theSubRes -ne $empty -And $txt.Length -ge $minLen) { 
             $fname = formatPrompt "Enter the first name of the user"
   
-            # Asking additional remarks if that is indicated in the response name
+            # Asking for additional data if that is indicated by the special char ~
             if ($options[$outputSelection].name -Like "*~*") { 
               $moreInfo = formatPrompt "Enter the additional data"
             }
@@ -213,11 +209,10 @@ function main() {
                 -replace "{APlink}", "$($APlink)" `
                 -replace "{data}", "$($moreInfo)"
     
-            
             # User feedback
             if ($txt.Length -ge $minLen -And $null -ne $txt) {
                 Set-Clipboard -value $txt
-                feedback(1.4)
+                feedback($delay)
             }
         }
   
@@ -235,20 +230,24 @@ function main() {
         foreach ($link in $links) {
             openLink($link)
         }
-        
     }
   }
   
+  # The purpose of this function is to provide an element of user feedback
+  # When the program interacts with the system's clipboard
   function feedBack($theTime) {
     Write-Host "`n** Item was copied to your clipboard **`n" -ForegroundColor DarkGreen
     Start-Sleep -Seconds $theTime
   }
   
+  # The purpose of this function is to create a uniform and eye-catching prompt 
+  # So that the user knows when their input is expected
   function formatPrompt($thePrompt) {
     return "$(Write-Host "$($thePrompt): " -ForegroundColor Red -NoNewline) $(Read-Host)"
   }
   
-  
+  # The purpose of this function is to to ensure that the responses are 
+  # using the correct time of day in them
   function formatTime() {
     $currentTime = Get-Date -Format HH
     $returnVal = $null
@@ -263,9 +262,10 @@ function main() {
     return $returnVal
   }
   
-  
+  # The purpose of this function is to open links with Chrome as the initial browser
+  # Then Edge as the secondary browser should CHrome not be found
   function openLink($theLink) {
-    $delayTime = 1.4
+    $delay = 1.4
   
     # Handling the documentation links
     $openLinks = formatPrompt "Do you need this resources? ($($theLink.label))"
@@ -279,17 +279,9 @@ function main() {
             $browser = "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
             Start-Process $browser -ArgumentList $theLink.uri
         }
-        Start-Sleep $delayTime
+        Start-Sleep $delay
     }
-  }
-  
-  
-  #TODO
-  function initCustomResponses() {
-  
   }
   
   # Starting the App
   Main
-
-  
