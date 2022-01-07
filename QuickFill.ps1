@@ -31,9 +31,6 @@ function main() {
     $terminate = -1
     $mainMenu = $jsonFileObject.mainMenu
     $api = "https://quickfill.herokuapp.com/"
-    
-    # First set the location
-    Set-Location "C:\myStuff" #TODO: C:\QuickFill
   
     # Prompt for response file type
     $fileResponse = formatPrompt "Would you like to use a custom response file?"
@@ -63,7 +60,7 @@ function main() {
     showMenu $mainMenu
   
     while ($userResponse -ne $terminate) { 
-        $userResponse = formatPrompt "Enter a sub option"
+        $userResponse = formatPrompt "Enter an option"
         
         # Breaking the loop if the input is -1
         if ($userResponse -like "*$($terminate)*") { break }
