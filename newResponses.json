@@ -49,9 +49,9 @@
             ]
           },
           {
-            "name": "#TODO: How to check Avaya Voicemail",
+            "name": "How to check Avaya Voicemail",
             "text": "",
-            "remarks":"\nRemarks\n----------\n\u2022 "
+            "remarks":"\nRemarks\n----------\n\u2022 Click on the VM symbol in Avaya\n\u2022 Dial 5901 as the VM extension\n\u2022 Input the default password 2580 and follow the prompts"
           },
           {
             "name": "Helpful Helpdesk Guide",
@@ -175,6 +175,10 @@
             "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. We sincerely appreciate you taking the time to contact us, and we are always happy to help. For this particular concern, I think it would be best if you gave us a call at {phone} so we can speak with you directly. We are here {days}, {hours} answering calls if you have the time to do so."
           },
           {
+            "name": "Thank you for calling",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. We sincerely appreciate you taking the time to contact us, and we are always happy to help. I'm glad I was able to resolve your concern and you're more than welcome to give us another call at {phone}, {days}, {hours} if you need anything else."
+          },
+          {
             "name": "What is your extension?",
             "text": "Good {time} {fname},\n\nThank you for reaching out. We at the Helpdesk are always happy to provide technical assistance. We need to know what the extension is for that phone. If you can simply reply back to this email with that 4 digit extension, we can pursue a resolution for you.\n\nIf you have additional concerns, feel free to give us a call at {phone}, {days}, {hours}."
           },
@@ -217,7 +221,7 @@
           {
             "name": "Assign To TLP ~ [Room #]",
             "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. This ticket has been assigned to your library's Technology Learning Paraeducator (TLP), so that they are aware of the issue and can coordinate with you to resolve it. If you have any concerns about this service request, please feel free to give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!\n\n\u26A0 Room Number / Location: {data}",
-            "remarks": "\nRemarks\n----------\n\u2022 Make sure you send the TLP the ticket via TOPdesk. Their emails are in the resource below.\n\u2022 Note that student's don't need prior approval to swap out a device as of: 12/21\n",
+            "remarks": "\nRemarks\n----------\n\u2022 Make sure you send the TLP the ticket via TOPdesk. Their emails are in the resource below.\n\u2022 Note that students don't need prior approval to swap out a device as of: 12/21\n",
             "links": [
               {
                 "uri": "https://puyallupsd.sharepoint.com/:x:/r/sites/PSD-EdTec2-TechSupport/_layouts/15/doc2.aspx?action=edit&sourcedoc=%7B9469AAD7-961C-4F7D-9D0D-0AB542BB15AB%7D",
@@ -253,7 +257,7 @@
           {
             "name": "Facilities",
             "text": "Good {time} {fname},\n\nWe appreciate you reaching out to the Helpdesk and we are always happy to help. However, this concern is not something that is handled by the Helpdesk, or Edtec as a whole. You will need to contact Facilities. Have an excellent rest of your day!",
-            "remarks": "\nRemarks\n----------\n\u2022 Badge access\n\u2022 Doors\n\u2022 Heating and cooling\n\u2022 Intercoms\n\u2022 Clocks\n"
+            "remarks": "\nRemarks\n----------\n\u2022 Badge access\n\u2022 Doors\n\u2022 Heating and cooling (HVAC)\n\u2022 Intercoms\n\u2022 Clocks\n"
           },
           {
             "name": "Human Resources",
@@ -279,11 +283,13 @@
           },
           {
             "name": "IEP Online",
-            "text": "Good {time} {fname},\n\nWe appreciate you reaching out to the Helpdesk and we are always happy to help. However, this concern is not something that is handled by the Helpdesk, or Edtec as a whole. You will need to contact Margaret Mason for IEP related concerns. Have an excellent rest of your day!"
+            "text": "Good {time} {fname},\n\nWe appreciate you reaching out to the Helpdesk and we are always happy to help. However, this concern is not something that is handled by the Helpdesk, or Edtec as a whole. You will need to contact Margaret Mason for IEP related concerns. Have an excellent rest of your day!",
+            "remarks": "\nRemarks\n----------\n\u2022 Have them contact Margaret Mason\n"
           },
           {
             "name": "SafeSchools",
             "text": "Good {time} {fname},\n\nWe appreciate you reaching out to the Helpdesk and we are always happy to help. However, this concern is not something that is handled by the Helpdesk, or Edtec as a whole. You will need to contact Megan Davis at ESC. Have an excellent rest of your day!",
+            "remarks": "\nRemarks\n----------\n\u2022 Have them contact Megan Davis at ESC\n",
             "links": [
               {
                 "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FSafeSchools.one%7C31512376-f0f2-4631-a3de-522746071dbe%2FSchool%20Information%7C72445585-6c40-4a5e-a628-80bb6383355d%2F%29",
@@ -294,7 +300,7 @@
           {
             "name": "Assessments",
             "text": "Good {time} {fname},\n\nWe appreciate you reaching out to the Helpdesk and we are always happy to help. However, this concern is not something that is handled by the Helpdesk, or Edtec as a whole. You will need to contact the Assessments Department. Have an excellent rest of your day!",
-            "remarks": "\nRemarks\n----------\n\u2022 Acadience\n\u2022 Dibels\n\u2022 OSPI(TIDE) - Have them contact Brian Powell specifically\n\u2022 OSPI(EDS) - Push over a ticket to EdApps for Kylie\n\u2022 WAKIDS - Account setup, classes, importing students\n\u2022 WCAP Portal"
+            "remarks": "\nRemarks\n----------\n\u2022 Acadience\n\u2022 Dibels\n\u2022 OSPI(TIDE) - Have them contact Brian Powell specifically\n\u2022 OSPI(EDS) - Push over a ticket to EdApps for Kylie\n\u2022 WAKIDS - Account setup, classes, importing students\n\u2022 WCAP Portal\n"
           },
           {
             "name": "Back",
@@ -308,7 +314,7 @@
           {
             "name": "Document Cameras",
             "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. There are a few things we can try with document cameras that resolve many of the common issues teachers run into. First, ensure the following are in good order:\n\n\u2022 Check the power cable at the wall, and camera levels. If either side of the cable is loose, that could cause a variety of problems\n\n\u2022 Make sure that the video cable (HDMI) is firmly seated in both the camera, and the other end of the cable. The HDMI cable must be in the 'HDMI out' port in the document camera\n\n\u2022 Note that when booting up, the power light on the camera will flash red for about 3 seconds. After that, press the power button once and the light should turn green\n\n\u2022 Check the status of the power light. If it is amber or orange, check the switch on the right-side of the body, and ensure the little black switch is set to 'RGB.'\n\nIf all these things look in order, and you are still having trouble using your document camera, we may need to send out a building technician to your room. You're more than welcome to give us a call at {phone}, {days}, {hours} to address this further. Have a wonderful rest of your day!",
-            "remarks": "\nRemarks\n----------\n\u2022 What is the model number? Ex. F70W\n\u2022 What color is the light above the power button?\n\t\u2022 Green means good to go\n\t\u2022 Amber means check RGB Switch\n\t\u2022 Red means the camera is off\n\t\u2022 Flashing red means the camera is booting up\n\u2022 Have you checked to make sure the HDMI cable is plugged into the HDMI Out port on the camera?\n\u2022 Is the little black switch set to RGB?\n\u2022 When did you notice it stopped working?\n\u2022 Have you cycled through the available HDMI options on the TV?\n\u2022 Has anything changed about your setup that you are aware of?\n\u2022 Consider escalating to a Building Tech if none of these resolved the concern - don't forget the room #!\n",
+            "remarks": "\nRemarks\n----------\n\u2022 What is the model number? Ex. F70W\n\u2022 What color is the light above the power button?\n\t\u2022 Green means good to go\n\t\u2022 Amber means check RGB Switch\n\t\u2022 Red means the camera is off\n\t\u2022 Flashing red means the camera is booting up\n\u2022 Have you checked to make sure the HDMI cable is plugged into the HDMI Out port on the camera?\n\u2022 Is the little black switch set to RGB?\n\u2022 When did you notice it stopped working?\n\u2022 Have you cycled through the available HDMI options on the TV?\n\u2022 Has anything changed about your setup that you are aware of?\n\u2022 Consider escalating to a Building Tech if none of these pinpointed the concern - don't forget the room #!\n",
             "links": [
               {
                 "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Hardware%2FDocument%20Camera.one%7Ca7d74578-093f-41c5-8118-c5be8678af5c%2FAverVision%20HD%20User%20Manual%20F70W%7Cfe091930-3bda-4a9e-a746-40bf206c3d0a%2F%29",
@@ -319,7 +325,7 @@
           {
             "name": "ActionTecs",
             "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. There are a few things you can try when it comes to troubleshooting Actiontecs (Black starfish on the wall above, beside, or behind your classroom television).\n\nAttempt the following:\n\n\u2022 Disconnect from the Actiontec on your computer if you are connected to it\n\n\u2022 Locate the Actiontec and unplug the power cable for several seconds\n\n\u2022 Plug the power cable back in and wait for the blue LED light to shine\n\n\u2022 Go back to your computer and attempt to connect to it\n\n\u2022 If prompted for a code input: 12345670\n\n\u2022 If you still can't connect, or you can't see your device, attempt to run all of the required and optional updates, then restart it. If you do not know how to run the optional updates, check out this link:\nhttps://pureinfotech.com/install-optional-updates-windows-10/ \n\n\u2022 If you can now connect, but can't see an image on the TV, you may need to ensure you are on the correct HDMI input\n\n\u2022 If all that checks out, ensure the 'Display Settings' on your computer are what you expect. Often times staff intend to 'Duplicate' a display, but the setting is instead set to 'Extend. Here is a detailed guide that covers the ins and outs of configuring your display settings:\nhttps://www.amd.com/en/support/kb/faq/dh-009 \n\nIf you have any concerns about these steps, or they did not work, please feel free to give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!",
-            "remarks": "\nRemarks\n----------\n\u2022 Do you see a blue light coming out of the black starfish? (Has power if so)\n\u2022 Do you know where to go to connect to a wireless display?\n\t\u2022 Search for 'Connect to a wireless display' in the task bar's search function\n\t\u2022 Scroll to the bottom of the page and select 'Connect to a wireless display'\n\t\u2022 Select the room number's Actiontec\n\t\u2022 Enter 12345670 if prompted to\n\u2022 Have you checked to ensure your display settings are what you expect?\n\u2022 Have you power-cycled the Actiontec, forgotten it on your device, then reversed the process?\n\u2022 When did you notice it stopped working?\n\u2022 Have you cycled through the available HDMI options on the TV?\n\u2022 Has anything changed about your setup that you are aware of?\n\u2022 Consider escalating to a Building Tech if none of these resolved the concern - don't forget the room #!",
+            "remarks": "\nRemarks\n----------\n\u2022 Do you see a blue light coming out of the black starfish? (Has power if so)\n\u2022 Do you know where to go to connect to a wireless display?\n\t\u2022 Search for 'Connect to a wireless display' in the task bar's search function\n\t\u2022 Scroll to the bottom of the page and select 'Connect to a wireless display'\n\t\u2022 Select the room number's Actiontec\n\t\u2022 Enter 12345670 if prompted to\n\u2022 Have you checked to ensure your display settings are what you expect?\n\u2022 Have you power-cycled the Actiontec, forgotten it on your device, then reversed the process?\n\u2022 When did you notice it stopped working?\n\u2022 Have you cycled through the available HDMI options on the TV?\n\u2022 Has anything changed about your setup that you are aware of?\n\u2022 Consider escalating to a Building Tech if none of these resolved the concern - don't forget the room #!\n",
             "links": [
               {
                 "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Hardware%2FActiontec.one%7Cfdfae724-b404-4501-b406-c45375e536d4%2FActiontec%20for%20Windows%2010%7C75e55bbf-8058-45b9-8a1f-0300e784dc49%2F%29",
@@ -329,7 +335,7 @@
           },
           {
             "name": "NewLine",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. There are a few \nRemarks when it comes to troubleshooting your classroom television.\n\nAttempt the following:\n\n\u2022 First, look at the home screen of your TV and take note of the right-hand side. If there is a valid input signal, you will see one of the 'HDMI' boxes illuminated. This is great if you do! It means that your Actiontec (Black starfish on the wall above, beside, or behind your classroom television) is connected to the TV, and the TV is able to talk to it. That is the input you want your TV to be set to\n\n\u2022 If you are in a newer elementary school, locate the black box on the left-hand side of your television to switch between those HDMI options if you need to. Otherwise, you can use the touchscreen function to switch between the HDMI inputs if necessary\n\n\u2022 If everything looks good with the HDMI input, then your issue likely rests with your Actiontec\n\nIf you need more information, or you think your Actiontec is to blame, please feel free to respond back to this ticket for more information, or give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!\n\nHere is the user manual if you would like to dive deeper into a specific topic: https://newline-interactive.com/wp-content/uploads/2019/01/TRUTOUCH-VN_User-Manual.pdf",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. There are a few things to consider when it comes to troubleshooting your classroom television.\n\nAttempt the following:\n\n\u2022 First, look at the home screen of your TV and take note of the right-hand side. If there is a valid input signal, you will see one of the 'HDMI' boxes illuminated. This is great if you do! It means that your Actiontec (Black starfish on the wall above, beside, or behind your classroom television) is connected to the TV, and the TV is able to talk to it. That is the input you want your TV to be set to\n\n\u2022 If you are in a newer elementary school, locate the black box on the left-hand side of your television to switch between those HDMI options if you need to. Otherwise, you can use the touchscreen function to switch between the HDMI inputs if necessary\n\n\u2022 If everything looks good with the HDMI input, then your issue likely rests with your Actiontec\n\nIf you need more information, or you think your Actiontec is to blame, please feel free to respond back to this ticket for more information, or give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!\n\nHere is the user manual if you would like to dive deeper into a specific topic: https://newline-interactive.com/wp-content/uploads/2019/01/TRUTOUCH-VN_User-Manual.pdf",
             "remarks": "\nRemarks\n----------\n\u2022 More often then not, Newline concerns are actually Actiontec concerns. See that menu item for more details\n\u2022 Staff frequently forget that there is a little black box on the back of the TV that allows them to cycle the HDMI input options. Use that if necessary\n\u2022 Every so often, staff want to use the whiteboard functionality - this is in the user manual\n\u2022 Note that when the TV detects input on an HDMI option, the option will appear solid white on the screen\n\u2022 If there is something physically wrong with the device - escalate over to a tech and don't forget the room #!\n",
             "links": [
               {
@@ -409,6 +415,17 @@
         "name": "General Software Concerns",
         "options": [
           {
+            "name": "DRC Insights - WIDA Assessments",
+            "text": "",
+            "remarks":"\nRemarks\n----------\n\u2022 Make sure you install the DRC app in Company Portal\n\u2022 Follow the steps in the guide!\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/:w:/s/PSD-EdTec2-TechSupport/EcxYvLjPFmVJv0r9BRznfnIB_SJS4FKOQakmixo7LblvUQ?e=5YEXwl",
+                "label": "Troubleshooting Guide"
+              }
+            ]
+          },
+          {
             "name": "Suspicious Emails",
             "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. We appreciate you taking the time to contact us and we are always happy to help. When it comes to suspicious emails, there is no need to call or email us as Outlook has an excellent tool that does that on your behalf.\n\nIf you simply select 'Report Message' from the upper right-hand side of the application window, you can then select 'Phishing' and that will both remove the email from your inbox, then report that message to Microsoft and our security team. If you have remarks or concerns, you are more than welcome to give us a call at {phone}, {days}, {hours}.\n\n\u26A0 If you have interacted with a suspicious email and provided any district login information, please change your password immediately by doing the following:\n\n\u2022 Hit CTRL + ALT + DEL on your keyboard\n\n\u2022 Select 'Change a password'\n\n\u2022 Follow the prompts to change your password\n\n\u2022 Log out of your computer, then log back in with the new password",
             "remarks": "\nRemarks\n----------\n\u2022 See the link on how to report a message in Outlook. That's all they have to do.\n",
@@ -470,8 +487,30 @@
             ]
           },
           {
+            "name": "REI Video Software - .HD5 files",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Windows sometimes tries to open .HD5 files in Windows Media Player - just set the default app for that file type back to REI\n",
+            "links": [
+              {
+                "uri": "https://techforluddites.com/windows-10-change-the-default-programs-for-opening-files/#:~:text=Use%20the%20Open%20With%20command,select%20it%20and%20click%20OK.",
+                "label": "How to report a message in Outlook"
+              }
+            ]
+          },
+          {
+            "name": "Time is off - W32Time service",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Restart the service Windows Time service (W32Time) in services.msc\n\u2022 Search for 'Date and Time Settings' in the Start Menu and click on Sync\n\u2022 Both of these require thelper creds\n",
+            "links": [
+              {
+                "uri": "https://techforluddites.com/windows-10-change-the-default-programs-for-opening-files/#:~:text=Use%20the%20Open%20With%20command,select%20it%20and%20click%20OK.",
+                "label": "How to report a message in Outlook"
+              }
+            ]
+          },
+          {
             "name": "Resetting Passwords",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. We would be happy to work with you to reset your password, however, we have policies in place to protect our staff and students. In order for us to reset your password, you will have to give us a call at {phone}, {days}, {hours}.\nThis is so that we can verify your identity, ask some security remarks and ensure that your account stays as secure as possible. Thanks for understanding, and we look forward to assisting you soon.",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. We would be happy to work with you to reset your password, however, we have policies in place to protect our staff and students. In order for us to reset your password, you will have to give us a call at {phone}, {days}, {hours}. This is so that we can verify your identity, ask some security remarks and ensure that your account stays as secure as possible. Thanks for understanding, and we look forward to assisting you soon.",
             "remarks": "\nRemarks\n----------\n\u2022 For students:\n\t\u2022 Make sure that you verify their student ID (Lunch Number)\n\t\u2022 Ask them to verify a teachers name on their schedule - check eSchools\n\t\u2022 Ask them to verify their birth date\n\t\u2022 Use the 'Password Reset Tool' which can be downloaded from Company Portal\n\u2022 For staff:\n\t\u2022 Verify their employee ID number\n\t\u2022 If they don't know it, get last 4 of social and verify in Business Plus\n",
             "links": [
               {
@@ -481,13 +520,13 @@
             ]
           },
           {
-            "name": "#TODO: OneNote Notebook troubleshooting",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. We would be happy to work with you to reset your password, however, we have policies in place to protect our staff and students. In order for us to reset your password, you will have to give us a call at {phone}, {days}, {hours}.\nThis is so that we can verify your identity, ask some security remarks and ensure that your account stays as secure as possible. Thanks for understanding, and we look forward to assisting you soon.",
-            "remarks": "\nRemarks\n----------\n\u2022 For students:\n\t\u2022 Make sure that you verify their student ID (Lunch Number)\n\t\u2022 Ask them to verify a teachers name on their schedule - check eSchools\n\t\u2022 Ask them to verify their birth date\n\t\u2022 Use the 'Password Reset Tool' which can be downloaded from Company Portal\n\u2022 For staff:\n\t\u2022 Verify their employee ID number\n\t\u2022 If they don't know it, get last 4 of social and verify in Business Plus\n",
+            "name": "OneNote Notebook troubleshooting",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. OneNote is a tricky application that our instructional coaches know better than anyone. If you would like to coordinate a time with one of them for deeper assistance, feel free to contact Jeremy Roy or Jennifer Matthews via email. There are however a few things you can do to troubleshoot the application. First, search for the application in your start menu. Once you find that, select the 'App Settings' on the right with the little gear next to it. This will bring you to a settings page on which you can click on the 'Terminate', 'Repair', 'Reset' options in that order. Note that when you 'Reset' OneNote, you will have to go back and add in the Notebooks manually. If this did not address your concern, feel free to give us a call at {phone}, {days}, {hours}.",
+            "remarks": "\nRemarks\n----------\n\u2022 Locate the 'App Settings' by searching for OneNote and clicking on 'App Settings'\n\u2022 Click on the 'Terminate' button to kill the app\n\u2022 Click on the 'Repair' button to repair the application\n\u2022 Click on the 'Reset' button to completely wipe OneNote. Note that you'll have to go in and add the notebooks manually afterwards.\n\u2022 You can try and do an Office Repair too\n\u2022 Try uninstalling / reinstalling the app if you're getting application specific errors\n",
             "links": [
               {
-                "uri": "https://businessplus.psd.local/screens/ui/uiscreens/cdd/S78E5A367-8DA6-4D4B-9915-4DA30EC531F:HR8920_SSN",
-                "label": "Business Plus Social Tool"
+                "uri": "https://www.alphr.com/onenote-add-new-notebook/",
+                "label": "How to add a notebook"
               }
             ]
           },
@@ -498,7 +537,7 @@
           },
           {
             "name": "Trusted Platform Module Error",
-            "text": "No common response for this error - It's tricky to identify sometimes",
+            "text": "",
             "remarks": "\nRemarks\n----------\n\u2022 Reboot, reboot, reboot\n\u2022 Try clearing credentials if that does not work\n\u2022 If it persists, approve them for a swap\n",
             "links": [
               {
@@ -579,7 +618,7 @@
           },
           {
             "name": "PSDVPN",
-            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. When it comes to the PSDVPN, there are a couple \nRemarks. One, you do not need to be connected to the VPN if you are at a school and on one of our networks. Second, the VPN does connect you to TAC, eSchools, BusinessPlus etc. - but only when you are outside of a district building. If you are having issues connecting to the VPN or are seeing error codes, please do give us a call so we can troubleshoot for you. If you are having trouble finding the VPN complete the following:\n\n\u2022 Move your mouse curser down to the right-hand side of the taskbar (The large rectangle on the bottom of the screen). \n\n\u2022 Look for either three curves, or a little computer with a plug next to it\n\n\u2022 Click that and at the top of that menu, look for PSDVPN\n\n\u2022 Click the PSDVPN, then select 'Connect'\n\nIf you have completed the above steps, and are not seeing the PSDVPN complete the next few steps:\n\n\u2022 Search for your 'Company Portal' by typing to search on the left-hand side of your taskbar\n\n\u2022 Open the Company Portal and allow a few moments to load\n\n\u2022 Look for a little gear icon on the lower left-hand side of the window and click that\n\n\u2022 At the top of the window, look for the 'Sync' button and click that\n\n\u2022 Allow up to an hour for this to complete then restart your computer\n\n\u2022 Once logged in, go back to the first set of instructions and look for your VPN.\n\nIf after completing all of these steps, you still do not see the VPN or are not able to connect to it, please give us a call at {phone}, {days}, {hours}. You can also reply back to this ticket to continue working with us. Have a wonderful rest of your day!",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. When it comes to the PSDVPN, there are a couple of things to consider. One, you do not need to be connected to the VPN if you are at a school and on one of our networks. Second, the VPN does connect you to TAC, eSchools, BusinessPlus etc. - but only when you are outside of a district building. If you are having issues connecting to the VPN or are seeing error codes, please do give us a call so we can troubleshoot for you. If you are having trouble finding the VPN complete the following:\n\n\u2022 Move your mouse curser down to the right-hand side of the taskbar (The large rectangle on the bottom of the screen). \n\n\u2022 Look for either three curves, or a little computer with a plug next to it\n\n\u2022 Click that and at the top of that menu, look for PSDVPN\n\n\u2022 Click the PSDVPN, then select 'Connect'\n\nIf you have completed the above steps, and are not seeing the PSDVPN complete the next few steps:\n\n\u2022 Search for your 'Company Portal' by typing to search on the left-hand side of your taskbar\n\n\u2022 Open the Company Portal and allow a few moments to load\n\n\u2022 Look for a little gear icon on the lower left-hand side of the window and click that\n\n\u2022 At the top of the window, look for the 'Sync' button and click that\n\n\u2022 Allow up to an hour for this to complete then restart your computer\n\n\u2022 Once logged in, go back to the first set of instructions and look for your VPN.\n\nIf after completing all of these steps, you still do not see the VPN or are not able to connect to it, please give us a call at {phone}, {days}, {hours}. You can also reply back to this ticket to continue working with us. Have a wonderful rest of your day!",
             "remarks": "\nRemarks\n----------\n\u2022 Disconnect from the VPN if the staff member is in a district building\n\u2022 Staff members must connect to the VPN in order to use TAC / eSchools / BusinessPlus from home\n\u2022 Sometimes a connection must be forced if a user can't connect the typical way.\n\t\u2022 Navigate over to: '%AppData%/Microsoft/Network/Connections/pbk' and run the 'rasphone.pbk' file. Follow the prompts and this will force a connection\n\u2022 Still can't connect, escalate to Sys. Eng. Team\n",
             "links": [
               {
@@ -710,7 +749,7 @@
             ]
           },
           {
-            "name": "eSchoolPLUS / TAC / HAC",
+            "name": "PowerSchool - eSchoolPLUS / TAC / HAC",
             "text": "",
             "remarks": "\nRemarks\n----------\n\u2022 eSchools:\n\t\u2022 There is a lot of information here and it's the source of everything in the district in terms of data\n\t\u2022 Here, you can reset HAC passwords for parents, check student schedules, find ID numbers, emails etc..\n\t\u2022 We do not do any troubleshooting however with eSchools with the exception of ensuring the VPN is on or off depending on if they are at home or work. Escalate to EdApps\n\u2022 TAC:\n\t\u2022 TAC is where teachers take attendance and perform teacher specific duties\n\t\u2022 We don't do anything with this either. Escalate to EdApps\n\u2022 HAC:\n\t\u2022 All we can do here is reset passwords for parent logins which is done in eSchools\n",
             "links": [
@@ -750,7 +789,7 @@
           {
             "name": "Schoology",
             "text": "",
-            "remarks": "\nRemarks\n----------\n\u2022 Here we can find Schoology access codes, reset passwords for parent logins and other troubleshooting.\n\u2022 Note that the search function in Schoology is very finicky and searching by first name, email or student ID only, tends to produce the best results.\n\u2022 You can also authorize OneDrive under 'Resources' in Schoology for assignment submission if necessary\n\u2022 The links detail the common things we have to do\n",
+            "remarks": "\nRemarks\n----------\n\u2022 Here we can find Schoology access codes, reset passwords for parent logins and other troubleshooting.\n\u2022 Note that the search function in Schoology is very finicky and searching by first name, email or student ID only, tends to produce the best results.\n\u2022 You can also authorize OneDrive under 'Resources' in Schoology for assignment submission if necessary\n\u2022 The links detail the common things we have to do\n\u2022 For more advanced concerns like missing courses / Grade Book / Rubrics- escalate over to EdApps\n",
             "links": [
               {
                 "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={e6d1618c-ea4b-4d75-8dba-ebf58836a389}&action=edit&wd=target%28To%20View%20Parent%20Access%20Codes%20for%20Students%7C41bb2cd5-f963-41bd-805c-a970f0c80cf1%2F%29",
@@ -765,6 +804,11 @@
                 "label": "General FAQ"
               }
             ]
+          },
+                    {
+            "name": "DreamBox",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Escalate over to EdApps - we don't do anything with this.\n"
           },
           {
             "name": "OpenText",
@@ -929,7 +973,7 @@
         "name": "Sys. Eng.",
         "options": [
           {
-            "name": "Advanced Outlook concerns",
+            "name": "Outlook concerns",
             "text": "",
             "remarks": "\nRemarks\n----------\n\u2022 Check out the troubleshooting guide for some direction\n\u2022 You can always try to repair Office - that tends to resolve a lot of persistent issues\n\u2022 Attempt to access the web app - if they can't escalate over to Sys. Eng.\n\u2022 Try uninstalling and reinstalling the app as well\n\u2022 Ultimately, try as much as you can but freely escalate over to Sys. Eng. if you can't figure it out\n",
             "links": [
@@ -940,7 +984,7 @@
             ]
           },
           {
-            "name": "Recurring OneDrive issues",
+            "name": "OneDrive issues",
             "text": "",
             "remarks": "\nRemarks\n----------\n\u2022 There are cases where a student's / staff member's OneDrive will not sync, no matter what device they are on. Escalate over to Sys. Eng. in these cases\n\u2022 If the OneDrive contains more than the device's storage capacity, see the attached link for troubleshooting\n\u2022 Sometimes pausing the sync process, then restarting it is a good way to force OneDrive to detect changes\n\u2022 Try and unlink the PC when OneDrive is misbehaving and the other steps don't work - see attached\n\u2022 Another thing you can try is killing OneDrive in Task Manager, then relaunching it\n\u2022 Escalate over to Sys. Eng. if you can't get OneDrive to behave\n",
             "links": [
@@ -1018,7 +1062,7 @@
           {
             "name": "Wireless / wired network issues",
             "text": "",
-            "remarks": "\nRemarks\n----------\n\u2022 Some questions to consider\n\t\u2022 Where are you?\n\t\u2022 Can you get onto any internet resources? Or is everything inaccessible?\n\t\u2022 When did you notice the network issues?\n\t\u2022 Have you tried disconnecting from the PSDVPN?\n\t\u2022 Have you tried to reboot your device?\n\t\u2022 Which network are you connected to? (PSDWIRELESS, PSDDEVICES etc.)\n\u2022 Try and remote in and identify anything obviously out of place.\n\u2022 Note that if you can remote in, they do have internet.\n\u2022 If you can't determine the cause - escalate over to Network Eng.\n\u2022 Note that FaceBook pictures will typically not load on our wireless networks - this is by design. They have to hard-line in.\n\u2022 Staff member's / Student's can't connect personal devices to our wireless networks - only PSDGUEST. \n\u2022 No Credentials? No access. No exceptions.\n"
+            "remarks": "\nRemarks\n----------\n\u2022 Some questions to consider\n\t\u2022 Where are you?\n\t\u2022 Can you get onto any internet resources? Or is everything inaccessible?\n\t\u2022 When did you notice the network issues?\n\t\u2022 Have you tried disconnecting from the PSDVPN?\n\t\u2022 Have you tried to reboot your device?\n\t\u2022 Which network are you connected to? (PSDWIRELESS, PSDDEVICES etc.)\n\u2022 Try and remote in and identify anything obviously out of place.\n\u2022 Note that if you can remote in, they do have internet.\n\u2022 For PSDGUEST ask them if they saw the 'splash page' and clicked 'Accept' - the device won't connect until this is complete\n\u2022 Have the user turn off and turn back on the WIFI\n\u2022 Have the user restart their device\n\u2022 Try and forget the network and rediscover it\n\u2022 If you can't determine the cause - escalate over to Network Eng.\n\u2022 Note that FaceBook / social media pictures will typically not load on our wireless networks - this is by design. They have to hard-line in.\n\u2022 Staff members / Students can't connect personal devices to our wireless networks - only PSDGUEST. \n\u2022 No Credentials? No access. No exceptions.\n"
           },
           {
             "name": "Back",
