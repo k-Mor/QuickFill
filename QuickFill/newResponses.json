@@ -1,0 +1,1102 @@
+{
+  "config": {
+    "phone": "253-841-8600",
+    "hours": "6:30AM to 4:00PM",
+    "APlink": "https://outlook.office365.com/owa/calendar/EdtecHelpdeskCalendar@puyallupsd.onmicrosoft.com/bookings/",
+    "days": "Monday - Friday",
+    "version": "2021.12.25"
+  },
+  "mainMenu": {
+    "name": "Main Menu",
+    "options": [
+      {
+        "name": "Helpdesk Resources",
+        "options": [
+          {
+            "name": "Tech Support OneNote",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Table%20of%20Contents.one%7C29205c67-b22c-4309-a123-6b90b5366d15%2FTable%20of%20Contents%20Page%7C17bd3ad6-f9fa-4d61-9ea0-9923fe878041%2F%29",
+                "label": "Tech Support OneNote"
+              }
+            ]
+          },
+          {
+            "name": "Approved Applications List",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/:x:/r/sites/PSD-EdTec2-TechSupport/_layouts/15/Doc.aspx?sourcedoc=%7B93B2B16A-A6AE-44DA-8FF4-F665E5F89978%7D&file=Copy%20of%20District%20Approved%20Application%20List%202020-21.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1",
+                "label": "Approved Applications List"
+              }
+            ]
+          },
+          {
+            "name": "Documentation Hub",
+            "links": [
+              {
+                "uri": "https://puyallupsd-my.sharepoint.com/personal/konsmdm_puyallup_k12_wa_us/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fkonsmdm%5Fpuyallup%5Fk12%5Fwa%5Fus%2FDocuments%2FTopDesk%2FDocumentation",
+                "label": "Devin's Documentation"
+              }
+            ]
+          },
+          {
+            "name": "HelpOne Voicemail System",
+            "links": [
+              {
+                "uri": "http://helpone/HelpOne/Update.aspx?AssetID=1",
+                "label": "Voicemail reset system"
+              }
+            ]
+          },
+          {
+            "name": "How to check Avaya Voicemail",
+            "text": "",
+            "remarks":"\nRemarks\n----------\n\u2022 Click on the VM symbol in Avaya\n\u2022 Dial 5901 as the VM extension\n\u2022 Input the default password 2580 and follow the prompts"
+          },
+          {
+            "name": "Helpful Helpdesk Guide",
+            "links": [
+              {
+                "uri": " https://puyallupsd-my.sharepoint.com/:x:/g/personal/morenks_puyallup_k12_wa_us/EWlq7yV6nbdLoNerhhbuML4BVpQcclNOuUzfrgJq5jIRTw?e=vZcWh3",
+                "label": "Helpful Helpdesk Guide"
+              }
+            ]
+          },
+          {
+            "name": "Phone List",
+            "text": "",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/PSD-EdTec2-TechSupport/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FPSD%2DEdTec2%2DTechSupport%2FShared%20Documents%2FTech%20Support%2F2019%2D20%20confidential%20phone%20%2D%20Work%20in%20Progress%2Epdf&parent=%2Fsites%2FPSD%2DEdTec2%2DTechSupport%2FShared%20Documents%2FTech%20Support",
+                "label": "Confidential Phone List"
+              }
+            ]
+          },
+          {
+            "name": "TLPs",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/:x:/r/sites/PSD-EdTec2-TechSupport/_layouts/15/doc2.aspx?action=edit&sourcedoc=%7B9469AAD7-961C-4F7D-9D0D-0AB542BB15AB%7D",
+                "label": "TLP List"
+              }
+            ]
+          },
+          {
+            "name": "Appointments Link",
+            "links": [
+              {
+                "uri": "https://outlook.office365.com/owa/calendar/EdtecHelpdeskCalendar@puyallupsd.onmicrosoft.com/bookings/",
+                "label": "Appointments Link"
+              }
+            ]
+          },
+          {
+            "name": "One Pagers",
+            "links": [
+              {
+                "uri": "https://puyallupsd-my.sharepoint.com/personal/hortoag_puyallup_k12_wa_us/_layouts/15/onedrive.aspx?view=4",
+                "label": "One Pagers"
+              }
+            ]
+          },
+          {
+            "name": "Student Teachers",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/:x:/r/sites/72/_layouts/15/Doc.aspx?sourcedoc=%7B96A3E69F-CA38-4FBF-84E8-868B98A1C8E2%7D&file=StudentTeachers2021-2022.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1",
+                "label": "Student Teachers List"
+              }
+            ]
+          },
+          {
+            "name": "Tech Regions",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/:x:/r/sites/PSD-EdTec2-TechSupport/_layouts/15/Doc.aspx?sourcedoc=%7BFBF336E8-27AB-4A7D-8DC5-526412AA7377%7D&file=Tech%20Regions%202021%20.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1",
+                "label": "Technician Regions"
+              }
+            ]
+          },
+          {
+            "name": "Xima",
+            "links": [
+              {
+                "uri": "https://ciwy9.acr.ximasoftware.com/ccagent/en/wallboards",
+                "label": "Phone System"
+              }
+            ]
+          },
+          {
+            "name": "TOPDesk",
+            "links": [
+              {
+                "uri": "https://puyallupsd.topdesk.net/tas/secure/mango/window/0?t=1623165266185",
+                "label": "TOPDesk"
+              }
+            ]
+          },
+          {
+            "name": "Policy & Procedure",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72-Docs/Policies-and-Procedures/HelpDesk",
+                "label": "P&P"
+              }
+            ]
+          },
+          {
+            "name": "Status Pages",
+            "links": [
+              {
+                "uri": "https://status.powerschool.com/",
+                "label": "Schoology / PowerSchool status page"
+              },
+              {
+                "uri": "https://portal.office.com/servicestatus",
+                "label": "Microsoft Services Health"
+              },
+              {
+                "uri": "https://securly.status.io/",
+                "label": "Securly DNS status page"
+              }
+            ]
+          },
+          {
+            "name": "Back",
+            "text": "Exit the resources menu"
+          }
+        ]
+      },
+      {
+        "name": "Quick Responses",
+        "options": [
+          {
+            "name": "Contact us",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. We sincerely appreciate you taking the time to contact us, and we are always happy to help. For this particular concern, I think it would be best if you gave us a call at {phone} so we can speak with you directly. We are here {days}, {hours} answering calls if you have the time to do so."
+          },
+          {
+            "name": "Thank you for calling",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. We sincerely appreciate you taking the time to contact us, and we are always happy to help. I'm glad I was able to resolve your concern and you're more than welcome to give us another call at {phone}, {days}, {hours} if you need anything else."
+          },
+          {
+            "name": "What is your extension?",
+            "text": "Good {time} {fname},\n\nThank you for reaching out. We at the Helpdesk are always happy to provide technical assistance. We need to know what the extension is for that phone. If you can simply reply back to this email with that 4 digit extension, we can pursue a resolution for you.\n\nIf you have additional concerns, feel free to give us a call at {phone}, {days}, {hours}."
+          },
+          {
+            "name": "Service Outage ~ [Service Name]",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. We sincerely appreciate you taking the time to contact us, and we are always happy to help. We are aware at this time that {data} is experiencing service disruptions, and we ask for your patience as we work to resolve it. If you have concerns outside of this reported outage, feel free to give us a call, or reply back {days}, {hours}. Have an excellent rest of your day!",
+            "links": [
+              {
+                "uri": "https://status.powerschool.com/",
+                "label": "Schoology / PowerSchool status page"
+              },
+              {
+                "uri": "https://portal.office.com/servicestatus",
+                "label": "Microsoft Services Health"
+              },
+              {
+                "uri": "https://securly.status.io/",
+                "label": "Securly DNS status page"
+              }
+            ]
+          },
+          {
+            "name": "Have you called?",
+            "text": "Good {time} {fname},\n\nThank you for reaching out. I'm just following up with you to see if you have been able to give us a call so that we can address your concerns? If you have not had time to call, replying to this email to let us know that you are still needing help would be your next best step. You can reach us at {phone}, {days}, {hours}."
+          },
+          {
+            "name": "General Troubleshooting",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. There are a few things you can try when it comes to troubleshooting common hardware or driver related issues.\n\nAttempt the following:\n\n\u2022 Search for 'Check for updates' in the lower left search bar on your taskbar\n\n\u2022 Once that menu opens up, select 'Check for updates'\n\n\u2022 After that process finishes, look for blue text that says 'View optional updates' on that same page. It is usually underneath the button to check for updates. If you do not know how to run the optional updates, check out this link:\nhttps://pureinfotech.com/install-optional-updates-windows-10/ \n\n\u2022 Allow those to finish, restart your computer, then attempt to use the hardware / software that you were initially trying to.\n\n\u2022 If you have a Kensington docking station at your desk, you may also want to power cycle that device as well, as that addresses many of the common display and audio issues staff members run into. To do this, locate the black cylindrical cable that is in the lowest possible port in the back panel. Unplug that cord, allow about 30 seconds to pass, plug the cord back in and see if that resolved your issue.\n\nIf you have concerns about these steps, or they did not work, please feel free to give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!",
+            "links": [
+              {
+                "uri": "https://pureinfotech.com/install-optional-updates-windows-10/",
+                "label": "How to install optional updates"
+              },
+              {
+                "uri": "https://puyallupsd-my.sharepoint.com/personal/hortoag_puyallup_k12_wa_us/_layouts/15/onedrive.aspx?view=4",
+                "label": "One Pagers"
+              }
+            ]
+          },
+          {
+            "name": "Assign To TLP ~ [Room #]",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. This ticket has been assigned to your library's Technology Learning Paraeducator (TLP), so that they are aware of the issue and can coordinate with you to resolve it. If you have any concerns about this service request, please feel free to give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!\n\n\u26A0 Room Number / Location: {data}",
+            "remarks": "\nRemarks\n----------\n\u2022 Make sure you send the TLP the ticket via TOPdesk. Their emails are in the resource below.\n\u2022 Note that students don't need prior approval to swap out a device as of: 12/21\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/:x:/r/sites/PSD-EdTec2-TechSupport/_layouts/15/doc2.aspx?action=edit&sourcedoc=%7B9469AAD7-961C-4F7D-9D0D-0AB542BB15AB%7D",
+                "label": "TLP List"
+              }
+            ]
+          },
+          {
+            "name": "Appointment Scheduling",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to us at the Helpdesk. Scheduling an appointment to pickup, swap, or drop off equipment is very easy to do, and you can do so by clicking this link:\n\n{APlink}\n\nor by completing the following steps:\n\n\u2022 Go to the Puyallup School District's website\n\n\u2022 Hover over the 'Staff' box on the upper right-hand side of the page\n\n\u2022 Click the Edtec Helpdesk link\n\n\u2022 Click 'Schedule an Appointment'\n\n\u26A0 Please note that all of our school's libraries typically have staff and student devices on hand that you can either check out, or swap with your current device. Often times, you can avoid having to make a trip to come see us by first checking with your school's library.\n\nIf you have additional remarks or concerns, feel free to give us a call at {phone}, {days}, {hours}.\n\n\u2022  Address: 1501 39th Ave. SW. Puyallup, WA. 98373",
+            "remarks": "\nRemarks\n----------\n\u2022 Teachers and students can perform device swaps at their school's libraries. \n\u2022 Students MUST go to their schools for a device swap. They will not come to Edtec unless otherwise directed.\n\u2022 Make sure you record the ticket number in the calendar appointment if you're scheduling the appointment for a caller.\n\u2022 Leave a brief description of why this appointment was scheduled, so other techs know what to expect.\n",
+            "links": [
+              {
+                "uri": "https://outlook.office365.com/owa/calendar/EdtecHelpdeskCalendar@puyallupsd.onmicrosoft.com/bookings/",
+                "label": "Appointments Link"
+              }
+            ]
+          },
+          {
+            "name": "Instructional Coaches",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. This concern would be best addressed by one of our instructional coaches who specialize in the software you're referring to. I encourage you to take some time to email one of them to schedule an appointment over Teams, or in person. Here is the most up to date information for the coaches:\n\nK-12 ELA (Reading, Writing) Gena Vincent and Jennifer Chavez\nK-12 Social Studies: Leslie Snyder, Jeanna Kooser\nK-12 Math: Priscilla Millan, Lizzie Herrera\nK-12 Science: Ann Schumacher, Joshua Simondet\nAP Matt White\n\nGLAD/EL Tabitha Aragon\nGLAD/CTE Jessica Anderson\n\nNew Teacher Induction/Mentoring: Sophia Monge, Candice McGregorTechnology: Jennifer Matthews, Jeremy Roy\n\nPlease feel free to give us a call at {phone}, {days}, {hours} if you have additional remarks. Have a wonderful rest of your day!",
+            "remarks": "\nRemarks\n----------\n\u2022 The coaches are great for setting up Teams meetings, OneNote Notebooks etc. \n\u2022 Coaches provide one on one training for staff in classroom technology as well. \n\u2022 Ask about current office hours!\n"
+          },
+          {
+            "name": "Back",
+            "text": "Exit the Quick Responses menu"
+          }
+        ]
+      },
+      {
+        "name": "Wrong Department",
+        "options": [
+          {
+            "name": "Facilities",
+            "text": "Good {time} {fname},\n\nWe appreciate you reaching out to the Helpdesk and we are always happy to help. However, this concern is not something that is handled by the Helpdesk, or Edtec as a whole. You will need to contact Facilities. Have an excellent rest of your day!",
+            "remarks": "\nRemarks\n----------\n\u2022 Badge access\n\u2022 Doors\n\u2022 Heating and cooling (HVAC)\n\u2022 Intercoms\n\u2022 Clocks\n"
+          },
+          {
+            "name": "Human Resources",
+            "text": "Good {time} {fname},\n\nWe appreciate you reaching out to the Helpdesk and we are always happy to help. However, this concern is not something that is handled by the Helpdesk, or Edtec as a whole. You will need to contact HR. Have an excellent rest of your day!",
+            "remarks": "\nRemarks\n----------\n\u2022 Staff accounts marked as inactive\n\u2022 Job applications\n\u2022 Employee ID numbers (You can choose to verify social with the link below)\n",
+            "links": [
+              {
+                "uri": "https://businessplus.psd.local/screens/ui/uiscreens/cdd/S78E5A367-8DA6-4D4B-9915-4DA30EC531F:HR8920_SSN",
+                "label": "Business Plus Social Tool"
+              }
+            ]
+          },
+          {
+            "name": "Frontline",
+            "text": "Good {time} {fname},\n\nWe appreciate you reaching out to the Helpdesk and we are always happy to help. However, this concern is not something that is handled by the Helpdesk, or Edtec as a whole. You will need to contact Kathy Barnett at ESC. Have an excellent rest of your day!",
+            "remarks": "\nRemarks\n----------\n\u2022 If this is simply for getting a user logged in, make sure the caller is on the correct page. There are a couple different sign in pages for Frontline.\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FFrontline-Subsystem.one%7C2d33d2b2-cd81-4dee-80de-20018b9ae767%2FFrontline%20Training%20Video%7C0c5e5bb7-d225-4a39-ac97-d46f8cb913f7%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "IEP Online",
+            "text": "Good {time} {fname},\n\nWe appreciate you reaching out to the Helpdesk and we are always happy to help. However, this concern is not something that is handled by the Helpdesk, or Edtec as a whole. You will need to contact Margaret Mason for IEP related concerns. Have an excellent rest of your day!",
+            "remarks": "\nRemarks\n----------\n\u2022 Have them contact Margaret Mason\n"
+          },
+          {
+            "name": "SafeSchools",
+            "text": "Good {time} {fname},\n\nWe appreciate you reaching out to the Helpdesk and we are always happy to help. However, this concern is not something that is handled by the Helpdesk, or Edtec as a whole. You will need to contact Megan Davis at ESC. Have an excellent rest of your day!",
+            "remarks": "\nRemarks\n----------\n\u2022 Have them contact Megan Davis at ESC\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FSafeSchools.one%7C31512376-f0f2-4631-a3de-522746071dbe%2FSchool%20Information%7C72445585-6c40-4a5e-a628-80bb6383355d%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "Assessments",
+            "text": "Good {time} {fname},\n\nWe appreciate you reaching out to the Helpdesk and we are always happy to help. However, this concern is not something that is handled by the Helpdesk, or Edtec as a whole. You will need to contact the Assessments Department. Have an excellent rest of your day!",
+            "remarks": "\nRemarks\n----------\n\u2022 Acadience\n\u2022 Dibels\n\u2022 OSPI(TIDE) - Have them contact Brian Powell specifically\n\u2022 OSPI(EDS) - Push over a ticket to EdApps for Kylie\n\u2022 WAKIDS - Account setup, classes, importing students\n\u2022 WCAP Portal\n"
+          },
+          {
+            "name": "Back",
+            "text": "Exit the wrong department menu"
+          }
+        ]
+      },
+      {
+        "name": "General Hardware Concerns",
+        "options": [
+          {
+            "name": "Document Cameras",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. There are a few things we can try with document cameras that resolve many of the common issues teachers run into. First, ensure the following are in good order:\n\n\u2022 Check the power cable at the wall, and camera levels. If either side of the cable is loose, that could cause a variety of problems\n\n\u2022 Make sure that the video cable (HDMI) is firmly seated in both the camera, and the other end of the cable. The HDMI cable must be in the 'HDMI out' port in the document camera\n\n\u2022 Note that when booting up, the power light on the camera will flash red for about 3 seconds. After that, press the power button once and the light should turn green\n\n\u2022 Check the status of the power light. If it is amber or orange, check the switch on the right-side of the body, and ensure the little black switch is set to 'RGB.'\n\nIf all these things look in order, and you are still having trouble using your document camera, we may need to send out a building technician to your room. You're more than welcome to give us a call at {phone}, {days}, {hours} to address this further. Have a wonderful rest of your day!",
+            "remarks": "\nRemarks\n----------\n\u2022 What is the model number? Ex. F70W\n\u2022 What color is the light above the power button?\n\t\u2022 Green means good to go\n\t\u2022 Amber means check RGB Switch\n\t\u2022 Red means the camera is off\n\t\u2022 Flashing red means the camera is booting up\n\u2022 Have you checked to make sure the HDMI cable is plugged into the HDMI Out port on the camera?\n\u2022 Is the little black switch set to RGB?\n\u2022 When did you notice it stopped working?\n\u2022 Have you cycled through the available HDMI options on the TV?\n\u2022 Has anything changed about your setup that you are aware of?\n\u2022 Consider escalating to a Building Tech if none of these pinpointed the concern - don't forget the room #!\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Hardware%2FDocument%20Camera.one%7Ca7d74578-093f-41c5-8118-c5be8678af5c%2FAverVision%20HD%20User%20Manual%20F70W%7Cfe091930-3bda-4a9e-a746-40bf206c3d0a%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "ActionTecs",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. There are a few things you can try when it comes to troubleshooting Actiontecs (Black starfish on the wall above, beside, or behind your classroom television).\n\nAttempt the following:\n\n\u2022 Disconnect from the Actiontec on your computer if you are connected to it\n\n\u2022 Locate the Actiontec and unplug the power cable for several seconds\n\n\u2022 Plug the power cable back in and wait for the blue LED light to shine\n\n\u2022 Go back to your computer and attempt to connect to it\n\n\u2022 If prompted for a code input: 12345670\n\n\u2022 If you still can't connect, or you can't see your device, attempt to run all of the required and optional updates, then restart it. If you do not know how to run the optional updates, check out this link:\nhttps://pureinfotech.com/install-optional-updates-windows-10/ \n\n\u2022 If you can now connect, but can't see an image on the TV, you may need to ensure you are on the correct HDMI input\n\n\u2022 If all that checks out, ensure the 'Display Settings' on your computer are what you expect. Often times staff intend to 'Duplicate' a display, but the setting is instead set to 'Extend. Here is a detailed guide that covers the ins and outs of configuring your display settings:\nhttps://www.amd.com/en/support/kb/faq/dh-009 \n\nIf you have any concerns about these steps, or they did not work, please feel free to give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!",
+            "remarks": "\nRemarks\n----------\n\u2022 Do you see a blue light coming out of the black starfish? (Has power if so)\n\u2022 Do you know where to go to connect to a wireless display?\n\t\u2022 Search for 'Connect to a wireless display' in the task bar's search function\n\t\u2022 Scroll to the bottom of the page and select 'Connect to a wireless display'\n\t\u2022 Select the room number's Actiontec\n\t\u2022 Enter 12345670 if prompted to\n\u2022 Have you checked to ensure your display settings are what you expect?\n\u2022 Have you power-cycled the Actiontec, forgotten it on your device, then reversed the process?\n\u2022 When did you notice it stopped working?\n\u2022 Have you cycled through the available HDMI options on the TV?\n\u2022 Has anything changed about your setup that you are aware of?\n\u2022 Consider escalating to a Building Tech if none of these resolved the concern - don't forget the room #!\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Hardware%2FActiontec.one%7Cfdfae724-b404-4501-b406-c45375e536d4%2FActiontec%20for%20Windows%2010%7C75e55bbf-8058-45b9-8a1f-0300e784dc49%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "NewLine",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. There are a few things to consider when it comes to troubleshooting your classroom television.\n\nAttempt the following:\n\n\u2022 First, look at the home screen of your TV and take note of the right-hand side. If there is a valid input signal, you will see one of the 'HDMI' boxes illuminated. This is great if you do! It means that your Actiontec (Black starfish on the wall above, beside, or behind your classroom television) is connected to the TV, and the TV is able to talk to it. That is the input you want your TV to be set to\n\n\u2022 If you are in a newer elementary school, locate the black box on the left-hand side of your television to switch between those HDMI options if you need to. Otherwise, you can use the touchscreen function to switch between the HDMI inputs if necessary\n\n\u2022 If everything looks good with the HDMI input, then your issue likely rests with your Actiontec\n\nIf you need more information, or you think your Actiontec is to blame, please feel free to respond back to this ticket for more information, or give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!\n\nHere is the user manual if you would like to dive deeper into a specific topic: https://newline-interactive.com/wp-content/uploads/2019/01/TRUTOUCH-VN_User-Manual.pdf",
+            "remarks": "\nRemarks\n----------\n\u2022 More often then not, Newline concerns are actually Actiontec concerns. See that menu item for more details\n\u2022 Staff frequently forget that there is a little black box on the back of the TV that allows them to cycle the HDMI input options. Use that if necessary\n\u2022 Every so often, staff want to use the whiteboard functionality - this is in the user manual\n\u2022 Note that when the TV detects input on an HDMI option, the option will appear solid white on the screen\n\u2022 If there is something physically wrong with the device - escalate over to a tech and don't forget the room #!\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2F72%2FShared%20Documents%2FProjects%2FElementary%20Interactive%20Panels%2FNewline%5FUB%5Fusermanual%2Epdf&parent=%2Fsites%2F72%2FShared%20Documents%2FProjects%2FElementary%20Interactive%20Panels",
+                "label": "SharePoint Manual"
+              },
+              {
+                "uri": "https://newline-interactive.com/wp-content/uploads/2019/01/TRUTOUCH-VN_User-Manual.pdf",
+                "label": "User Manual"
+              }
+            ]
+          },
+          {
+            "name": "Juno Speakers",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. There are a few things we can try with the Juno speakers that resolve many of the common issues teachers run into. Here are some 'if then' steps to follow. If any of these apply, give the solution a try!\n\n\u2022 IF the tower will not wake up from standby mode, THEN: raise the volume and make sure the microphone is on (if you have one) and working correctly\n\n\u2022 IF there is no sound coming out of the Juno, THEN: raise the volume, ensure that you have the correct audio output on your computer. You can do this by clicking the little speaker symbol on the lower right-hand side of your taskbar, then selecting the correct output. You will also want to check the audio cable that links your Juno to the Actiontec in your classroom, if you have one.\n\n\u2022 IF you turn the tower on and only get a white screen, THEN: power off the tower, wait a full and complete minute, then turn the tower back on\n\n\u2022 IF the display will not turn on at all, THEN: verify that the power supply is plugged into both the receiver, and a working wall outlet. You will also want to check the power switch on the device to ensure it is on. Lastly, if you have an additional power supply around, try that one to rule out supply issues\n\n\u2022 IF you are hearing a squealing sound or feedback, THEN: lower the microphone volume controls on the tower. You may also need to position the mic closer to your mouth. Finally, go to your Juno's settings and ensure that the 'Music Audio In' options is not checked. You can find that option in the 'Microphone Volume Screen.' \n\nIf none of these apply to you, or the steps did not address your concern, then we may need to send out your building technician. You're more than welcome to give us a call at {phone}, {days}, {hours} if you have additional remarks. Have a wonderful rest of your day!",
+            "remarks": "\nRemarks\n----------\n\u2022 Juno issues often get forwarded to the building tech\n\u2022 If there is just no sound, check the HDMI out option on their device. It needs to be on 'Digital Out'\n\u2022 Paste the response for this one and go through the IF THEN steps\n\u2022 Don't forget to get a room number if you escalate!\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Hardware%2FJuno.one%7C3cc8adc1-661b-4deb-af71-f76daf82a419%2FTroubleshooting%7Ce8494e72-286b-4fdb-8cae-c4118e2331cd%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "SMART Board",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. There are a few things we can consider with the SMART Board that tend to resolve many of the common issues teachers run into. Here are some 'if then' statements to go through. If any of these apply, give the solution a try!\n\n\u2022 IF the Ready light (an LED located on the lower-right corner of the frame) is off, THEN: there is no power going to the SMART Board and you'll need to check the power source\n\n\u2022 IF the Ready light is solid green, THEN: the SMART Board is successfully communicating with the SMART software on the connected computer\n\n\u2022 IF the Ready light is flashing green, THEN: the SMART Board is successfully communicating with the computer's USB port, but either the SMART Board software is not installed, or the SMART Board service is not running.\n\n\u26A0 Note that In this mode, the SMART Board operates as a touch screen. The SMART Board tools, such as the pens and eraser, won’t work, but you can move the mouse pointer and perform mouse functions by touching anywhere on the screen. This mode may be desirable for occasional or guest users who don’t require the use of SMART Board tools or pen tray functions.\n\n\u2022 IF the Ready light is solid red, THEN: the SMART Board has power but it is not communicating with the computer. In this case, first check that the connection is solid and there are no breaks or kinks in the cable. Second, unplug the SMART Board's USB connection form the computer, uninstall the SMART Software, restart your computer, then re-install the SMART software. Next, plug in the SMART Board, run the 'Connection Wizard', then run the 'System Tray tools.' If all goes well, you should see that solid green light, and the touchscreen should accept input.\n\nIf none of these steps address your concern, then we may need to send out your building technician. You're more than welcome to give us a call at {phone}, {days}, {hours} if you have additional remarks. Have a wonderful rest of your day!",
+            "remarks": "\nRemarks\n----------\n\u2022 IF the Ready light (an LED located on the lower-right corner of the frame) is off, THEN: there is no power going to the SMART Board and you'll need to check the power source\n\u2022 IF the Ready light is solid green, THEN: the SMART Board is successfully communicating with the SMART software on the connected computer\n\u2022 IF the Ready light is flashing green, THEN: the SMART Board is successfully communicating with the computer's USB port, but either the SMART Board software is not installed, or the SMART Board service is not running.\n\t\u2022 Note that In this mode, the SMART Board operates as a touch screen. The SMART Board tools, such as the pens and eraser, won’t work, but you can move the mouse pointer and perform mouse functions by touching anywhere on the screen.\n\t\u2022 This mode may be desirable for occasional or guest users who don’t require the use of SMART Board tools or pen tray functions.\n\u2022 IF the Ready light is solid red, THEN: the SMART Board has power but it is not communicating with the computer.\n\t\u2022 In this case, first check that the connection is solid and there are no breaks or kinks in the cable.\n\t\u2022 Second, unplug the SMART Board's USB connection form the computer, uninstall the SMART Software, restart your computer, then re-install the SMART software.\n\t\u2022 Next, plug in the SMART Board, run the 'Connection Wizard', then run the 'System Tray tools.' If all goes well, you should see that solid green light, and the touchscreen should accept input.\n\u2022 If you can't communicate with the board, send it over to the tech and don't forget the room number!",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Hardware%2FSmartboard.one%7C8e0ffb18-315a-49f8-997c-debcc2fd4792%2FSmartboard%20Indicator%20Lights%7C1a586b6b-3215-4a0d-b086-d158942d644d%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "Voicemail Forwarding",
+            "text": "Good {time} {fname},\n\nThank you for reaching out. We at the Helpdesk are always happy to provide technical assistance. When it comes to voicemail forwarding, you can try the following steps to prevent it:\n\n\u2022 Pickup the handset and dial #2\n\n\u2022 Listen for the beep, then hang up\n\n\u2022 Pickup the handset and dial #3\n\n\u2022 Listen for the beep, then hang up\nThat is all you need to do! If this did not work, feel free to give us a call at {phone}, {days}, {hours}.",
+            "remarks": "\nRemarks\n----------\n\u2022 Pickup the handset and dial #2\n\u2022 Listen for the beep, then hang up\n\u2022 Pickup the handset and dial #3\n\u2022 Listen for the beep, then hang up\n"
+          },
+          {
+            "name": "Projectors",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. There are a few things we can try with projectors that resolve many of the common issues teachers run into. First, ensure the following is in good order:\n\n\u2022 Check the power cable at the wall and ensure that it is firmly seated in the outlet. If the cable is loose, that could cause a variety of problems\n\n\u2022 Make sure that the video cable is firmly seated and the input option is set to the correct input\n\n\u2022 If the picture quality is dark, adjust 'BRIGHT' and 'CONTRAST' settings and turn off the 'WHISPER' mode in the settings. This may also be an indication of a failing bulb\n\n\u2022 If the picture appears blurry, adjust the 'FOCUS' and the 'PHASE settings \nThe following cases indicate that we need to send out your building technician\n\n\u2022 Blinking red light over the 'LAMP' indicator - This usually indicates a dirty filter, or a damaged bulb. It could also indicate that the cooling fan has failed, the lamp cover is not properly fixed, or overheating has occurred\n\n\u2022 If the green 'POWER', red 'LAMP' and red 'TEMP' lights are blinking, that indicates it is time for the filter to be replaced.\n\nIf you have tried to adjust the settings mentioned above with no progress, or have observed any of these light sequences, we must send a technician to your room. You're more than welcome to give us a call at {phone}, {days}, {hours} if you have additional concerns. Have a wonderful rest of your day!\n",
+            "remarks": "\nRemarks\n----------\n\u2022 If the picture quality is dark, adjust 'BRIGHT' and 'CONTRAST' settings and turn off the 'WHISPER' mode in the settings.\n\t\u2022 This may also be an indication of a failing bulb\n\u2022 If the picture appears blurry, adjust the 'FOCUS' and the 'PHASE settings \n\u2022 Send out a tech if:\n\t\u2022 Blinking red light over the 'LAMP' indicator - This usually indicates a dirty filter, or a damaged bulb. It could also indicate that the cooling fan has failed, the lamp cover is not properly fixed, or overheating has occurred\n\t\u2022 If the green 'POWER', red 'LAMP' and red 'TEMP' lights are blinking, that indicates it is time for the filter to be replaced.\n\u2022 Don't forget the room # if you escalate!",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Hardware%2FProjection%20Units.one%7Cb0fec74b-95be-45e6-97ec-a27b4abfdf4a%2FProjector%20Bulb%20Info%7Ce2bcbd96-a844-494e-8288-c31e2c6c19c3%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "Device Internet Issues",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. Often times, troubleshooting a device's connectivity  is simple and only requires the following:\n\n\u2022 Locate the power button on the device\n\n\u2022 Hold down that button until the screen goes completely black, then let go\n\n\u2022 Wait about 30 seconds, then press the button one time \n\n\u2022 After a few moments, you should see the boot screen that eventually brings you to the login screen\n\n\u2022 Log in and check your internet status. If you are not sure how to do this, click on the link below:\nhttps://support.microsoft.com/en-us/windows/connect-to-a-wi-fi-network-in-windows-10-1f881677-b569-0cd5-010d-e3cd3579d263 \n\n\u26A0 Note that you may need to repeat the previous steps up to three separate times to have a stable wireless connection.\n\nHere are some bonus resources that may answer remarks you, or others might have:\n\n\u2022 Turning airplane mode on or off\nhttps://support.microsoft.com/en-us/windows/turn-airplane-mode-on-or-off-f2c2e0a1-706f-ff26-c4b2-4a37f9796df1 \n\n\u2022 Microsoft troubleshooting tips\nhttps://support.microsoft.com/en-us/sbs/topic/can't-connect-to-internet-a85b5012-804f-517a-b548-f2f9274e3563?ui=en-US&rs=en-US&ad=US\n\nIf you need additional help troubleshooting your connectivity, feel free to give us a call at {phone}, {days}, {hours}.",
+            "remarks": "\nRemarks\n----------\n\u2022 Most of these issues are resolved by power cycling the device up to three separate times\n\u2022 Approve for a swap if they aren't able to get a hard-lined connection\n\u2022 If they can, get them hard-lined in, remote in and install the optional updates / check drivers & reboot\n\u2022 You may also want to 'Sync' the Company Portal to bring down any wireless profiles the device could be missing.\n\t\u2022 See 'How to sync the Company Portal' in the General Software Concerns Menu\n",
+            "links": [
+              {
+                "uri": "https://pureinfotech.com/install-optional-updates-windows-10/",
+                "label": "How to install optional updates"
+              },
+              {
+                "uri": "https://support.microsoft.com/en-us/windows/update-drivers-in-windows-ec62f46c-ff14-c91d-eead-d7126dc1f7b6",
+                "label": "How to update drivers"
+              },
+              {
+                "uri": "https://support.microsoft.com/en-us/windows/update-drivers-in-windows-ec62f46c-ff14-c91d-eead-d7126dc1f7b6",
+                "label": "How to connect to a network"
+              }
+            ]
+          },
+          {
+            "name": "Back",
+            "text": "Exit the hardware concerns"
+          }
+        ]
+      },
+      {
+        "name": "General Software Concerns",
+        "options": [
+          {
+            "name": "DRC Insights - WIDA Assessments",
+            "text": "",
+            "remarks":"\nRemarks\n----------\n\u2022 Make sure you install the DRC app in Company Portal\n\u2022 Follow the steps in the guide!\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/:w:/s/PSD-EdTec2-TechSupport/EcxYvLjPFmVJv0r9BRznfnIB_SJS4FKOQakmixo7LblvUQ?e=5YEXwl",
+                "label": "Troubleshooting Guide"
+              }
+            ]
+          },
+          {
+            "name": "Suspicious Emails",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. We appreciate you taking the time to contact us and we are always happy to help. When it comes to suspicious emails, there is no need to call or email us as Outlook has an excellent tool that does that on your behalf.\n\nIf you simply select 'Report Message' from the upper right-hand side of the application window, you can then select 'Phishing' and that will both remove the email from your inbox, then report that message to Microsoft and our security team. If you have remarks or concerns, you are more than welcome to give us a call at {phone}, {days}, {hours}.\n\n\u26A0 If you have interacted with a suspicious email and provided any district login information, please change your password immediately by doing the following:\n\n\u2022 Hit CTRL + ALT + DEL on your keyboard\n\n\u2022 Select 'Change a password'\n\n\u2022 Follow the prompts to change your password\n\n\u2022 Log out of your computer, then log back in with the new password",
+            "remarks": "\nRemarks\n----------\n\u2022 See the link on how to report a message in Outlook. That's all they have to do.\n",
+            "links": [
+              {
+                "uri": "https://support.lucidity.co.nz/support/solutions/articles/42000082250-how-to-use-the-outlook-report-message-add-in",
+                "label": "How to report a message in Outlook"
+              }
+            ]
+          },
+          {
+            "name": "Bit locker recovery error",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Try and have the user restart their computer a few times\n\u2022 Head over to MME and see if they can give you the key\n\u2022 A device swap is an acceptable solution\n"
+          },
+          {
+            "name": "Help I have a virus! (Chrome notifications)",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. We sincerely appreciate you taking the time to contact us, and we are always happy to help. For this particular concern, I think it would be best if you gave us a call at {phone} so we can speak with you directly. We are here {days}, {hours} answering calls if you have the time to do so.",
+            "remarks": "\nRemarks\n----------\n\u2022 Rarely is there an actual virus to be concerned about in these situations. To resolve this:\n\t\u2022 Close whatever browser they are using by killing the application in Task Manager (See resource if you don't know how to do this)\n\t\u2022 Once the browser has closed, go and disable notifications for that browser\n\t\u2022 Close the browser, restart it and they are good to go!\n\t\u2022 There is no need to swap the device and you can safely assure them there is nothing to worry about.\n\u2022 Now, if they interacted with the malicious software and input their district credentials into any form, have them change their password / do it for them immediately.\n\u2022 For extra peace of mind, you can do a virus scan with Windows Defender - see the resource if you are unfamiliar.\n",
+            "links": [
+              {
+                "uri": "https://www.businessinsider.com/how-to-force-quit-on-windows",
+                "label": "How to kill an application"
+              },
+              {
+                "uri": "https://www.avast.com/c-turn-off-chrome-notifications#gref",
+                "label": "How to disable Chrome notifications"
+              },
+              {
+                "uri": "https://www.lifewire.com/manage-notifications-in-microsoft-edge-5104663",
+                "label": "How to disable Edge notifications"
+              },
+              {
+                "uri": "https://www.howtogeek.com/679263/how-to-scan-with-microsoft-defender-antivirus-on-windows-10/",
+                "label": "How to do a virus scan"
+              }
+            ]
+          },
+          {
+            "name": "Connecting to PSDSTAFF on Android",
+            "text": "Good {time} {fname},\n\nThank you for contacting the Helpdesk. We enjoy working to resolve technical problems for our staff, students and families. Connecting to the staff WIFI is a common question and it may be a little more involved than people realize. Here are the steps you can take to connect to PSDSTAFF:\n\n\u2022 Select the PSDSTAFF network\n\n\u2022 Ensure that the EAP setting is set to PEAP\n\n\u2022 Input your district credentials and ensure you only put in the segment before the @ sign. Note that this is case sensitive.\n\n\u2022 Under certificates, ensure that you select 'Do Not Validate'\n\n\u2022 Under advanced, look for an option that says 'Phase 2 Authenticate' then for that, input MSCHP V2\n\nAfter all that, you should be able to connect to the PSDSTAFF wireless network. If you have any remarks about this, feel free to give us a call at {phone}, {days}, {hours}.",
+            "remarks": "\nRemarks\n----------\n\u2022 Ensure that the EAP setting is set to PEAP\n\u2022 Input your district creds - just before the @ sign\n\u2022 Ensure that you do not validate certificates\n\u2022 Under the advanced settings, make sure to select 'MSCHP V2' as a Phase 2 Authentication option\n",
+            "links": [
+              {
+                "uri": " https://puyallupsd-my.sharepoint.com/:x:/g/personal/morenks_puyallup_k12_wa_us/EWlq7yV6nbdLoNerhhbuML4BVpQcclNOuUzfrgJq5jIRTw?e=vZcWh3",
+                "label": "Helpful Helpdesk Guide - See cell 25 for more"
+              }
+            ]
+          },
+          {
+            "name": "Connecting to PSDSTAFF on IOS",
+            "text": "Good {time} {fname},\n\nThank you for contacting the Helpdesk. We enjoy working to resolve technical problems for our staff, students and families. Connecting to the staff WIFI is a common question and it is very simple on IOS. Here are the steps you can take to connect to PSDSTAFF:\n\n\u2022 Select the PSDSTAFF network\n\n\u2022 Input your district credentials and ensure you only put in the segment before the @ sign. Note that this is case sensitive.\n\u2022 Enter your district account password\nAfter that, you should be able to connect to the PSDSTAFF wireless network. If you have any remarks about this, feel free to give us a call at {phone}, {days}, {hours}.",
+            "remarks": "\nRemarks\n----------\n\u2022 Just drop in the first portion of their email\n\u2022 Put in their SSO password, and thats it!\n",
+            "links": [
+              {
+                "uri": " https://puyallupsd-my.sharepoint.com/:x:/g/personal/morenks_puyallup_k12_wa_us/EWlq7yV6nbdLoNerhhbuML4BVpQcclNOuUzfrgJq5jIRTw?e=vZcWh3",
+                "label": "Helpful Helpdesk Guide - See cell 26 for more"
+              }
+            ]
+          },
+          {
+            "name": "REI Video Software - .HD5 files",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Windows sometimes tries to open .HD5 files in Windows Media Player - just set the default app for that file type back to REI\n",
+            "links": [
+              {
+                "uri": "https://techforluddites.com/windows-10-change-the-default-programs-for-opening-files/#:~:text=Use%20the%20Open%20With%20command,select%20it%20and%20click%20OK.",
+                "label": "How to report a message in Outlook"
+              }
+            ]
+          },
+          {
+            "name": "Time is off - W32Time service",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Restart the service Windows Time service (W32Time) in services.msc\n\u2022 Search for 'Date and Time Settings' in the Start Menu and click on Sync\n\u2022 Both of these require thelper creds\n",
+            "links": [
+              {
+                "uri": "https://techforluddites.com/windows-10-change-the-default-programs-for-opening-files/#:~:text=Use%20the%20Open%20With%20command,select%20it%20and%20click%20OK.",
+                "label": "How to report a message in Outlook"
+              }
+            ]
+          },
+          {
+            "name": "Resetting Passwords",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. We would be happy to work with you to reset your password, however, we have policies in place to protect our staff and students. In order for us to reset your password, you will have to give us a call at {phone}, {days}, {hours}. This is so that we can verify your identity, ask some security remarks and ensure that your account stays as secure as possible. Thanks for understanding, and we look forward to assisting you soon.",
+            "remarks": "\nRemarks\n----------\n\u2022 For students:\n\t\u2022 Make sure that you verify their student ID (Lunch Number)\n\t\u2022 Ask them to verify a teachers name on their schedule - check eSchools\n\t\u2022 Ask them to verify their birth date\n\t\u2022 Use the 'Password Reset Tool' which can be downloaded from Company Portal\n\u2022 For staff:\n\t\u2022 Verify their employee ID number\n\t\u2022 If they don't know it, get last 4 of social and verify in Business Plus\n",
+            "links": [
+              {
+                "uri": "https://businessplus.psd.local/screens/ui/uiscreens/cdd/S78E5A367-8DA6-4D4B-9915-4DA30EC531F:HR8920_SSN",
+                "label": "Business Plus Social Tool"
+              }
+            ]
+          },
+          {
+            "name": "OneNote Notebook troubleshooting",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. OneNote is a tricky application that our instructional coaches know better than anyone. If you would like to coordinate a time with one of them for deeper assistance, feel free to contact Jeremy Roy or Jennifer Matthews via email. There are however a few things you can do to troubleshoot the application. First, search for the application in your start menu. Once you find that, select the 'App Settings' on the right with the little gear next to it. This will bring you to a settings page on which you can click on the 'Terminate', 'Repair', 'Reset' options in that order. Note that when you 'Reset' OneNote, you will have to go back and add in the Notebooks manually. If this did not address your concern, feel free to give us a call at {phone}, {days}, {hours}.",
+            "remarks": "\nRemarks\n----------\n\u2022 Locate the 'App Settings' by searching for OneNote and clicking on 'App Settings'\n\u2022 Click on the 'Terminate' button to kill the app\n\u2022 Click on the 'Repair' button to repair the application\n\u2022 Click on the 'Reset' button to completely wipe OneNote. Note that you'll have to go in and add the notebooks manually afterwards.\n\u2022 You can try and do an Office Repair too\n\u2022 Try uninstalling / reinstalling the app if you're getting application specific errors\n",
+            "links": [
+              {
+                "uri": "https://www.alphr.com/onenote-add-new-notebook/",
+                "label": "How to add a notebook"
+              }
+            ]
+          },
+          {
+            "name": "Student Login Concerns",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. Student logins can be a little confusing, as there are often numerous students with the same names that then require numbers after their last names in their email addresses. However, for most students, the format is as follows:\n\n\u2022 Username / Email: firstname.lastname@students.puyallupsd.org\n\n\u26A0 Note that for students with a hyphenated last name, simply remove the hyphen and merge the two names into one lowercase word\n\n\u2022 Password: [first initial][last initial][2 digit birth month][2 digit birth day] note that this is all lower case, and the password for K-6 now includes the last 4 digits of the primary phone number on file.\n\nIf you need additional help logging a student in, feel free to give us a call at {phone}, {days}, {hours}.",
+            "remarks": "\nRemarks\n----------\n\u2022 Most often, the student / TLP is using the wrong phone number in their password.\n\t\u2022 They must use eSchools to get the number and it is the first listed guardian's HOME PHONE number.\n\u2022 If a TLP is calling and they are using Destiny, they are wrong\n"
+          },
+          {
+            "name": "Trusted Platform Module Error",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Reboot, reboot, reboot\n\u2022 Try clearing credentials if that does not work\n\u2022 If it persists, approve them for a swap\n",
+            "links": [
+              {
+                "uri": "https://docs.rackspace.com/support/how-to/clear-credential-manager/",
+                "label": "How to clear Windows Credentials"
+              }
+            ]
+          },
+          {
+            "name": "Outlook Emails Not Sending",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. Below is a link to a great resource that addresses this concern. The benefit of going to this page is the clear documentation, pictures and helpful links. Note that we at the Helpdesk are not experts when it comes to the ins and outs of Outlook, so I encourage you to take some time and review this resource.\n\nIf after looking through this support page (and referenced pages), you are not able to find information about your specific concern, please feel free to give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!\n\n\u2022 Link:\n https://kb.intermedia.net/article/1187 \n\nHere are some bonus resources that may address other Outlook concerns that you, or other staff members may have:\n\n\u2022 Setting up custom views:\n https://support.microsoft.com/en-us/office/create-change-or-customize-a-view-f693f3d9-0037-4fa0-9376-3a57b6337b71 \n\n\u2022 Scheduling Teams meetings in Outlook:\n https://support.microsoft.com/en-us/office/schedule-a-teams-meeting-from-outlook-883cc15c-580f-441a-92ea-0992c00a9b0f \n\n\u2022 Setting up signatures:\n https://support.microsoft.com/en-us/office/create-and-add-a-signature-to-messages-8ee5d4f4-68fd-464a-a1c1-0e1c80bb27f2",
+            "remarks": "\nRemarks\n----------\n\u2022 Check out the linked resource below. I'd try enabling and disabling cached mode\n\u2022 You may also want to do an Office repair\n",
+            "links": [
+              {
+                "uri": "https://support.intermedia.com/app/articles/detail/a_id/25022/type/KB",
+                "label": "Outlook troubleshooting"
+              },
+              {
+                "uri": "https://www.groovypost.com/howto/repair-microsoft-office-365-installation/",
+                "label": "How to repair Office"
+              }
+            ]
+          },
+          {
+            "name": "Adding A Shared Mailbox",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. Below is a link to a great resource that addresses this concern. The benefit of going to this page is the clear documentation, pictures and helpful links. Note that we at the Helpdesk are not experts when it comes to the ins and outs of Outlook, so I encourage you to take some time and review this resource.\n\nIf after looking through this support page (and referenced pages), you are not able to find information about your specific concern, please feel free to give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!\n\n\u2022 Link:\n https://support.microsoft.com/en-us/office/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd \n\nHere are some bonus resources that may address other Outlook concerns that you, or other staff members may have:\n\n\u2022 Setting up custom views:\n https://support.microsoft.com/en-us/office/create-change-or-customize-a-view-f693f3d9-0037-4fa0-9376-3a57b6337b71 \n\n\u2022 Scheduling Teams meetings in Outlook:\n https://support.microsoft.com/en-us/office/schedule-a-teams-meeting-from-outlook-883cc15c-580f-441a-92ea-0992c00a9b0f \n\n\u2022 Setting up signatures:\n https://support.microsoft.com/en-us/office/create-and-add-a-signature-to-messages-8ee5d4f4-68fd-464a-a1c1-0e1c80bb27f2",
+            "remarks": "\nRemarks\n----------\n\u2022 This is a rather uncommon request, but the first linked resource is helpful.\n\u2022 Check out the other resources for help with signatures, Teams and Outlook etc..\n",
+            "links": [
+              {
+                "uri": "https://support.microsoft.com/en-us/office/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd",
+                "label": "How to open and use a shared mailbox"
+              },
+              {
+                "uri": "https://support.microsoft.com/en-us/office/create-change-or-customize-a-view-f693f3d9-0037-4fa0-9376-3a57b6337b71",
+                "label": "Custom views"
+              },
+              {
+                "uri": "https://support.microsoft.com/en-us/office/schedule-a-teams-meeting-from-outlook-883cc15c-580f-441a-92ea-0992c00a9b0f",
+                "label": "Setting up Teams meetings"
+              },
+              {
+                "uri": "https://support.microsoft.com/en-us/office/create-and-add-a-signature-to-messages-8ee5d4f4-68fd-464a-a1c1-0e1c80bb27f2",
+                "label": "Signatures"
+              }
+            ]
+          },
+          {
+            "name": "Outlook Calendar",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. Below is a link to Microsoft's Support Page which covers a variety of Calendar related concerns. The benefit of going to this page is the clear documentation, pictures and helpful links. Note that we at the Helpdesk are not experts when it comes to the ins and outs of calendars, so I encourage you to take some time and review this resource.\n\nIf after looking through this support page (and referenced pages), you are not able to find information about your specific calendar concern, please feel free to give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!\n\n\u2022 Link:\n https://support.microsoft.com/en-us/office/introduction-to-the-outlook-calendar-d94c5203-77c7-48ec-90a5-2e2bc10bd6f8 \n\nHere are some bonus resources that may address other Outlook concerns that you, or other staff members may have:\n\n\u2022 Setting up custom views:\n https://support.microsoft.com/en-us/office/create-change-or-customize-a-view-f693f3d9-0037-4fa0-9376-3a57b6337b71 \n\n\u2022 Scheduling Teams meetings in Outlook:\n https://support.microsoft.com/en-us/office/schedule-a-teams-meeting-from-outlook-883cc15c-580f-441a-92ea-0992c00a9b0f \n\n\u2022 Setting up signatures:\n https://support.microsoft.com/en-us/office/create-and-add-a-signature-to-messages-8ee5d4f4-68fd-464a-a1c1-0e1c80bb27f2",
+            "remarks": "\nRemarks\n----------\n\u2022 Outlook calendars can be tricky and sometimes result in escalation to our Sys. Eng. Team.\n\u2022 The resource gives a good into on the calendar\n",
+            "links": [
+              {
+                "uri": "https://support.microsoft.com/en-us/office/introduction-to-the-outlook-calendar-d94c5203-77c7-48ec-90a5-2e2bc10bd6f8",
+                "label": "Into to the calendar"
+              }
+            ]
+          },
+          {
+            "name": "Eval Tool",
+            "text":"",
+            "remarks": "\nRemarks\n----------\n\u2022 Escalate over to Evan Windsor in Web Apps - we don't do anything with this\n"
+          },
+          {
+            "name": "Multi Factor Authentication (MFA) issues",
+            "text":"",
+            "remarks": "\nRemarks\n----------\n\u2022 Escalate over to the Security Team - we don't do anything with this\n"
+          },
+          {
+            "name": "Adobe Creative Cloud",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. Signing into Adobe Creative Cloud is the only way that staff and students can get licenses for Adobe products in our district. If you did not sign into Adobe Creative Cloud with your district credentials, you will likely be warned that your account is about to expire or you may be prompted to pay for the service. To use Adobe products, such as Acrobat, Illustrator or Photoshop the correct way, complete the following: \n\n\u2022 Search for 'Adobe Creative Cloud' on your computer\n\n\u2022 Sign into that service with your district credentials\n\n\u2022 Allow sufficient time for that application to get setup on your device, then open the application of interest from that portal \n\nIf you need additional help getting an Adobe licensing issue resolved, please give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!",
+            "remarks": "\nRemarks\n----------\n\u2022 Staff members have to sign into Adobe Creative cloud in order to gain licenses to use the software. If they have never signed in, they will be put on a 14 day trial.\n\u2022 If they have signed in and are still not able to use Adobe apps, check with the MME team.\n\u2022 Uninstalling Adobe apps, then reinstalling them through Creative Cloud usually resolves most issues\n",
+            "links": [
+              {
+                "uri": "https://helpx.adobe.com/creative-cloud/help/creative-cloud-updates.html",
+                "label": "How to update Adobe CC apps"
+              }
+            ]
+          },
+          {
+            "name": "PSDVPN",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. When it comes to the PSDVPN, there are a couple of things to consider. One, you do not need to be connected to the VPN if you are at a school and on one of our networks. Second, the VPN does connect you to TAC, eSchools, BusinessPlus etc. - but only when you are outside of a district building. If you are having issues connecting to the VPN or are seeing error codes, please do give us a call so we can troubleshoot for you. If you are having trouble finding the VPN complete the following:\n\n\u2022 Move your mouse curser down to the right-hand side of the taskbar (The large rectangle on the bottom of the screen). \n\n\u2022 Look for either three curves, or a little computer with a plug next to it\n\n\u2022 Click that and at the top of that menu, look for PSDVPN\n\n\u2022 Click the PSDVPN, then select 'Connect'\n\nIf you have completed the above steps, and are not seeing the PSDVPN complete the next few steps:\n\n\u2022 Search for your 'Company Portal' by typing to search on the left-hand side of your taskbar\n\n\u2022 Open the Company Portal and allow a few moments to load\n\n\u2022 Look for a little gear icon on the lower left-hand side of the window and click that\n\n\u2022 At the top of the window, look for the 'Sync' button and click that\n\n\u2022 Allow up to an hour for this to complete then restart your computer\n\n\u2022 Once logged in, go back to the first set of instructions and look for your VPN.\n\nIf after completing all of these steps, you still do not see the VPN or are not able to connect to it, please give us a call at {phone}, {days}, {hours}. You can also reply back to this ticket to continue working with us. Have a wonderful rest of your day!",
+            "remarks": "\nRemarks\n----------\n\u2022 Disconnect from the VPN if the staff member is in a district building\n\u2022 Staff members must connect to the VPN in order to use TAC / eSchools / BusinessPlus from home\n\u2022 Sometimes a connection must be forced if a user can't connect the typical way.\n\t\u2022 Navigate over to: '%AppData%/Microsoft/Network/Connections/pbk' and run the 'rasphone.pbk' file. Follow the prompts and this will force a connection\n\u2022 Still can't connect, escalate to Sys. Eng. Team\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/:w:/r/sites/PSD-EdTec2-TechSupport/_layouts/15/Doc.aspx?sourcedoc=%7BC77BD0B2-3D92-4696-B0D0-FD5C2C8FB005%7D&file=PSDVPN%20Troubleshooting%20Steps%20(3).docx&action=default&mobileredirect=true&DefaultItemOpen=1",
+                "label": "SharePoint How-to"
+              }
+            ]
+          },
+          {
+            "name": "Display Settings",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. Below is a link to a page which covers the ins and outs of configuring your display settings. The benefit of going to this page is the clear documentation and annotated pictures. I encourage you to take some time and review this resource prior to calling as this may answer your question more quickly than we can on busy days.\n\nIf after looking through this support page, you are not able to find information about your specific display settings concern, please feel free to give us a call at {phone}, {days}, {hours}. Have a wonderful rest of your day!\n\n\u2022 Link:\nhttps://www.amd.com/en/support/kb/faq/dh-009",
+            "remarks": "\nRemarks\n----------\n\u2022 This is one of those things that just takes some patience and targeted remarks. Ask them how they want things to look, and do your best to represent that in the settings.\n\u2022 The resource helps explain this if you're unfamiliar\n",
+            "links": [
+              {
+                "uri": "https://www.amd.com/en/support/kb/faq/dh-009",
+                "label": "How to change display settings"
+              }
+            ]
+          },
+          {
+            "name": "Adding folder from SharePoint to File Explorer",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to us at the Helpdesk. Fortunately, adding folders from SharePoint to your File Explorer is very easy. Below is a visual guide that will take will walk you through how to do this.\n\n\u2022 Link:\nhttps://support.microsoft.com/en-us/office/view-and-open-sharepoint-files-with-file-explorer-66b574bb-08b4-46b6-a6a0-435fd98194cc \n\nIf you would rather not review the documentation, you can complete the following steps:\n\n\u2022 First, open an internet browser (Microsoft Edge or Google Chrome)\n\n\u2022 Navigate over to your SharePoint of interest\n\n\u2022 Find the folder that you want to add to your File Explorer\n\n\u2022 Select the folder and look for the option to 'Sync' on the upper right-hand side of the page\n\n\u2022 Click that option and allow OneDrive to complete this function\n\n\u2022 Done! The folder will now be available in your File Explorer.\n\nIf you have any remarks about these steps, or the resource, feel free to give us a call at {phone}, {days}, {hours}.",
+            "remarks": "\nRemarks\n----------\n\u2022 All you have to do is navigate over to the SharePoint directory they want to add, click on 'Sync' and it will appear in their File Explorer\n",
+            "links": [
+              {
+                "uri": "https://support.microsoft.com/en-us/office/view-and-open-sharepoint-files-with-file-explorer-66b574bb-08b4-46b6-a6a0-435fd98194cc",
+                "label": "How to Sync to File Explorer"
+              }
+            ]
+          },
+          {
+            "name": "Printing issues",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. Connecting to our printers can be challenging at times and there are a few things you need to check prior to a successful print. First, ensure that your PSDVPN is disconnected, and the box to connect automatically is unchecked. Second, ensure that you are on the PSDWIRELESS network or your connection shows psd.local. Lastly, ensure that you have added this printer through Printix. If these things are in order and you still can't print, follow the next steps:\n\n\u2022 Open your Company Portal\n\n\u2022 Search for 'Printix Service Fix' and install it\n\n\u2022 Attempt to print to the printer\n\n\u2022 If that is not successful, try removing the printer in your 'Printers & Scanners' menu, then re-add the printer through Printix.\n\nIf adding a printer through Printix is something you are not sure about, complete the following steps\n\n\u2022 Move your mouse cursor down to the lower right-hand side of your taskbar (The long rectangle on the bottom of your screen)\n\n\u2022 Look for an upwards facing arrow \u2227 and click that to open a small menu\n\n\u2022 Search for a little black and white 'P' and click that to open another menu\n\n\u2022 Search for the top menu option that says 'Printers' and click that to open another menu\n\n\u2022 In this menu, search for the printer you want to add, select the checkbox next to it, then click 'add' on the lower right-hand side of that menu\n\nPlease feel free to give us a call if you have additional remarks at {phone}, {days}, {hours}. Have a wonderful rest of your day!",
+            "remarks": "\nRemarks\n----------\n\u2022 First check to make sure they are on PSDWIRELESS or PSDDEVICES\n\u2022 Check to make sure the PSDVPN is disconnected and the box to 'Connect Automatically' is unchecked\n\u2022 Ensure they have signed into Printix and have added the printers they want to use\n\u2022 Make sure the printer doesn't require a user code provided by the Office Manager\n\u2022 Check the Printix service and make sure it's running (Usually obvious by no printers showing up in the Printix list) - restart with admin creds if necessary\n\u2022 Escalate to Sys. Eng. Team if all these things are in place, but they still can't print\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Hardware%2FPrinters.one%7C11d3a908-fdd3-4a5d-acc7-473071b6a253%2FFixing%20paper%20jam%7C0387aaa4-bea3-41da-9582-c82d3b7436c9%2F%29",
+                "label": "OneNote Notebook"
+              },
+              {
+                "uri": "https://www.thewindowsclub.com/open-windows-services",
+                "label": "How to restart / check services"
+              },
+              {
+                "uri": "https://uknowit.uwgb.edu/page.php?id=73063",
+                "label": "How to put in a user code"
+              }
+            ]
+          },
+          {
+            "name": "Employee Online Login",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. Thankfully, logging into Employee Online is pretty straight forward if you know where to go and your staff credentials:\n\n\u2022 Username / Email: Everything before the @ sign in your staff email\n\n\u2022 Password: The same password you use to log into a staff device. If you have never reset this password it will follow this format - E000000Welcome! where the 0's are your employee ID. If you do not know your employee ID number, HR can provide that information to you by calling 253-841-1301.\n\n\u2022 Link to Employee Online\nhttps://employeeonline.puyallup.k12.wa.us/ifas7/login/login.aspx?ReturnUrl=%2fbusinessplus%2femployeeonline%2fEOHomePage \n\nIf you need additional help logging in, feel free to give us a call at {phone}, {days}, {hours}.",
+            "remarks": "\nRemarks\n----------\n\u2022 Users can't log in usually because they are trying to use their entire email address. It's just the portion before the @ symbol.\n\u2022 They are usually in the wrong place as well. Note that the password is their Single Sign On (SSO) password.\n\u2022 If they are doing everything correctly, take a screenshot and escalate over to Business Apps\n",
+            "links": [
+              {
+                "uri": "https://employeeonline.puyallup.k12.wa.us/ifas7/login/login.aspx?ReturnUrl=%2fbusinessplus%2femployeeonline%2fEOHomePage",
+                "label": "Correct link to EO"
+              }
+            ]
+          },
+          {
+            "name": "Parent Securly Concerns",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. Securly is a very powerful tool that we use throughout the district, and it does a great job of keeping out inappropriate content. However it can be an inconvenience when something gets blocked that was previously accessible. Securly undergoes frequent updates that add websites, or web applications to its blocked list.\n\nAs such, if you are seeing the Securly page when trying to access a resource, that web page has likely been added to that list. Note that as a parent, you also have access to the Securly Home App which gives you granular control of your student's device. You can disable applications, block websites and control screen time all from your smart phone.\n\nIf you would like to know more about this, feel free to navigate to the link below! You are also more than welcome to reach out to Securly support by emailing: support@securly.com if you have specific remarks about the service. If you need anything else, or have other remarks, feel free to reach out to us at {phone}, {days}, {hours}\n\n\u2022 Link:\nhttps://homesupport.securly.com/hc/en-us/categories/360000431333-Securly-Home-App",
+            "remarks": "\nRemarks\n----------\n\u2022 If a parent is calling in because they can't keep their student off of a website, you can escalate over to MME.\n\u2022 If the concern involves pornography or inappropriate content, escalate over to Security and refer to the attached resource\n",
+            "links": [
+              {
+                "uri": " https://puyallupsd-my.sharepoint.com/:x:/g/personal/morenks_puyallup_k12_wa_us/EWlq7yV6nbdLoNerhhbuML4BVpQcclNOuUzfrgJq5jIRTw?e=vZcWh3",
+                "label": "Helpful Helpdesk Guide - cell 15"
+              }
+            ]
+          },
+          {
+            "name": "How To Install An Application",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. All of our devices should have an application installed by default named Company Portal. Company Portal is like the app store on your phone and it has all of the applications that you are allowed to download available. Here is a short step by step guide on how to get to Company Portal and download an app:\n\n\u2022 Click your Start Menu, or use the 'Search' function on the lower left-hand side of your Start Menu, and search for 'Company Portal'\n\n\u2022 Once you launch Company Portal, you will see a search function on the upper left-hand side of the window that looks like a magnifying glass\n\n\u2022 Click that, and search for whatever it is you're trying to download. If you do not see an application that you are looking for one of two things are happening. One, your account does not have access to that application, and you can make a follow up request to be granted that access. Or two, your Company Portal is out of date and you need to preform a 'Sync' \n\n\u2022 To preform a Sync, click on the little gear icon on the lower left-hand side of the Company Portal window\n\n\u2022 That will bring you to a separate page which has a 'Sync' button at the top of it. Click that and allow up to 30 minutes for it to complete \n\n\u26A0 Note that you CAN NOT download applications from the internet on any of our managed devices. If you wish to download and install something that is not in Company Portal, you must submit a follow up request for consideration. \n\nIf you have additional remarks about downloading applications, feel free to give us a call at {phone}, {days}, {hours}.",
+            "remarks": "\nRemarks\n----------\n\u2022 The primary thing to consider here is that this is generally not possible outside of Company Portal.\n\u2022 If a Curriculum Director is calling in wanting to request a new program, there is a process in place. Refer to the P&P or confer with MME.\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72-Docs/Policies-and-Procedures/HelpDesk",
+                "label": "P&P"
+              }
+            ]
+          },
+          {
+            "name": "How To Install Office 365",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. All of our staff and students have access to the full Office Suite and you can download it by doing the following on a personal device (not owned by the district):\n\n\u2022 Navigate to 'portal.office.com' in any internet browser\n\n\u2022 Once there, login with your district credentials then draw your attention to the upper right-hand side of the screen\n\n\u2022 There, you should see a button to 'Install Office.' Click that to begin the installation\n\nAlternatively, on a district issued device, you can 'Sync' your Company Portal to bring down the required Office applications. To do so, follow the remaining steps:\n\n\u2022 Locate the Company Portal application on your device. You can search for it with the 'Search Bar' down on the lower-left-hand side of your taskbar\n\n\u2022 To preform a Sync, click on the little gear icon on the lower left-hand side of the Company Portal window\n\n\u2022 That will bring you to a separate page which has a 'Sync' button at the top of it. Click that and allow up to 30 minutes for it to complete \n\n\u26A0 Note that you CAN NOT download applications from the internet on any of our managed devices. If you wish to download and install something that is not in Company Portal, with the exception of Microsoft Office, you must submit a follow up request for consideration. \n\nIf you have additional remarks about downloading applications, feel free to give us a call at {phone}, {days}, {hours}.",
+            "remarks": "\nRemarks\n----------\n\u2022 Office can be installed on home computers and the process is easy\n\t\u2022 Navigate to 'portal.office.com' in any internet browser\n\t\u2022 login with your district credentials then draw your attention to the upper right-hand side of the screen\n\t\u2022 There, you should see a button to 'Install Office.' Click that to begin the installation\n",
+            "links": [
+              {
+                "uri": "https://www.office.com/?auth=2",
+                "label": "Office"
+              }
+            ]
+          },
+          {
+            "name": "How to Sync the Company Portal",
+            "text": "Good {time} {fname},\n\nThank you for reaching out to the Helpdesk. All of our devices should have an application installed by default named Company Portal. Company Portal is like the app store on your phone and it has all of the applications that you are allowed to download available. It also contains a tool that allows your device to check in with our systems and correct some common issues, such as the one you are experiencing. Here is a short step by step guide on how to get to Company Portal and perform a 'Sync':\n\n\u2022 Click your Start Menu, or use the 'Search' function on the lower left-hand side of your Start Menu, and search for 'Company Portal'\n\n\u2022 To preform a Sync, click on the little gear icon on the lower left-hand side of the Company Portal window\n\n\u2022 That will bring you to a separate page which has a 'Sync' button at the top of it which you can click to begin the process \n\n\u26A0 Note that you should allow up to 45 minutes for this process to complete, then restart your device after it does.\n\nIf you have additional remarks about this process, or it was unsuccessful, feel free to give us a call at {phone}, {days}, {hours}.",
+            "remarks": "\nRemarks\n----------\n\u2022 Company Portal is where staff and students get access to their applications. It's also where 'Syncs' occur which is when a device checks in with our Intune Management System\n\u2022 To 'Sync', open Company Portal, go to the settings page which is the little gear on the lower left-hand side\n\u2022 Select 'Sync' at the top of the page and allow around 30 minutes for it to complete\n"
+          },
+          {
+            "name": "Back",
+            "text": "Exit the common issues menu"
+          }
+        ]
+      },
+      {
+        "name": "EdApps",
+        "options": [
+          {
+            "name": "eTrition",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 eTrition sometimes requires admin creds to open which can be input over TeamViewer \n\u2022 If the app is not working as expected, try and uninstall it then re-install it\n\u2022 If that doesn't resolve it - escalate over to EdApps\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FeTrition.one%7C78aac3b6-71b1-4e0b-8d4f-27bbeb49b95a%2FeTrition%20Installation%7C85d226e6-939c-44b5-9c8d-2a6e36ce31b0%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "TransFinder / RouteFinder",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 RouteFinder is a legacy mapping application who's support ends 12/31/21.\n\u2022 Installing the application is a beast and the full install requires a USB with the install folder '12.13'\n\u2022 To get that folder go to:\n\t\u2022 Y:/ITC/Computer Support/USB Media/RoutefinderPro\n\t\u2022 In this folder are instructions on how to install RouteFinder Pro\n\t\u2022 There are instructions for the RouteFinder Pro 12.13 Update as well\n\u2022 If you're just updating the app navigate to: Y:/Temporarily Shared Files/RoutefinderPro/RoutefinderUpdate2021\n\u2022 There you'll find instructions and the 'TFProPatch.exe'\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FTransfinder.one%7Cc6eb663a-333d-4604-a54a-8aadf687beb8%2FRouteFinder%20not%20opening%20after%20login%7Cde0eca75-7022-4a9e-a67b-3bbead232c44%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "PowerSchool - eSchoolPLUS / TAC / HAC",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 eSchools:\n\t\u2022 There is a lot of information here and it's the source of everything in the district in terms of data\n\t\u2022 Here, you can reset HAC passwords for parents, check student schedules, find ID numbers, emails etc..\n\t\u2022 We do not do any troubleshooting however with eSchools with the exception of ensuring the VPN is on or off depending on if they are at home or work. Escalate to EdApps\n\u2022 TAC:\n\t\u2022 TAC is where teachers take attendance and perform teacher specific duties\n\t\u2022 We don't do anything with this either. Escalate to EdApps\n\u2022 HAC:\n\t\u2022 All we can do here is reset passwords for parent logins which is done in eSchools\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FeSchoolPLUS.one%7C3052b7e6-5603-4085-adac-3f31900f2d11%2FeSchoolPLUS%20Admin%20Mobile%20App%7C993573e7-59a9-46ac-a9dc-9904cb48862c%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "Typing Agent",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Just escalate to EdApps\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FTyping%20Agent.one%7C36611354-676e-4ffd-a571-a2ef0e25edd2%2FTyping%20Agent%20%20User%20Log%20In%7C8b7bbc66-c1a1-4801-be7e-387aadfbd649%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "Khan Academy",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Khan Academy recently made changes to their app which means that it is now only accessible as part of the 'Clever Library'. This means that teacher and student data will not be shared (and the app will not appear in the portal), until the teacher adds it for their class.\n\u2022 Here are the steps:\n\t\u2022 Log into Clever\n\t\u2022 Select 'Library' at the top of the screen\n\t\u2022 Select the Khan Academy resource\n\t\u2022 Click the install button\n\t\u2022 The app tile will then appear on the teacher's Clever Portal. Return to the portal and select the app tile\n\t\u2022 When you first install Khan Academy, confirm that you want to share class data by selecting 'Allow'\n\t\u2022 You'll then be asked to log in or create an account - create an account if you're are unsure of the login\n\t\u2022 You'll then be prompted to input your district creds which will grant you access to the system\n"
+          },
+          {
+            "name": "Destiny",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 If someone is missing - just escalate to EdApps\n\u2022 Otherwise, some light training is something we can do\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FDestiny.one%7C8607bde9-9d23-4e96-9e97-072d0e55bd7a%2FHelpdesk%20Procedure%7C9b2cd6b0-b8e2-4e35-92f2-b9c05f510022%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "Schoology",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Here we can find Schoology access codes, reset passwords for parent logins and other troubleshooting.\n\u2022 Note that the search function in Schoology is very finicky and searching by first name, email or student ID only, tends to produce the best results.\n\u2022 You can also authorize OneDrive under 'Resources' in Schoology for assignment submission if necessary\n\u2022 The links detail the common things we have to do\n\u2022 For more advanced concerns like missing courses / Grade Book / Rubrics- escalate over to EdApps\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={e6d1618c-ea4b-4d75-8dba-ebf58836a389}&action=edit&wd=target%28To%20View%20Parent%20Access%20Codes%20for%20Students%7C41bb2cd5-f963-41bd-805c-a970f0c80cf1%2F%29",
+                "label": "How to find parent access code"
+              },
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={e6d1618c-ea4b-4d75-8dba-ebf58836a389}&action=edit&wd=target%28Parent%20Account%20How-to%7C051e64ef-bd84-4285-8154-dd7bd8f49b70%2F%29",
+                "label": "How to register for a parent account"
+              },
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={e6d1618c-ea4b-4d75-8dba-ebf58836a389}&action=edit&wd=target%28FAQs%7C21dfa36b-6f28-4a92-b77f-4ff4e7d79c48%2F%29",
+                "label": "General FAQ"
+              }
+            ]
+          },
+                    {
+            "name": "DreamBox",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Escalate over to EdApps - we don't do anything with this.\n"
+          },
+          {
+            "name": "OpenText",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Escalate over to EdApps - we don't do anything with this.\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FOpenText.one%7Cf5adcb3a-69e9-4ac0-93f2-cdf38e0c741a%2FOpenText%7Cf6d7aad5-1c5c-49e4-afec-2713a3172dcc%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "Cognos",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Escalate over to EdApps - we don't do anything with this.\n"
+          },
+          {
+            "name": "Quaver",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Escalate over to EdApps - we don't do anything with this.\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FQuaver.one%7C52ad947d-a6dc-4bb5-8508-d12f5758f8fb%2FTouch%5C%2FWhiteboard%20Troubleshooting%7Cfa51ce49-56c7-4796-a36f-fb0703943d64%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "Renaissance / AR / STAR",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Escalate over to EdApps - we don't do anything with this.\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FRenaissance%20Place.one%7C8369cdfa-119c-4988-bbef-e660af01789a%2FSchool%20Login%20Instructions%7Cf5a59a32-9a9a-4f11-96fa-c5d7a23bba43%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "Clever & Clever Badges",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Note that Clever is how students should be accessing Schoology and all of the other curriculum programs in the district, with few exceptions \n\u2022 The only thing we really do with Clever is ensure that students can log into it\n\u2022 Note that the Clever Badges do not know what a student's password is - it's only making it's best guess based on a predefined pattern.\nThe pattern is: lowercase [first initial][last initial][2 digit birth month][2 digit birth day][last 4 of primary guardian's home phone number] \n\u2022 If you can't get them logged in - Ensure you're using eSchools and all the numbers are correct.\n\u2022 If you still can't get them logged in - escalate over to EdApps\n"
+          },
+          {
+            "name": "Back",
+            "text": "Exit Ed Apps"
+          }
+        ]
+      },
+      {
+        "name": "Modern Management Eng.",
+        "options": [
+          {
+            "name": "Teams",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Here are some things you can try that resolve many of the common issues:\n\t\u2022 Update Teams by clicking on the little 3 dots on the upper right-side and select 'Check For Updates'\n\t\u2022 If the desktop client is not letting a student / staff member in - use the web version and update the app\n\t\u2022 Often, we have to uninstall Teams then re-install it via Company Portal to get it to behave\n\t\u2022 A device swap is also a solution you can offer\n\t\u2022 Beyond this, if it's not a training issue, escalate over to MME\n\t\u2022 See the resources on how to solve other common problems\n",
+            "links": [
+              {
+                "uri": "https://support.microsoft.com/en-us/office/schedule-a-meeting-in-teams-943507a9-8583-4c58-b5d2-8ec8265e04e5",
+                "label": "How to schedule a Teams meeting"
+              },
+              {
+                "uri": "https://support.microsoft.com/en-us/office/change-participant-settings-for-a-teams-meeting-53261366-dbd5-45f9-aae9-a70e6354f88e",
+                "label": "How to change meeting options"
+              },
+              {
+                "uri": "https://support.microsoft.com/en-us/office/my-camera-isn-t-working-in-teams-9581983b-c6f9-40e3-b0d8-122857972ade",
+                "label": "Troubleshoot camera / mic not working"
+              },
+              {
+                "uri": "https://puyallupsd.sharepoint.com/:p:/r/sites/pitt/_layouts/15/guestaccess.aspx?e=HEgePb&share=EdaUdYmXVVVFhlX7oY6uoskB57__ZFjFzYYFyBHGE4wzpQ",
+                "label": "PP OnePagers"
+              }
+            ]
+          },
+          {
+            "name": "Class Policy",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Check out the OnePagers for really good problem solving documentation\n\u2022 Note that there are logs in the C:/ClassPolicy directory that you should attach to tickets before escalating over to MME if you decide you need to\n\u2022 Teachers often forget that they need to install the 'Teacher's Service' in Company Portal alongside the application. Otherwise, it will prompt them for configuration\n\u2022 The MME team can do a lot with Class Policy so send over any concerns you don't feel equipped to handle\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/:p:/r/sites/pitt/_layouts/15/guestaccess.aspx?e=ObNwEV&share=EWrEme1RUr1BgUyIqtW1cXIBXFzF_3dU0e4842h7CfepHQ",
+                "label": "PP OnePagers"
+              },
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FClass%20Policy.one%7C99f87c77-a960-4b5b-837c-96ee82fbb4b7%2FClassPolicy%20Important%20Reminders%7Ce093520f-4fb9-44e7-bfb3-2f3a10383be4%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "Office 365 add-ins (ex. Jasperactive, Ablebits)",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Jasperactive is an O365 add-in that integrates with Word\n\u2022 Ablebits is also an O365 add-in that integrates with Excel\n\u2022 Note that recent student name changes may remove their ability to use Jasperactive for a short time\n\u2022 Escalate over / confer with MME for more support options\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FeSchoolPLUS.one%7C3052b7e6-5603-4085-adac-3f31900f2d11%2FeSchoolPLUS%20Admin%20Mobile%20App%7C993573e7-59a9-46ac-a9dc-9904cb48862c%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "Daktronics Venus 1500 V4",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Take a look at the OneNote and confer with MME if the download via Company Portal is problematic\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FVenus%201500%20Sign%20Software.one%7C3ab1ec95-6d89-4816-9075-b2bc2604608d%2FNo%20registration%20required%20for%20Venus%5C%2FDownload%20link%7Cbfc4b440-c83f-40a1-9b7a-1971364cca01%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "Securly",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Securly is now under MME management - formerly it was with the Security Team\n\u2022 Note that we can 'unblock' resources, but the process is undefined as of 12/21\n\u2022 If you have a staff member calling in about this, reach out to MME\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd.sharepoint.com/sites/72/_layouts/15/Doc.aspx?sourcedoc={82b159f3-9b0a-4564-ac37-e4b3fcf9de0a}&action=edit&wd=target%28Software%20Programs%2FSecURLy.one%7C842cd2d8-26dd-41b5-bb8d-cab89004f1d1%2FParent%20Letter%7C40207da6-ad2e-4319-99e0-88111f3da5a7%2F%29",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "CTE Hardware / Software",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Jake tends to manage the majority of CTE related software / hardware\n\u2022 Direct a ticket over to MME with as much detail as possible, so one of us can look into the concern\n"
+          },
+          {
+            "name": "AVD / WVD",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Direct a ticket over to MME with as much detail as possible, so one of us can look into the concern\n"
+          },
+          {
+            "name": "DAS Program",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 The MME team has a computer with DAS already installed in the event of a staff member needing a hot swap\n\u2022 Confer with MME if a staff member needs assistance with installing this program\n"
+          },
+          {
+            "name": "Adobe account issues",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 The MME team has access to the Adobe Admin Console which gives us a good deal of user control\n\u2022 Confer with / escalate to MME if a staff member needs assistance with account related issues\n"
+          },
+          {
+            "name": "iPads / Apple products",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Escalate over to MME for troubleshooting or come have a chat\n"
+          },
+          {
+            "name": "Company Portal",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Escalate over to MME for apps failing to install\n\u2022 Company Portal has a 'Sync' function that allows users to force their devices to check in with our Intune Management System. Doing this is a good troubleshooting step for a variety of problems\n\u2022 see 'How to sync the Company Portal' in 'General Software Concerns'\n"
+          },
+          {
+            "name": "Back",
+            "text": "Exit MME Menu"
+          }
+        ]
+      },
+      {
+        "name": "Sys. Eng.",
+        "options": [
+          {
+            "name": "Outlook concerns",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Check out the troubleshooting guide for some direction\n\u2022 You can always try to repair Office - that tends to resolve a lot of persistent issues\n\u2022 Attempt to access the web app - if they can't escalate over to Sys. Eng.\n\u2022 Try uninstalling and reinstalling the app as well\n\u2022 Ultimately, try as much as you can but freely escalate over to Sys. Eng. if you can't figure it out\n",
+            "links": [
+              {
+                "uri": "https://www.sperrysoftware.com/Email-Tools/how-to-fix-outlook-problems/?scrlybrkr=3fb56a43",
+                "label": "General Troubleshooting Guide"
+              }
+            ]
+          },
+          {
+            "name": "OneDrive issues",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 There are cases where a student's / staff member's OneDrive will not sync, no matter what device they are on. Escalate over to Sys. Eng. in these cases\n\u2022 If the OneDrive contains more than the device's storage capacity, see the attached link for troubleshooting\n\u2022 Sometimes pausing the sync process, then restarting it is a good way to force OneDrive to detect changes\n\u2022 Try and unlink the PC when OneDrive is misbehaving and the other steps don't work - see attached\n\u2022 Another thing you can try is killing OneDrive in Task Manager, then relaunching it\n\u2022 Escalate over to Sys. Eng. if you can't get OneDrive to behave\n",
+            "links": [
+              {
+                "uri": "https://support.microsoft.com/en-us/office/choose-which-onedrive-folders-to-sync-to-your-computer-98b8b011-8b94-419b-aa95-a14ff2415e85",
+                "label": "How to de-sync folders"
+              },
+              {
+                "uri": "https://support.microsoft.com/en-us/office/turn-off-disable-or-uninstall-onedrive-f32a17ce-3336-40fe-9c38-6efb09f944b0",
+                "label": "How to unlink a PC"
+              }
+            ]
+          },
+          {
+            "name": "Microsoft account problems",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Escalate if:\n\t\u2022 Wrong profile picture\n\t\u2022 Microsoft account errors\n\t\u2022 Wrong name / email combination\n\t\u2022 You can't find a quick resolution to the problem\n"
+          },
+          {
+            "name": "SharePoint access requests",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 These kinds of requests have to come from a building admin\n\u2022 Escalate over to Sys. Eng.\n"
+          },
+          {
+            "name": "Y-Drive concerns / access requests",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Access requests have to be escalated\n\u2022 If someone is not able to get to the Y drive:\n\t\u2022 Make sure the drive is mapped properly\n\t\u2022 Ensure that they are on the correct network - PSDWIRELESS \n\t\u2022 Ensure that the PSDVPN is disconnected\n\t\u2022 If they still are not able to connect - escalate over to Sys. Eng.\n",
+            "links": [
+              {
+                "uri": "https://support.microsoft.com/en-us/windows/map-a-network-drive-in-windows-10-29ce55d1-34e3-a7e2-4801-131475f9557d",
+                "label": "How to map a network drive"
+              }
+            ]
+          },
+          {
+            "name": "Email access requests",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Escalate over to Sys. Eng\n"
+          },
+          {
+            "name": "Adding a printer to Printix",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Escalate over to Sys. Eng\n"
+          },
+          {
+            "name": "Back",
+            "text": "Exit Sys. Eng."
+          }
+        ]
+      },
+      {
+        "name": "Network Eng.",
+        "options": [
+          {
+            "name": "Resetting voicemail passwords",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Make sure you check the extension in HelpOne before you escalate it over to Network. The link is below!\n\u2022 Make sure you put the extension and the location in the ticket!\n",
+            "links": [
+              {
+                "uri": "http://helpone/HelpOne/Update.aspx?AssetID=1",
+                "label": "HelpOne Voicemail System"
+              }
+            ]
+          },
+          {
+            "name": "Handheld radio concerns",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Escalate over to Network Eng\n\u2022 Make sure you get the location of the radios in the ticket\n"
+          },
+          {
+            "name": "Any phone concerns",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Make sure you grab the extension before you escalate the concern. Grab the WHO, WHAT, WHERE as well and put it all in the ticket.\n\n"
+          },
+          {
+            "name": "Wireless / wired network issues",
+            "text": "",
+            "remarks": "\nRemarks\n----------\n\u2022 Some questions to consider\n\t\u2022 Where are you?\n\t\u2022 Can you get onto any internet resources? Or is everything inaccessible?\n\t\u2022 When did you notice the network issues?\n\t\u2022 Have you tried disconnecting from the PSDVPN?\n\t\u2022 Have you tried to reboot your device?\n\t\u2022 Which network are you connected to? (PSDWIRELESS, PSDDEVICES etc.)\n\u2022 Try and remote in and identify anything obviously out of place.\n\u2022 Note that if you can remote in, they do have internet.\n\u2022 For PSDGUEST ask them if they saw the 'splash page' and clicked 'Accept' - the device won't connect until this is complete\n\u2022 Have the user turn off and turn back on the WIFI\n\u2022 Have the user restart their device\n\u2022 Try and forget the network and rediscover it\n\u2022 If you can't determine the cause - escalate over to Network Eng.\n\u2022 Note that FaceBook / social media pictures will typically not load on our wireless networks - this is by design. They have to hard-line in.\n\u2022 Staff members / Students can't connect personal devices to our wireless networks - only PSDGUEST. \n\u2022 No Credentials? No access. No exceptions.\n"
+          },
+          {
+            "name": "Back",
+            "text": "Exit Sys. Eng. Menu"
+          }
+        ]
+      },
+      {
+        "name": "About this app",
+        "options": [
+          {
+            "name": "README",
+            "text": "",
+            "remarks": "\n\u2022 Documentation on how to get the most out of this program!\n\n",
+            "links": [
+              {
+                "uri": "https://puyallupsd-my.sharepoint.com/:o:/g/personal/morenks_puyallup_k12_wa_us/EvEcaDV6pflBoNAAAFaH8SsBPXIGzUQRNI4K1gkyUJALxw?e=RaLajA",
+                "label": "OneNote Notebook"
+              }
+            ]
+          },
+          {
+            "name": "Back",
+            "text": "Exit About"
+          }
+        ]
+      },
+      {
+        "name": "Search"
+      },
+      {
+        "name": "Exit",
+        "text": "Exit the program"
+      }
+    ]
+  }
+}
