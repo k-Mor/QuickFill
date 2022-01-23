@@ -23,13 +23,10 @@
 ##### Best of all, this program is totally customizable and very flexible. If you pick up just a little knowledge on how to read JSON, you can write and use your own custom response file! This means you can make the program say whatever you want it to. However, if you want to keep it simple and aren't interested in writing your own responses, you can just use my API which I'll do my best to keep up to date and relevant. Note that this a labor of love and is something that only I can do at this time.
 
 ## What QuickFill is not
-#### A magic bullet. There are still many cases in which you'd have to collaborate with other techs / departments in order to find an appropriate response to a caller or ticket. I'd caution you at considering my responses as an authority on a particular issue, but rather a good direction to begin looking for an answer. Always double check something you're unfamiliar with. 
+#### A magic bullet. A panacea. A one-size-fits-all tool. There are still many cases in which you'd have to collaborate with other techs / departments in order to find an appropriate response to a caller or ticket. I'd caution you from considering my responses as an authority on a particular issue, but rather a good direction to begin looking for an answer. Always double check something you're unfamiliar with. 
 
-## What problem this program aims to solve
----
-
-## How to use this program efficiently
----
+## How to use QuickFill efficiently
+#### 
 
 ## How to get additional help and submit change requests
 ---
