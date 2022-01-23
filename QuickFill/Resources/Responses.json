@@ -7,10 +7,10 @@
     "version": "2021.12.25"
   },
   "mainMenu": {
-    "name": "Main Menu",
+    "name": "Main Menu - Local File",
     "options": [
       {
-        "name": "Helpdesk Resources POOP STICK",
+        "name": "Helpdesk Resources",
         "options": [
           {
             "name": "Tech Support OneNote",
