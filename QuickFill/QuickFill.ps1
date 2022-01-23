@@ -60,7 +60,7 @@ function main() {
     $mainMenu = $jsonFileObject.mainMenu
   
     # Show the main menu
-    Write-Host "QuickFill App $([char]0x00A9) Kaleb Moreno`nVersion: 22.01.01`n" -ForegroundColor DarkGray
+    Write-Host "QuickFill App $([char]0x00A9) Kaleb Moreno`nVersion: $($jsonFileObject.config.version)`n" -ForegroundColor DarkGray
     showMenu $mainMenu
   
     while ($userResponse -ne $terminate) { 
