@@ -45,7 +45,8 @@ function main() {
 
         # Default to the API for the response file
         try {
-            $jsonFileObject = Invoke-restmethod -Uri $api 
+            Write-Host "Connecting to API..."
+            $jsonFileObject = Invoke-restmethod -Uri $api
         }
         catch {
             Write-Host "There was an error connecting to the API..`nCheck your internet connection."
