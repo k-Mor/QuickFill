@@ -26,7 +26,8 @@
 
 #>
 
-using namespace ".\Modules\HelperFunctions.psm1"
+# Pulling in the functions
+Import-Module -Name ".\Modules\HelperFunctions.psm1"
         
 # Program driver 
 function main() {
@@ -39,7 +40,7 @@ function main() {
     
     # If the user wants to use the API that I wrote for this program
     if ($fileResponse -Like "*y*") {
-        $jsonFileObject = Get-Content '.\newResponses.json' | Out-String | ConvertFrom-Json
+        $jsonFileObject = Get-Content '.\Resources\Responses.json' | Out-String | ConvertFrom-Json
     } else {
 
         # Default to the API for the response file
@@ -89,7 +90,5 @@ function main() {
     }
   }
   
-
-
   # Starting the App
   Main
