@@ -1,4 +1,5 @@
-# QuickFill V2022.01.23
+# QuickFill 
+##### V2022.01.23
 
 ## What is QuickFill?
 ##### QuickFill is a Powershell console program that seeks to demystify the ticket creation / response process by copying pre-formatted responses to the system clipboard, while providing useful remarks for a selected topic. This program assumes the following about its users:
@@ -17,7 +18,7 @@
 4. Most of the options that exist in the sub menus contain "Remarks." Remarks help familiarize a new Tech and even remind seasoned Techs, what they ought to do for a particular concern. For example, say someone calls in about a Juno:
     * First, the Tech will find the Juno menu option and go through the prompts (I will cover this in a moment)
     * Next, the Tech will review the remarks and realize that they MUST include the room number of the Juno in the ticket before they escalate it to a On Site Tech. This little detail is one example of things that are very often missed during ticket escalation, which can be avoided by using this program.
-5. This program contains a search algorithm that makes locating specific issues much easier within the program itself. All you have to do is select "Search", input a search term, and the program will show you where it found that term, then copy the search results / path to your clipboard. This is super helpful when you don't where to look for something. So, if you didn't have enough time to look at the results, you can just paste them anywhere for further review.
+5. This program contains a search algorithm that makes locating specific issues much easier within the program itself. All you have to do is select "Search", input a search term, and the program will show you where it found that term, then copy the search results / path to your clipboard. This is super helpful when you don't know where to look for something. So, if you didn't have enough time to look at the results, you can just paste them anywhere for further review.
 6. In the "Helpdesk Resources" there are links to just about anything you could need as a Tech. There are status pages, guides, official resources like the Approved Applications List, text based guides, etc. 
 
 ##### Best of all, this program is totally customizable and very flexible. If you pick up just a little knowledge on how to read JSON, you can write and use your own custom response file! This means you can make the program say whatever you want it to. However, if you want to keep it simple and aren't interested in writing your own responses, you can just use my API which I'll do my best to keep up to date and relevant. Note that this a labor of love and is something that only I can do at this time.
