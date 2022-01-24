@@ -25,7 +25,7 @@
 ## What QuickFill is not
 #### A magic bullet. A panacea. A one-size-fits-all tool. There are still many cases in which you'd have to collaborate with other techs / departments in order to find an appropriate response to a caller or ticket. I'd caution you from considering my responses as an authority on a particular issue, but rather a good direction to begin looking for an answer. Always double check something you're unfamiliar with. 
 
-## How to use QuickFill efficiently
+## How to use QuickFill
 #### I aimed to make this program as user friendly as possible, however I recognize that not everyone is conformable with console-based programs. I'll break the entire process down in a few easy-to-digest steps:
 
 #### Run the program
@@ -272,10 +272,87 @@ All you have to do is hit CTRL + V to paste this response into the response box 
 
     Continue?:
 
-These are all the common reasons someone will call in / submit a ticket for Facilities. There are no links, so the program is asking you to hit "Enter" or a "y" word to continue back to the Main Menu.
+These are all the common reasons someone will call in / submit a ticket for Facilities. There are no resource links, so the program is asking you to hit "Enter" or a "y" word to continue back to the Main Menu.
 
+#### Example 3 - You get a call / ticket for WCAP and have no idea where to find that
+
+    ---------
+    Main Menu
+    ---------
+    (0) Helpdesk Resources
+    (1) Quick Responses
+    (2) Wrong Department
+    (3) General Hardware Concerns
+    (4) General Software Concerns
+    (5) EdApps
+    (6) Modern Management Eng.
+    (7) Sys. Eng.
+    (8) Network Eng.
+    (9) About this app
+    (10) Search
+    (-1) Exit
+    Enter an option: 10
+
+In this example, I have no idea where to look for this term, so lets search for it! Type in "10" and hit "Enter."
+    
+    ---------
+    Main Menu
+    ---------
+    (0) Helpdesk Resources
+    (1) Quick Responses
+    (2) Wrong Department
+    (3) General Hardware Concerns
+    (4) General Software Concerns
+    (5) EdApps
+    (6) Modern Management Eng.
+    (7) Sys. Eng.
+    (8) Network Eng.
+    (9) About this app
+    (10) Search
+    (-1) Exit
+    Enter an option: 10
+    Enter the search term: WCAP
+
+You can see that the program is asking for a search term, so lets put in "WCAP." The algorithm will then go and look at every remark and item name for this term.
+
+    ---------
+    Main Menu
+    ---------
+    (0) Helpdesk Resources
+    (1) Quick Responses
+    (2) Wrong Department
+    (3) General Hardware Concerns
+    (4) General Software Concerns
+    (5) EdApps
+    (6) Modern Management Eng.
+    (7) Sys. Eng.
+    (8) Network Eng.
+    (9) About this app
+    (10) Search
+    (-1) Exit
+    Enter an option: 10
+    Enter the search term: WCAP
+
+    Wrong Department -> [Assessments]
+
+    ** Item was copied to your clipboard **
+
+Yay! The algorithm found that term in the "Wrong Department" menu under the menu item "Assessments" and copied the search results to your clipboard. Just navigate your way there for more information. Note that when you perform a search, the program only shows the search results for a few seconds. If you missed that period, you can just copy the results from your clipboard anywhere for reference.
+
+
+What were those results again? Lets see!
+
+<blockquote>
+
+    You searched for: WCAP
+
+    Wrong Department -> [Assessments]
+
+
+</blockquote>
 
 
 ## How to get additional help and submit change requests
----
+
+Just shoot me an email, submit a ticket to me, or get me on Teams! 
 
