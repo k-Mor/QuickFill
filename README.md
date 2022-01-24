@@ -338,10 +338,10 @@ You can see that the program is asking for a search term, so lets put in "WCAP."
 
     ** Item was copied to your clipboard **
 
-Yay! The algorithm found that term in the "Wrong Department" menu under the menu item "Assessments" and copied the search results to your clipboard. Just navigate your way there for more information. Note that when you perform a search, the program only shows the search results for a few seconds. If you missed that period, you can just copy the results from your clipboard anywhere for reference.
+Yay! The algorithm found that term in the "Wrong Department" menu under the menu item "Assessments" and copied the search results to your clipboard. Just navigate your way there for more information. Note that when you perform a search, the program only shows the search results for a few seconds. If you missed that period, you can just paste the results from your clipboard anywhere for reference.
 
 
-What were those results again? Lets see!
+What were those results again? Lets paste the results into NotePad with CTRL + V.
 
 <blockquote>
 
