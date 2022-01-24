@@ -1,8 +1,8 @@
 # QuickFill 
-##### V2022.01.23
+V2022.01.23
 
 ## What is QuickFill?
-##### QuickFill is a Powershell console program that seeks to demystify the ticket creation / response process by copying pre-formatted responses to the system clipboard, while providing useful remarks for a selected topic. This program assumes the following about its users:
+<strong>QuickFill is a Powershell console program that seeks to demystify the ticket creation / response process by copying pre-formatted responses to the system clipboard, while providing useful remarks for a selected topic. This program assumes the following about its users:</strong>
 
 1. You are tired of typing the same things over and over while responding to common issues - like printers failing to print.
 2. You realize that you can't remember everything, and would like to be able to search for less common issues quickly
@@ -10,7 +10,7 @@
 4. You like to have all of your resources in one central place.
 5. You don't know where to find the information you need for a particular concern.
 
-##### There are a few things that this program does for you that makes your life as a Helpdesk Tech easier:
+<strong>There are a few things that this program does for you that makes your life as a Helpdesk Tech easier:</strong>
 
 1. Writes responses, based on your selection in one of the menus and adds in dynamic content, like the time of day. For example, the program checks to see what time of day it is before it proceeds to write "Good morning so-and-so" or "Good afternoon so-and-so." This is so you don't have to go back and edit a response before you send it off.
 2. The program will copy that response to your clipboard so you can simply hit CTRL + V to paste it into the response box in TOPdesk. This is a huge time saver during the busy seasons.
@@ -21,15 +21,15 @@
 5. This program contains a search algorithm that makes locating specific issues much easier within the program itself. All you have to do is select "Search", input a search term, and the program will show you where it found that term, then copy the search results / path to your clipboard. This is super helpful when you don't know where to look for something. So, if you didn't have enough time to look at the results, you can just paste them anywhere for further review.
 6. In the "Helpdesk Resources" there are links to just about anything you could need as a Tech. There are status pages, guides, official resources like the Approved Applications List, text based guides, etc. 
 
-##### Best of all, this program is totally customizable and very flexible. If you pick up just a little knowledge on how to read JSON, you can write and use your own custom response file! This means you can make the program say whatever you want it to. However, if you want to keep it simple and aren't interested in writing your own responses, you can just use my API which I'll do my best to keep up to date and relevant. Note that this a labor of love and is something that only I can do at this time.
+<strong>Best of all, this program is totally customizable and very flexible. If you pick up just a little knowledge on how to read JSON, you can write and use your own custom response file! This means you can make the program say whatever you want it to. However, if you want to keep it simple and aren't interested in writing your own responses, you can just use my API which I'll do my best to keep up to date and relevant. Note that this a labor of love and is something that only I can do at this time.</strong>
 
 ## What QuickFill is not
-#### A magic bullet. A panacea. A one-size-fits-all tool. There are still many cases in which you'd have to collaborate with other techs / departments in order to find an appropriate response to a caller or ticket. I'd caution you from considering my responses as an authority on a particular issue, but rather a good direction to begin looking for an answer. Always double check something you're unfamiliar with. 
+A magic bullet. A panacea. A one-size-fits-all tool. There are still many cases in which you'd have to collaborate with other techs / departments in order to find an appropriate response to a caller or ticket. I'd caution you from considering my responses as an authority on a particular issue, but rather a good direction to begin looking for an answer. Always double check something you're unfamiliar with. 
 
 ## How to use QuickFill
-#### I aimed to make this program as user friendly as possible, however I recognize that not everyone is conformable with console-based programs. I'll break the entire process down in a few easy-to-digest steps:
+I aimed to make this program as user friendly as possible, however I recognize that not everyone is conformable with console-based programs. I'll break the entire process down with examples and simple steps.
 
-#### Run the program
+<strong>First, Run the program</strong>
 
     1. Open Powershell or the CMD on your Windows Machine and type in "Powershell"
     2. Navigate to the QuickFill directory and run the QuickFill.ps1 script
@@ -37,7 +37,7 @@
       * Note that you can input anything with a "y" here to use a custom response file
         otherwise, it'll query my API. Just hit "Enter" to move forward.
 
-#### The Main Menu will pop up
+<strong>Next, the Main Menu will pop up and we'll have to select an option. The option you select will depend on what you're trying to do! Check out the examples for some ideas on how to use the program.</strong>
 
     ---------
     Main Menu
@@ -55,7 +55,8 @@
     (10) Search
     (-1) Exit
     Enter an option:
-
+    
+## Examples
 #### Example 1 - Ticket comes in with a user not sure why they can't print
 
     ---------
