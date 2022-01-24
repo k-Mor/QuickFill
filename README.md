@@ -57,7 +57,7 @@ I aimed to make this program as user friendly as possible, however I recognize t
     Enter an option:
     
 ## Examples
-#### Example 1 - Ticket comes in with a user not sure why they can't print
+#### Example 1 - Ticket comes in with a user not anle to print
 
     ---------
     Main Menu
@@ -276,7 +276,7 @@ All you have to do is hit CTRL + V to paste this response into the response box 
 
 These are all the common reasons someone will call in / submit a ticket for Facilities. There are no resource links, so the program is asking you to hit "Enter" or a "y" word to continue back to the Main Menu.
 
-#### Example 3 - You get a call / ticket for WCAP and have no idea where to find that
+#### Example 3 - You get a call / ticket for WCAP and have no idea what / where that is
 
     ---------
     Main Menu
@@ -339,10 +339,10 @@ You can see that the program is asking for a search term, so lets put in "WCAP."
 
     ** Item was copied to your clipboard **
 
-Yay! The algorithm found that term in the "Wrong Department" menu under the menu item "Assessments" and copied the search results to your clipboard. Just navigate your way there for more information. Note that when you perform a search, the program only shows the search results for a few seconds. If you missed that period, you can just paste the results from your clipboard anywhere for reference.
+Nice! The algorithm found that term in the "Wrong Department" menu under the menu item "Assessments" and copied the search results to your clipboard. Just navigate your way there for more information. Note that when you perform a search, the program only shows the search results for a few seconds. If you missed that period, you can just paste the results from your clipboard anywhere for reference.
 
 
-What were those results again? Lets paste the results into NotePad with CTRL + V.
+What were those results again? Lets paste the results into Notepad with CTRL + V.
 
 <blockquote>
 
