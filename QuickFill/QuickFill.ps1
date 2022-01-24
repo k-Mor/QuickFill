@@ -1,6 +1,6 @@
 <#
     Author: Kaleb Moreno
-    Version: 2022.01.01
+    Version: 2022.01.23
 
     .DESCRIPTION
         The purpose of his script is to allow Helpdesk techs to do their jobs more efficiently 
