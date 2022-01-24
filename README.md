@@ -57,7 +57,7 @@ I aimed to make this program as user friendly as possible, however I recognize t
     Enter an option:
     
 ## Examples
-#### Example 1 - Ticket comes in with a user not anle to print
+#### Example 1 - Ticket comes in with a user not able to print
 
     ---------
     Main Menu
