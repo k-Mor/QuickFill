@@ -5,7 +5,7 @@ Version: 2022.01.23
 <strong>QuickFill is a Powershell console program that seeks to demystify the ticket creation / response process by copying pre-formatted responses to the system clipboard, while providing useful remarks for a selected topic. This program assumes the following about its users:</strong>
 
 1. You are tired of typing the same things over and over while responding to common issues - like printers failing to print.
-2. You realize that you can't remember everything, and would like to be able to search for less common issues quickly
+2. You realize that you can't remember everything, and would like to be able to search for less common issues quickly.
 3. You are either on the phone with a caller, or interacting with a user via TOPdesk.
 4. You like to have all of your resources in one central place.
 5. You don't know where to find the information you need for a particular concern.
