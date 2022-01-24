@@ -9,6 +9,7 @@ Version: 2022.01.23
 3. You are either on the phone with a caller, or interacting with a user via TOPdesk.
 4. You like to have all of your resources in one central place.
 5. You don't know where to find the information you need for a particular concern.
+6. You have an active internet connection. 
 
 <strong>There are a few things that this program does for you that makes your life as a Helpdesk Tech easier:</strong>
 
