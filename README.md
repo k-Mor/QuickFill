@@ -355,5 +355,5 @@ What were those results again? Lets paste the results into NotePad with CTRL + V
 
 ## How to get additional help and submit change requests
 
-Just shoot me an email, submit a ticket to me, or get me on Teams! 
+Just shoot me an email, submit a ticket to me, or get me on Teams! If you like this program and find it useful, consider giving it a ⭐️
 
