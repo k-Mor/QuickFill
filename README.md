@@ -1,5 +1,5 @@
 # QuickFill 
-Version: 2022.01.23
+## Version: 2022.01.23
 
 ## What is QuickFill?
 <strong>QuickFill is a Powershell console program that seeks to demystify the ticket creation / response process by copying pre-formatted responses to the system clipboard, while providing useful remarks for a selected topic. This program assumes the following about its users:</strong>
@@ -357,5 +357,5 @@ What were those results again? Lets paste the results into Notepad with CTRL + V
 
 ## How to get additional help and submit change requests
 
-Just shoot me an email, submit a ticket to me, or get me on Teams! If you like this program and find it useful, consider giving it a ⭐️
+Open an issue here on GitHub, shoot me an email, submit a ticket to me, or get me on Teams! If you like this program and find it useful, consider giving it a ⭐️
 
