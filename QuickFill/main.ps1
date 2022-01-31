@@ -1,6 +1,6 @@
 <#
     Author: Kaleb Moreno
-    Version: 22.01.23
+    Version: 22.01.31
 
     .DESCRIPTION
         The purpose of his script is to allow Helpdesk techs to do their jobs more efficiently 
@@ -26,11 +26,16 @@
 
 #>
 
+
 # Pulling in the functions
 Import-Module -Name ".\Modules\HelperFunctions.psm1"
         
 # Program driver 
 function main() {
+
+    # App version number
+    $appVersion = "22.01.31"
+    
     $terminate = -1
     $mainMenu = $jsonFileObject.mainMenu
     $api = "https://quickfill.herokuapp.com/"
@@ -60,7 +65,7 @@ function main() {
     $mainMenu = $jsonFileObject.mainMenu
   
     # Show the main menu
-    Write-Host "QuickFill App $([char]0x00A9) Kaleb Moreno`nVersion: $($jsonFileObject.config.version)`n" -ForegroundColor DarkGray
+    Write-Host "QuickFill App $([char]0x00A9) Kaleb Moreno`nFile Version: $($jsonFileObject.config.version)`nApp Version: $($appVersion)`n" -ForegroundColor DarkGray
     showMenu $mainMenu
   
     while ($userResponse -ne $terminate) { 
