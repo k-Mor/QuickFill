@@ -1,4 +1,4 @@
-# O(n)^2 searching algorithm that works effeciently on small n - may need revision if n continues to
+# O(n^2) searching algorithm that works effeciently on small n - may need revision if n continues to
 # grow
 function doSearch($theMainMenu, $theKey) {
     $results = "You searched for: $($theKey)`n`n"
