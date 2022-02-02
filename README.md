@@ -34,7 +34,7 @@ I aimed to make this program as user friendly as possible, however I recognize t
 <strong>First, Run the program</strong>
 
     1. Open Powershell or the CMD on your Windows Machine and type in "Powershell"
-    2. Navigate to the QuickFill directory and run the QuickFill.ps1 script
+    2. Navigate to the QuickFill directory and run the main.ps1 script
     3. Respond to the prompt: Would you like to use a custom response file?
       * Note that you can input anything with a "y" here to use a custom response file
         otherwise, it'll query my API. Just hit "Enter" to move forward.
